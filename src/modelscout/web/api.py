@@ -44,7 +44,7 @@ class HardwareBenchmarkResponse(BaseModel):
 @router.get("/health")
 def get_health() -> Dict[str, str]:
     """Health check endpoint."""
-    return {"status": "ok", "app": "modelscout", "version": "0.1.0"}
+    return {"status": "ok", "app": "modelscout", "version": "0.1.1"}
 
 
 @router.get("/hardware")

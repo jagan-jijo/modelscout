@@ -18,9 +18,9 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="ModelScout Web",
+    title="ModelScout — Local AI Advisor",
     description="Find local AI models that fit your hardware, with memory and speed estimates.",
-    version="0.1.0",
+    version="0.1.1",
     lifespan=lifespan,
 )
 
