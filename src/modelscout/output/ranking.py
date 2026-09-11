@@ -82,7 +82,8 @@ def _top_pick_confidence(results: list[CompatibilityResult]) -> tuple[str, str]:
         confidence = "Low"
         reason = f"direct benchmark but very close (+{gap:.1f}){risk_note}"
 
-    # オフロード/CPU-only/低信頼speedの1位は実運用で不確実性が高いため信頼度を1段階下げる
+    # If the top pick requires offloading onto CPU RAM or has low speed confidence,
+    # real-world tokens/sec will have more variance. Step confidence down one notch.
     if top.fit_type != "full_gpu" or top.speed_confidence == "low":
         if confidence == "High":
             confidence = "Medium"

@@ -133,7 +133,7 @@ def rank_models(
         if not _passes_evidence_filter(bench_evidence.source, evidence_filter):
             continue
 
-        # 各variantを評価し、そのモデルで最もスコアが高いものを採用する
+        # Evaluate each quantization variant and select the highest-scoring candidate for this model.
         best_for_model: CompatibilityResult | None = None
         for variant in candidates:
             if gguf_only_backend and variant is None:

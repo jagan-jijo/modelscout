@@ -200,11 +200,16 @@ def compute_hardware_score(
     )
     overall = max(10, min(100, overall))
 
-    summary = (
-        f"AI Hardware Score: {overall}/100 — "
-        f"{'Exceptional' if overall >= 90 else 'Great' if overall >= 80 else 'Capable' if overall >= 65 else 'Entry-level'} "
-        f"local AI inference configuration."
-    )
+    if overall >= 90:
+        desc = "Powerhouse setup: handles heavy 70B+ models and fast multi-turn workflows with ease."
+    elif overall >= 80:
+        desc = "High-performance setup: comfortably runs 14B–32B models at fast interactive speeds."
+    elif overall >= 65:
+        desc = "Solid mid-range setup: great for popular 7B–9B models (like Llama 3 8B and Gemma 2 9B)."
+    else:
+        desc = "Entry-level setup: best suited for compact 1B–4B models (like Phi-3 or Qwen 2.5 3B) or quantized 7B with offloading."
+
+    summary = f"AI Hardware Score: {overall}/100 — {desc}"
 
     return HardwareScoreBreakdown(
         overall_score=overall,

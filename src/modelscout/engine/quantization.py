@@ -7,7 +7,7 @@ import re
 from modelscout.constants import QUANT_QUALITY_PENALTY
 from modelscout.models.types import GGUFVariant, ModelInfo
 
-# GGUFでないリポジトリ名から量子化方式を推定する
+# Infer quantization schemes from non-GGUF repo names (e.g. vLLM or Transformers formats)
 _NON_GGUF_PATTERNS: list[tuple[str, str]] = [
     (r"(^|[-_/])awq($|[-_/])", "AWQ"),
     (r"(^|[-_/])gptq($|[-_/])", "GPTQ"),
@@ -22,7 +22,7 @@ _NON_GGUF_PATTERNS: list[tuple[str, str]] = [
     (r"(^|[-_/])(fp16|f16)($|[-_/])", "FP16"),
 ]
 
-# GGUF以外の簡易推定: 重み1つあたりのバイト数
+# Approximate byte footprint per parameter for non-GGUF formats
 _NON_GGUF_BYTES_PER_WEIGHT: dict[str, float] = {
     "AWQ": 0.5,
     "GPTQ": 0.5,
@@ -35,7 +35,7 @@ _NON_GGUF_BYTES_PER_WEIGHT: dict[str, float] = {
     "FP16": 2.0,
 }
 
-# GGUF以外の簡易推定: 品質低下率
+# Empirical perplexity/quality loss penalty relative to FP16
 _NON_GGUF_QUALITY_PENALTY: dict[str, float] = {
     "AWQ": 0.05,
     "GPTQ": 0.05,

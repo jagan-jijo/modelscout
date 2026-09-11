@@ -19,6 +19,25 @@ def get_default_db_path() -> Path:
     return cache_dir / "modelscout.db"
 
 
+def _get_dataset_mtime() -> float:
+    """Returns the newest mtime among dataset.json, models.json, cpus.json, and gpus.json."""
+    candidates = [
+        Path(__file__).resolve().parents[3] / "assets",
+        Path(__file__).resolve().parents[1] / "dataset" / "data",
+    ]
+    max_mtime = 0.0
+    for c in candidates:
+        if c.is_dir():
+            for f in ["dataset.json", "models.json", "cpus.json", "gpus.json"]:
+                p = c / f
+                if p.is_file():
+                    try:
+                        max_mtime = max(max_mtime, p.stat().st_mtime)
+                    except OSError:
+                        pass
+    return max_mtime
+
+
 class DatabaseRepository:
     def __init__(self, db_path: Optional[str | Path] = None):
         if db_path == ":memory:":
@@ -43,6 +62,7 @@ class DatabaseRepository:
         needs_seed = False
         try:
             conn.executescript(CREATE_TABLES_SQL)
+            conn.execute("CREATE TABLE IF NOT EXISTS catalog_sync_meta (key TEXT PRIMARY KEY, val TEXT)")
             conn.commit()
             cur = conn.cursor()
             cur.execute("SELECT COUNT(*) FROM models")
@@ -51,7 +71,18 @@ class DatabaseRepository:
             intel_cpu_count = cur.fetchone()[0]
             cur.execute("SELECT COUNT(*) FROM hardware_gpu WHERE vendor = 'NVIDIA' AND vram_gb >= 40")
             industry_gpu_count = cur.fetchone()[0]
-            if model_count == 0 or intel_cpu_count < 20 or industry_gpu_count < 5:
+
+            cur.execute("SELECT val FROM catalog_sync_meta WHERE key = 'last_dataset_mtime'")
+            row = cur.fetchone()
+            last_mtime = float(row[0]) if row and row[0] else 0.0
+            current_mtime = _get_dataset_mtime()
+
+            if (
+                model_count == 0
+                or intel_cpu_count < 20
+                or industry_gpu_count < 5
+                or (current_mtime > 0.0 and current_mtime > last_mtime)
+            ):
                 needs_seed = True
         finally:
             if self.db_path != ":memory:":

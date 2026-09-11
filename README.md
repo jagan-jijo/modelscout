@@ -10,33 +10,69 @@ I’m focusing on macOS and Linux first. Windows has a launcher, but hardware
 detection there is still a basic fallback. Use explicit hardware settings on
 Windows and check the results against your machine.
 
-## Run it
+## Quick Start
+
+### 1. Git Clone & Run (macOS, Linux, Windows)
+
+Clone the repository and run the launcher script. It automatically sets up an isolated virtual environment and installs everything:
 
 ```bash
+# Clone the repository
 git clone https://github.com/jagan-jijo/modelscout.git
 cd modelscout
+
+# Run CLI hardware scan & recommendation
 ./start.sh
+
+# Or start the local web dashboard at http://127.0.0.1:1234
+./start.sh web
 ```
 
-The launcher creates `.venv` and installs the Python dependencies. It uses Python
-3.11 or newer if available. On macOS and Linux, it can use `uv` to download Python
-when needed; if neither is installed, it downloads `uv` into `.local/bin` using
-`curl`. You’ll need an internet connection for the first setup.
-
-Run the same command again whenever you need it. Missing Python packages are
-installed again automatically. A broken environment is moved into `.local/`
-before a replacement is created, so any files you put there are kept.
-
-On Windows, install Python 3.11+ or `uv`, then run:
+On Windows (Command Prompt or PowerShell):
 
 ```bat
+git clone https://github.com/jagan-jijo/modelscout.git
+cd modelscout
 start.bat
 start.bat web
 ```
 
-ModelScout doesn’t install GPU drivers or inference runtimes. It looks for tools
-such as `nvidia-smi`, `rocm-smi`, `lspci` and Ollama when they’re available. You can
-still use the catalogue and supply hardware settings without them.
+The launcher takes care of `.venv` creation and dependency management. If `uv` or Python 3.11+ is present on your machine, it uses that; otherwise, on macOS/Linux it bootstraps `uv` automatically.
+
+---
+
+### 2. Instant Run with `uvx` (No manual install required)
+
+You can run ModelScout directly using `uv` or `uvx` without needing to manage environments:
+
+**Published PyPI package:**
+```bash
+# Run CLI hardware scan
+uvx modelscout@latest
+
+# Launch the Web dashboard
+uvx modelscout@latest web
+
+# Run specific commands or check requirements for a model
+uvx modelscout@latest hardware
+uvx modelscout@latest plan "llama 3 70b"
+uvx modelscout@latest snippet "llama 3" --runner ollama
+```
+
+**Directly from GitHub (without waiting for PyPI):**
+```bash
+# Run CLI scanner directly from GitHub
+uvx --from git+https://github.com/jagan-jijo/modelscout.git#subdirectory=src modelscout
+
+# Launch Web UI directly from GitHub
+uvx --from git+https://github.com/jagan-jijo/modelscout.git#subdirectory=src modelscout web
+```
+
+**Inside a cloned repository with `uv`:**
+```bash
+uv run --directory src modelscout
+uv run --directory src modelscout web
+```
 
 ## A few useful commands
 
@@ -118,35 +154,20 @@ reload it with:
 Set `MODELSCOUT_DATASET` to an absolute file path to use your own catalogue.
 Ordinary scans use local data; runtime detection may contact Ollama on localhost.
 
-## Working on it
+## Development & Testing
 
-```text
-assets/             Dataset and notes about its sources
-scripts/            Shared launcher setup
-src/                Python package and pyproject.toml
-  modelscout/
-    hardware/       Machine detection and overrides
-    estimation/     Memory fit and speed estimates
-    recommendation/ Ranking and explanations
-    benchmarks/     Benchmark aggregation and source adapters
-    dataset/        Loading and validation
-    database/       SQLite cache
-    models/         Model metadata and quantization
-    sources/        Model hub adapters
-    cli/            Terminal commands
-    web/            FastAPI app and browser UI
-tests/             Tests for the CLI, API and calculations
-```
-
-From the repository root, after the first launch:
+Run tests or contribute to ModelScout:
 
 ```bash
+# Install development dependencies
 uv pip install --python .venv/bin/python -e './src[dev]'
-.venv/bin/python -m pytest tests
+
+# Run full test suite
+.venv/bin/pytest
 ```
 
-Without `uv`, run `.venv/bin/python -m ensurepip --upgrade` first, then
-`.venv/bin/python -m pip install -e './src[dev]'`.
-Python packaging lives in `src/` to keep the root small, so manual installs use
-`pip install ./src`. Local notes, environment files and generated output stay
-out of Git.
+If you're not using `uv`:
+```bash
+.venv/bin/python -m pip install -e './src[dev]'
+.venv/bin/pytest
+```

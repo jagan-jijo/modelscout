@@ -456,15 +456,14 @@ async function runAnalysis() {
 
   btn.disabled = true;
   if (btnIcon) btnIcon.innerHTML = '<span class="spinner"></span>';
-  if (btnText) btnText.textContent = "Analyzing System...";
+  if (btnText) btnText.textContent = "Scanning your setup...";
 
   const stages = [
-    "🔍 Probing host CPU & GPU compute architecture...",
-    "🦙 Querying Ollama local runtime & model library...",
-    "🤗 Scanning Hugging Face quantized weights catalog...",
-    "⚡ Cross-referencing NVIDIA Build model registry...",
-    "💾 Calculating KV cache footprints & memory fits...",
-    "📊 Deriving token generation speeds & benchmark rankings..."
+    "🔍 Checking your CPU & GPU compute architecture...",
+    "🦙 Looking for local Ollama and llama.cpp runtimes...",
+    "🤗 Cross-referencing Hugging Face quantized models...",
+    "💾 Calculating memory footprints & KV cache requirements...",
+    "⚡ Estimating real-world tokens/second and fit..."
   ];
   let stageIdx = 0;
   statusText.style.display = "flex";
@@ -473,7 +472,7 @@ async function runAnalysis() {
   const stageInterval = setInterval(() => {
     stageIdx = (stageIdx + 1) % stages.length;
     statusText.innerHTML = stages[stageIdx];
-  }, 320);
+  }, 400);
 
   try {
     const res = await fetch("/api/analyze", {
@@ -493,7 +492,7 @@ async function runAnalysis() {
     if (!res.ok) throw new Error("Failed to run analysis");
     currentReport = await res.json();
     renderReport(currentReport);
-    statusText.innerHTML = `✓ Analysis complete — ${currentReport.recommendations.length} recommendations ranked`;
+    statusText.innerHTML = `✓ Found ${currentReport.recommendations.length} models ready for your machine!`;
     setTimeout(() => {
       statusText.style.display = "none";
     }, 3200);
@@ -504,7 +503,7 @@ async function runAnalysis() {
     clearInterval(stageInterval);
     btn.disabled = false;
     if (btnIcon) btnIcon.textContent = "⚡";
-    if (btnText) btnText.textContent = "Find Out What I Can Run";
+    if (btnText) btnText.textContent = "Find Models That Fit";
   }
 }
 

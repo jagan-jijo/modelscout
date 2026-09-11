@@ -147,7 +147,7 @@ def _generation_bonus(model_id: str) -> float:
 
 
 def _detect_specializations(model_id: str) -> set[str]:
-    """モデルIDから用途特化タグを検出する。"""
+    """Detect task specialization tags (coding, vision, math) from model repository ID."""
     lower = model_id.lower()
     tags: set[str] = set()
     if re.search(r"(coder|codegen|starcoder|program|coding)", lower):
@@ -160,7 +160,7 @@ def _detect_specializations(model_id: str) -> set[str]:
 
 
 def _matches_profile(model: ModelInfo, task_profile: str) -> bool:
-    """指定プロファイルにモデルが合致するか判定する。"""
+    """Check whether a model matches the requested user profile (general, coding, vision, etc.)."""
     profile = task_profile.lower()
     tags = _detect_specializations(model.id)
     if profile == "any":
@@ -183,7 +183,7 @@ def _knowledge_capacity_b(model: ModelInfo) -> float:
 
 
 def _passes_evidence_filter(source: str, evidence_filter: str) -> bool:
-    """判定根拠フィルタに合致するかを返す。"""
+    """Determine whether benchmark evidence satisfies the strictness threshold."""
     mode = evidence_filter.lower()
     if mode == "strict":
         return source == "direct"
@@ -193,14 +193,14 @@ def _passes_evidence_filter(source: str, evidence_filter: str) -> bool:
 
 
 def _is_gguf_only_backend(hardware: HardwareInfo) -> bool:
-    """実行基盤の都合でGGUFのみを許可すべきか判定する。"""
-    # Apple Silicon(macOS/Metal)とCPU-onlyは、実運用の安定性を優先してGGUFに限定する。
+    """Determine whether the execution backend prefers GGUF format exclusively."""
+    # Apple Silicon (macOS/Metal) and CPU-only setups have optimal stability with GGUF.
     if hardware.os == "darwin":
         return True
     if not hardware.gpus:
         return True
 
-    # Linux + NVIDIA (CUDA) は AWQ/GPTQ 含む非GGUFも許可する。
+    # Linux with NVIDIA CUDA can comfortably run AWQ, GPTQ, and EXL2 alongside GGUF.
     has_linux_nvidia = hardware.os == "linux" and any(
         g.vendor == "nvidia" for g in hardware.gpus
     )

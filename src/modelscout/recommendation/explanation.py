@@ -19,49 +19,49 @@ def explain_why_recommended(
     score: ScoreBreakdown,
     quant: str,
 ) -> List[str]:
-    """Generates human-readable bullet points explaining why the candidate is recommended."""
+    """Generates human-readable, friendly bullet points explaining why the candidate is recommended."""
     reasons: List[str] = []
 
     # Memory / Fit reason
     if fit.fit_type == FitType.UNIFIED_MEMORY:
-        reasons.append(f"Fits comfortably in {mem.total_required_gb} GB unified memory")
+        reasons.append(f"Fits comfortably in {mem.total_required_gb:.1f} GB unified memory")
     elif fit.fit_type == FitType.FULL_GPU:
-        reasons.append(f"Fits entirely in VRAM ({mem.total_required_gb} GB required)")
+        reasons.append(f"Fits 100% inside GPU VRAM ({mem.total_required_gb:.1f} GB) for maximum speed")
     elif fit.fit_type == FitType.PARTIAL_OFFLOAD:
-        reasons.append(f"Usable with partial GPU offload ({int(fit.gpu_layers_pct * 100)}% on GPU)")
+        reasons.append(f"Runs smoothly with {int(fit.gpu_layers_pct * 100)}% offloaded to GPU and rest in RAM")
 
     # Benchmark reason
     if benchmarks.composite_score >= 85.0:
-        reasons.append(f"Top-tier benchmark performance ({benchmarks.composite_score:.1f} on {benchmarks.primary_benchmark})")
+        reasons.append(f"Top-tier intelligence ({benchmarks.composite_score:.1f} on {benchmarks.primary_benchmark})")
     elif benchmarks.composite_score >= 75.0:
-        reasons.append(f"Solid benchmark capability score ({benchmarks.composite_score:.1f})")
+        reasons.append(f"Solid capability score ({benchmarks.composite_score:.1f} across benchmark suites)")
 
     # Speed reason
     if speed.estimated_tok_per_sec >= 20.0:
-        reasons.append(f"Fast interactive speed ({speed.speed_display})")
+        reasons.append(f"Super snappy interactive speed ({speed.speed_display})")
     elif speed.estimated_tok_per_sec >= 8.0:
-        reasons.append(f"Acceptable generation speed ({speed.speed_display})")
+        reasons.append(f"Smooth reading speed ({speed.speed_display})")
 
     # Evidence reason
     if benchmarks.evidence_type == "direct":
-        reasons.append("High-confidence direct benchmark evidence")
+        reasons.append("High-confidence benchmark evidence verified directly on this model")
     elif benchmarks.evidence_type == "variant":
-        reasons.append("Verified instruction-tuned variant evidence")
+        reasons.append("Verified instruction-tuned performance on official lineage")
 
     # Capabilities
     if model.capabilities.get("reasoning"):
-        reasons.append("Trained with deep reasoning capabilities")
+        reasons.append("Strong multi-step reasoning and mathematical logic")
     if model.capabilities.get("coding"):
-        reasons.append("Specialized for coding and agentic tasks")
+        reasons.append("Specialized for coding, debugging, and software workflows")
     if model.capabilities.get("vision"):
-        reasons.append("Multimodal image understanding support")
+        reasons.append("Full vision and image comprehension support")
 
     # Runtime
     if model.ollama_name:
-        reasons.append(f"Available directly in Ollama (`ollama run {model.ollama_name}`)")
+        reasons.append(f"Ready to run in Ollama: `ollama run {model.ollama_name}`")
 
     # Artifact
-    reasons.append(f"Recommended artifact: {quant} ({mem.weights_gb} GB weights)")
+    reasons.append(f"Recommended quant: {quant} (~{mem.weights_gb:.1f} GB download)")
 
     return reasons
 
@@ -74,15 +74,15 @@ def explain_why_not_recommended(
     hardware: SystemHardware,
     missing_requirement: str = "",
 ) -> str:
-    """Generates clear, helpful explanation for excluded models."""
+    """Generates clear, friendly explanations for excluded models."""
     if missing_requirement:
-        return f"Does not meet profile requirement: {missing_requirement}."
+        return f"Doesn't fit your selected profile requirement: {missing_requirement}."
 
     if not fit.can_run or fit.fit_type == FitType.UNUSABLE:
         avail = hardware.memory.total_ram_gb
-        return f"Exceeds memory: Requires ~{mem.total_required_gb:.1f} GB, but system only has {avail:.1f} GB available."
+        return f"Needs ~{mem.total_required_gb:.1f} GB of RAM/VRAM, but your machine only has {avail:.1f} GB available."
 
     if speed.estimated_tok_per_sec < 2.0:
-        return f"Technically runnable with heavy offload, but predicted speed is too slow ({speed.speed_display}) for comfortable interactive use."
+        return f"Technically runnable, but predicted speed ({speed.speed_display}) is too slow for comfortable interactive chat."
 
-    return "Excluded based on lower overall balance of capability, fit, and generation speed compared to top recommendations."
+    return "Excluded because other models deliver a better balance of capability, fit, and speed for your setup."
