@@ -45,18 +45,18 @@ The launcher takes care of `.venv` creation and dependency management. If `uv` o
 
 You can run ModelScout directly using `uv` or `uvx` without needing to manage environments:
 
-**Published PyPI package:**
+**Published PyPI package (`modelscout-llm`):**
 ```bash
-# Run CLI hardware scan
-uvx modelscout@latest
+# Run CLI hardware scan & recommendations
+uvx modelscout-llm@latest
 
-# Launch the Web dashboard
-uvx modelscout@latest web
+# Launch the interactive Web dashboard on http://localhost:1234
+uvx modelscout-llm@latest web
 
 # Run specific commands or check requirements for a model
-uvx modelscout@latest hardware
-uvx modelscout@latest plan "llama 3 70b"
-uvx modelscout@latest snippet "llama 3" --runner ollama
+uvx modelscout-llm@latest hardware
+uvx modelscout-llm@latest plan "llama 3 70b"
+uvx modelscout-llm@latest snippet "llama 3" --runner ollama
 ```
 
 **Directly from GitHub (without waiting for PyPI):**

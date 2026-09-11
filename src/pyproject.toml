@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "modelscout"
+name = "modelscout-llm"
 version = "0.1.0"
 description = "Find local AI models that fit your hardware, with memory and speed estimates."
 requires-python = ">=3.11"
