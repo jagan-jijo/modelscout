@@ -17,8 +17,8 @@
            ▼                                       ▼
     ┌──────────────────────────────┐ ┌──────────────────────────────┐
     │     Local SQLite Store       │ │    Optional Live Hubs        │
-    │  (Seed dataset.json: 207     │ │  (Hugging Face GGUF, Ollama  │
-    │   CPUs, 199 GPUs, models)    │ │   daemon, NVIDIA Build)      │
+    │  (Seed dataset.json: 245     │ │  (Hugging Face GGUF, Ollama  │
+    │   CPUs, 214 GPUs, models)    │ │   daemon, NVIDIA Build)      │
     └──────────────┬───────────────┘ └──────────────┬───────────────┘
                    │                                │
                    └───────────────┬────────────────┘
@@ -83,14 +83,10 @@
       • ModelScout never requires an active Internet connection to evaluate hardware, compute
       token speeds, or recommend models.
       • The local database (dataset.json imported into SQLite) contains:
-          • 207 CPUs (Apple Silicon M1–M4, Intel Core 6th Gen to 14th Gen & Arrow Lake, Xeon,
-          AMD Ryzen 1000–9000, Threadripper, EPYC).
-          • 199 GPUs (NVIDIA GTX 1060+, RTX 20/30/40/50 series, Quadro, RTX Ada, H100/H200,
-          A100, B200, GB200, AMD RX & Instinct, Intel Arc & Gaudi).
-          • Curated open-weight models across families (Llama 3.x, Qwen 2.5/3, DeepSeek-R1
-          Distills, Gemma 2/4, Mistral, Phi-4) with GGUF quantizations (Q4_K_M, Q5_K_M, Q8_0,
-          FP16).
-          • Standard benchmark evaluations from verified leaderboards.
+          • 245 CPUs (Apple Silicon M1–M4/M5, Intel Core 6th Gen to 14th Gen, Core Ultra Lunar Lake & Arrow Lake, Xeon 6, AMD Ryzen 1000–9000 & X3D, Strix Halo, Threadripper, EPYC Turin).
+          • 214 GPUs (NVIDIA RTX 50 Blackwell series, B200, GB200, RTX 40 Ada, Hopper H100/H200, A100, RTX 30/20, GTX 10 series, AMD RX 6000/7000/8000 & Instinct MI300, Intel Arc Battlemage/Alchemist & Gaudi).
+          • 107 Curated canonical open-weight models with 318 quantized GGUF variants (Llama 3.3/3.2, Qwen 2.5/3, DeepSeek R1/V3, Gemma 2/4, Mistral Large/Nemo, Phi-4) spanning Q4_K_M, Q5_K_M, Q8_0, and FP16.
+          • Standard benchmark evaluations from verified leaderboards (LiveBench, Aider, Chatbot Arena, Artificial Analysis).
   • Live Data Ingestion (Opt-in via --refresh or background discover):
       • Hugging Face: Queries the Hugging Face Hub API (https://huggingface.co/api/models)
       for newly uploaded GGUF repositories, active downloads, parameter counts, and model
@@ -226,67 +222,185 @@
   available").
   ──────
   ──────
-  ### 7. Modular Architecture & Directory Layout
+  ### 7. Modular Package Architecture & Repository Layout
 
-  Following modern best practices and clean separation of concerns, the core engine in `src/modelscout` provides:
+  Following modern best practices and clean separation of concerns, ModelScout is structured with explicit package boundaries, modular dataset storage, and backward-compatible shims:
 
   ```text
-  ├── cli.py              # Typer CLI entry point: main, plan, run, snippet, hardware, web, update
-  ├── constants.py        # Backward-compatible exports for curated registries and thresholds
-  ├── data/               # GPU, quantization, framework, and lineage registries
-  │   ├── framework.py    # Framework memory overheads and compute capability limits
-  │   ├── gpu.py          # Curated GPU specs, bandwidth tables, and NVIDIA compute capabilities
-  │   ├── lineage.py      # Generation lineage version mappings and bonuses/penalties
-  │   └── quantization.py # Quantization tiers, bytes per weight, quality penalties
-  ├── web/                # Local FastAPI Web UI (default: http://localhost:1234)
-  │   ├── app.py          # FastAPI application and lifespan background updater
-  │   ├── api.py          # API endpoints (/api/scan, /api/models, /api/hardware)
-  │   └── static/         # HTML5 dashboard, styles, and interactive client
-  ├── hardware/           # Hardware detection & synthetic simulation engine
-  │   ├── detector.py     # Orchestrates GPU, CPU, RAM, and runtime detection
-  │   ├── nvidia.py       # NVIDIA GPU probe via NVML with nvidia-smi fallback
-  │   ├── amd.py          # AMD GPU probe via ROCm SMI and Linux DRM/sysfs
-  │   ├── apple.py        # Apple Silicon Metal and Asahi Linux devicetree detection
-  │   ├── cpu.py          # CPU brand name, core count, AVX2 / AVX-512 detection
-  │   ├── memory.py       # Physical RAM, usable budget, and disk free space
-  │   ├── gpu_simulator.py# Multi-GPU simulation (--gpu "2x RTX 4090", comma-separated, catalog fallback)
-  │   ├── gpu_db.py       # Static bandwidth & compute capability resolution
-  │   └── types.py        # GPUInfo, HardwareInfo, SystemHardware, CpuInfo, MemoryInfo
-  ├── models/             # Model sourcing, metadata parsing, and benchmark indexing
-  │   ├── fetcher.py      # HuggingFace hub API fetcher with retry & sliding window awareness
-  │   ├── benchmark.py    # Arena ELO, Open LLM Leaderboard, recency weighting & evidence lookup
-  │   ├── grouper.py      # Model family grouping by base_model and normalized architecture
-  │   ├── cache.py        # Local JSON cache with 6-hour TTL
-  │   └── types.py        # ModelInfo, GGUFVariant, ModelFamily
-  ├── engine/             # Execution and compatibility calculation engine
-  │   ├── vram.py         # VRAM = weights + KV cache (FP16/GQA) + activation + overhead
-  │   ├── compatibility.py# Full GPU, partial offload, CPU-only, disk, and compute warnings
-  │   ├── performance.py  # Bandwidth-bound decoding speed and confidence ranges
-  │   ├── quantization.py # Bytes per weight, quality loss, and non-GGUF format inference
-  │   ├── ranker.py       # Scoring orchestrator, evidence filter, and profile matching
-  │   └── types.py        # CompatibilityResult, FitType
-  └── output/             # Rendering and export surfaces
-      ├── ranking.py      # Rich terminal tables and top-pick confidence panels
-      ├── json_output.py  # Machine-readable JSON output for CLI automation
-      ├── plan.py         # Model hardware requirements breakdown across quant levels
-      ├── upgrade.py      # GPU upgrade comparison table and verdict analysis
-      ├── markdown.py     # GitHub-Flavored Markdown table export (-m / --markdown)
-      └── display.py      # Compatibility re-export shim for output surfaces
+  ├── assets/                 # Modular offline datasets & source provenance
+  │   ├── cpus.json           # 245 curated CPUs (Apple, AMD, Intel)
+  │   ├── gpus.json           # 214 curated GPUs (NVIDIA, AMD, Intel)
+  │   ├── models.json         # 107 canonical models & 318 quantized artifacts
+  │   └── dataset.json        # Combined fallback registry
+  ├── scripts/                # Shared developer launchers & test utilities
+  │   ├── start.sh            # Auto-detecting CLI & Web UI launcher
+  │   ├── test.sh             # Pytest test suite runner
+  │   ├── build.sh            # Wheel and sdist build script
+  │   ├── verify.sh           # End-to-end verification script
+  │   └── benchmark.sh        # Estimation engine benchmark suite
+  ├── src/                    # Python distribution root
+  │   ├── pyproject.toml      # Hatchling packaging config for 'modelscout-llm' (v0.1.1)
+  │   ├── hatch_build.py      # Custom build hook packaging assets/ into wheels
+  │   ├── README.md           # PyPI project description and quickstart docs
+  │   └── modelscout/         # Core Python package
+  │       ├── hardware/       # Machine detection & synthetic simulation engine
+  │       │   ├── detector.py     # Orchestrates GPU, CPU, RAM, and runtime detection
+  │       │   ├── apple.py        # Apple Silicon Metal & unified memory detection
+  │       │   ├── nvidia.py       # NVIDIA GPU probe via NVML with nvidia-smi fallback
+  │       │   ├── amd.py          # AMD GPU probe via ROCm SMI and Linux DRM/sysfs
+  │       │   ├── intel.py        # Intel Arc & integrated GPU detection
+  │       │   ├── macos.py        # macOS sysctl & IOKit hardware probes
+  │       │   ├── linux.py        # Linux /proc/cpuinfo and /proc/meminfo probes
+  │       │   ├── windows.py      # Windows WMI and PowerShell hardware probes
+  │       │   ├── cpu.py          # CPU core topology, frequencies, AVX2/AVX-512 flags
+  │       │   ├── memory.py       # Physical RAM, usable budget, and disk free space
+  │       │   ├── gpu_simulator.py# Multi-GPU simulation (--gpu "2x RTX 4090", comma-separated)
+  │       │   ├── gpu_db.py       # Static bandwidth & compute capability resolution
+  │       │   └── types.py        # HardwareInfo, SystemHardware, CpuInfo, GpuInfo
+  │       ├── estimation/     # Memory fit and generation speed estimation engine
+  │       │   ├── memory.py       # The 4-pool memory calculation (Weights + KV + Act + Driver)
+  │       │   ├── kv_cache.py     # Architecture-aware KV cache (MHA, GQA, MQA, FP16/quantized)
+  │       │   ├── speed.py        # Bandwidth-bound decoding speed (GB/s ÷ active footprint)
+  │       │   ├── fit.py          # Fit classification (FULL_GPU, UNIFIED, PARTIAL, CPU_ONLY)
+  │       │   └── confidence.py   # Statistical confidence ranges (±15% calibrated bounds)
+  │       ├── recommendation/ # Ranking, profiles, and explainable recommendations
+  │       │   ├── scoring.py      # 0–100 composite scoring engine across 6 pillars
+  │       │   ├── profiles.py     # User profiles (general, coding, fast, reasoning)
+  │       │   ├── explanation.py  # Human-readable justification generation
+  │       │   └── ranking.py      # Candidate ordering and exclusion tracking
+  │       ├── benchmarks/     # Multi-source benchmark aggregation & normalization
+  │       │   ├── aggregation.py  # Weighted benchmark scoring across sources
+  │       │   ├── engine.py       # Benchmark evaluation engine
+  │       │   ├── evidence.py     # Evidence tiers (Direct, Variant, Transferred, Lineage)
+  │       │   ├── recency.py      # Exponential time-decay weighting (180-day half-life)
+  │       │   ├── normalization.py# Benchmark score scaling to 0–100 scale
+  │       │   └── sources/        # Source adapters (LiveBench, Aider, Arena, Leaderboard)
+  │       ├── dataset/        # Dataset loading, validation, and live synchronization
+  │       │   ├── loader.py       # Multi-file dataset loader (cpus, gpus, models)
+  │       │   ├── schema.py       # Pydantic schema validation for catalog records
+  │       │   ├── validator.py    # Catalog integrity and constraint checks
+  │       │   ├── importer.py     # SQLite batch importer
+  │       │   ├── updater.py      # Live open-endpoint synchronization engine (<10s)
+  │       │   └── provenance.py   # Origin metadata and verification timestamps
+  │       ├── database/       # SQLite storage & cache repository
+  │       │   ├── repository.py   # Database access layer with mtime auto-reloading
+  │       │   └── models.py       # Relational table schema definitions
+  │       ├── models/         # Model metadata, variants, and quantization
+  │       │   ├── parser.py       # Model tag and quantization format parser
+  │       │   ├── parameters.py   # Architecture parameter resolver (total vs active)
+  │       │   ├── types.py        # ModelInfo, GGUFVariant, ModelFamily
+  │       │   ├── grouper.py      # Model family grouping and architecture grouping
+  │       │   └── gguf.py         # GGUF quantization tiers, bytes/weight, quality loss
+  │       ├── sources/        # Model hub and runtime integration adapters
+  │       │   ├── huggingface.py  # HuggingFace Hub API search and download metrics
+  │       │   ├── ollama.py       # Local Ollama daemon tags and inspection
+  │       │   └── nvidia.py       # NVIDIA Build NIM mapping
+  │       ├── cli/            # Typer-powered terminal CLI interface
+  │       │   ├── main.py         # Main Typer entry point and subcommands
+  │       │   ├── commands.py     # Command implementations (scan, run, plan, snippet, upgrade, update, web)
+  │       │   └── output.py       # Rich terminal tables, panels, and Markdown export
+  │       ├── web/            # Local FastAPI Web Application (default: http://localhost:1234)
+  │       │   ├── app.py          # FastAPI application & lifespan background updater
+  │       │   ├── api.py          # REST API endpoints (/api/scan, /api/models, /api/hardware)
+  │       │   └── static/         # HTML5 responsive UI, dark theme, and interactive client
+  │       ├── data/           # Backward-compatibility registries (framework, gpu, lineage, quant)
+  │       ├── engine/         # Backward-compatibility calculation shims
+  │       └── output/         # Backward-compatibility terminal formatting shims
+  ├── tests/                  # 45 passing unit and integration tests
+  └── .github/workflows/      # CI/CD and deployment workflows
+      └── publish.yml         # PyPI Trusted Publishing via OIDC
   ```
 
-  ### 8. Multi-File Dataset & Background Updater
-  - **Dataset Split**: Located in `assets/`, cleanly separated into `cpus.json`, `gpus.json`, and `models.json`, unified via `dataset.json`.
-  - **Catalogue Breadth**: Covers Intel (Lunar Lake, Arrow Lake, Xeon 6), AMD (Ryzen 9000/X3D, Strix Halo, Turin EPYC), NVIDIA (Blackwell RTX 50 series, B200, Ada Lovelace, Hopper), Apple Silicon (M1 through M4 Max/Ultra, M5), and latest models (DeepSeek R1/V3, Qwen 2.5/3, Llama 3.3/3.2, Mistral, Gemma 2/3/4, Phi-4).
-  - **Fast Open API Sync**: `start_background_model_update(timeout=8.0)` runs in a non-blocking daemon thread on startup. If open endpoints take < 10 seconds, they enrich the local catalogue. Offline assets serve as an immediate zero-latency fallback.
+  ### 8. Multi-File Dataset & Dynamic Mtime Auto-Sync
 
-  ### 9. Verification Summary
-  - **CLI Scan**: `modelscout` or `./start.sh`
-  - **One-Command Chat**: `modelscout run llama`
-  - **Code Snippets**: `modelscout snippet llama --runner ollama`
-  - **Hardware Inspection**: `modelscout hardware`
-  - **Hardware Plan**: `modelscout plan "llama 3 70b"`
-  - **GPU Upgrade Plan**: `modelscout upgrade`
-  - **Catalog Sync**: `modelscout update`
-  - **Web Dashboard**: `modelscout web --port 1234`
-  - **Test Suite**: `pytest` -> All 45 tests passing.
-  - **Git State**: Zero commits made. Ready for user's manual review and push.
+  - **Modular Dataset Architecture**:
+    Instead of a single monolithic file, curated data is split into specialized JSON assets under `assets/`:
+    • `assets/cpus.json`: 245 curated CPUs spanning Apple Silicon (M1 through M4 Max/Ultra, M5), Intel (Core 6th–14th Gen, Core Ultra Lunar Lake / Arrow Lake, Xeon 6), and AMD (Ryzen 1000–9000 & X3D, Strix Halo APU, Turin EPYC, Threadripper).
+    • `assets/gpus.json`: 214 curated GPUs spanning NVIDIA Blackwell RTX 50 series (5090, 5080, 5070, 5060), B200/GB200, Ada Lovelace RTX 40 series, Hopper H100/H200, A100, RTX 30/20, GTX 10 series, AMD Radeon RX 6000/7000/8000, Instinct MI300X/A, and Intel Arc Battlemage (B580/B570), Alchemist, and Gaudi 2/3.
+    • `assets/models.json`: 107 canonical models with 318 quantized GGUF variants (DeepSeek R1/V3, Qwen 2.5/3, Llama 3.3/3.2, Mistral Large/Nemo, Gemma 2/4, Phi-4) across Q4_K_M, Q5_K_M, Q8_0, and FP16 formats.
+    • `assets/dataset.json`: Unified master dataset serving as a zero-dependency offline fallback.
+
+  - **Automatic Mtime-Based Database Reseeding**:
+    The SQLite cache (`DatabaseRepository`) guarantees that manual edits to dataset files take effect immediately:
+    • `DatabaseRepository.init_db()` records the `last_dataset_mtime` in the `catalog_sync_meta` table.
+    • Every time ModelScout starts (CLI or Web UI), `_get_dataset_mtime()` inspects the filesystem modification times (`st_mtime`) of `assets/models.json`, `assets/cpus.json`, `assets/gpus.json`, and `assets/dataset.json`.
+    • If any dataset file has a newer `st_mtime` than `last_dataset_mtime`, the SQLite store automatically and idempotently re-seeds itself from disk without requiring manual cache wipes, `--force` flags, or database recreation.
+
+  - **Dual Background & On-Demand Synchronization**:
+    • **Non-Blocking Background Sync**: On application startup, `start_background_model_update(timeout=8.0)` spawns a daemon thread that queries open endpoints (Hugging Face trending models and local Ollama daemon) within a strict 10-second timeout guard. If updated download counts, likes, or tags are found, they are written back directly into `assets/models.json` and synchronized with SQLite.
+    • **On-Demand Manual Sync**: Running `modelscout update` executes an immediate, synchronous update cycle with interactive Rich progress bars, reporting exact counts of discovered models and updated metadata.
+
+  ### 9. PyPI Distribution, Packaging & GitHub Actions (OIDC)
+
+  - **Distribution Naming & Binary Entry Point**:
+    • **PyPI Package Name**: `modelscout-llm` (version `0.1.1`). The base name `modelscout` was previously registered on PyPI, so the package was renamed to `modelscout-llm` for PyPI distribution.
+    • **Executable CLI Command**: The CLI command remains `modelscout`, mapped via `[project.scripts]` in `src/pyproject.toml`:
+      ```toml
+      [project.scripts]
+      modelscout = "modelscout.cli.main:app"
+      ```
+
+  - **Build Hook & Asset Packaging**:
+    • ModelScout uses Hatchling as its build backend.
+    • To bundle the offline datasets into wheels and source distributions, `src/hatch_build.py` and `src/pyproject.toml` use `[tool.hatch.build.targets.sdist.force-include]` and wheel package mapping so that `assets/` files are included directly in the installable distribution.
+    • **PyPI Readme Requirement**: Hatchling requires `readme` paths to reside inside the build root. `src/README.md` provides the full project description, quickstart instructions, and usage guide displayed on pypi.org.
+
+  - **GitHub Actions Trusted Publishing (OIDC)**:
+    • Workflow location: `.github/workflows/publish.yml`.
+    • Triggered automatically on GitHub release publication or manually via `workflow_dispatch`.
+    • Configured with `permissions: id-token: write`, enabling PyPI Trusted Publishing via OpenID Connect (OIDC) without long-lived API tokens or passwords.
+    • Employs `pypa/gh-action-pypi-publish@release/v1` with `packages-dir: src/dist/` and `skip-existing: true` so re-runs or partial uploads succeed gracefully.
+
+  - **PyPI Release Immutability**:
+    • PyPI strictly forbids overwriting or re-uploading an existing version; attempts will fail with HTTP 400 (`File already exists`).
+    • For every new release, increment the version string across:
+      1. `src/pyproject.toml` (`version = "x.y.z"`)
+      2. `src/modelscout/__init__.py` (`__version__ = "x.y.z"`)
+      3. `src/modelscout/web/app.py` (`APP_VERSION = "x.y.z"`)
+      4. `src/modelscout/web/api.py` (`APP_VERSION = "x.y.z"`)
+
+  ### 10. Zero-Install Execution with `uvx`
+
+  ModelScout can be executed instantly on any system without cloning the repository or manually managing Python virtual environments:
+
+  ```bash
+  # Auto-detect hardware and display top recommended models
+  uvx modelscout-llm@latest
+
+  # Launch the local Web UI dashboard on port 1234
+  uvx modelscout-llm@latest web --port 1234
+
+  # Interactive chat with the best fitting model
+  uvx modelscout-llm@latest run llama
+
+  # Generate runner code snippets (Ollama, vLLM, llama.cpp)
+  uvx modelscout-llm@latest snippet llama --runner ollama
+
+  # Inspect detected host CPU, GPU, RAM, and runtime capabilities
+  uvx modelscout-llm@latest hardware
+
+  # Memory & quantization requirements plan for a model
+  uvx modelscout-llm@latest plan "llama 3 70b"
+
+  # Simulate GPU upgrades and evaluate capability gains
+  uvx modelscout-llm@latest upgrade
+
+  # Synchronize model catalogue from open endpoints
+  uvx modelscout-llm@latest update
+  ```
+
+  ### 11. Verification & Operational Commands
+
+  - **Local Launcher**:
+    ```bash
+    ./start.sh          # Launches CLI scan
+    ./start.sh web      # Launches local Web UI on http://localhost:1234
+    ```
+  - **Developer Scripts**:
+    ```bash
+    ./scripts/test.sh   # Executes full pytest suite
+    ./scripts/verify.sh # Verifies CLI, API, memory math, and hardware detection
+    ./scripts/build.sh  # Builds wheel and source distributions via uv
+    ```
+  - **Test Suite Status**: All 45 automated unit and integration tests passing.
+  - **Git State**: Zero unreviewed commits. All changes remain in the local working tree for manual review and push.
