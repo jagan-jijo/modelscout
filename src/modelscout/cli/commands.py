@@ -602,10 +602,12 @@ def update_cmd(
         stats = sync_models_from_open_apis(timeout=timeout, repo=repo)
         console.print(f"✓ Hugging Face models queried: [bold]{stats['hf_found']}[/bold]")
         console.print(f"✓ Local Ollama tags inspected: [bold]{stats['ollama_found']}[/bold]")
+        if stats.get("updated_models", 0) > 0:
+            console.print(f"[bold cyan]✓ Refreshed versions and metrics for {stats['updated_models']} stored models.[/bold cyan]")
         if stats["added_models"] > 0:
-            console.print(f"[bold green]✓ Added {stats['added_models']} newly discovered models to local catalogue![/bold green]")
-        else:
-            console.print("[dim]Local catalogue is up to date with latest online models.[/dim]")
+            console.print(f"[bold green]✓ Added {stats['added_models']} newly discovered models to stored dataset and catalogue![/bold green]")
+        elif stats.get("updated_models", 0) == 0:
+            console.print("[dim]Stored model dataset and catalogue are up to date with latest online models.[/dim]")
     except Exception as e:
         console.print(f"[yellow]Update completed with notice: {e}[/yellow]")
-        console.print("[dim]Local backup dataset remains fully operational.[/dim]")
+        console.print("[dim]Local stored dataset remains fully operational.[/dim]")

@@ -92,18 +92,38 @@ def _extract_param_billions(name: str) -> float:
     return 7.0
 
 
+def get_stored_models_path() -> Optional[Path]:
+    """Locates the stored model dataset file (assets/models.json)."""
+    candidates = [
+        Path(__file__).resolve().parents[3] / "assets" / "models.json",
+        Path(__file__).resolve().parents[1] / "dataset" / "data" / "models.json",
+    ]
+    for c in candidates:
+        if c.is_file():
+            return c
+    return None
+
+
 def sync_models_from_open_apis(timeout: float = 8.0, repo: Optional[DatabaseRepository] = None) -> Dict[str, Any]:
     """Fetches open-endpoint model info from HuggingFace and local Ollama within strict timeout (<10s).
-    Updates the local database and assets/models.json when available.
+    Updates the stored model dataset (assets/models.json) and synchronizes with SQLite.
     """
-    stats = {"hf_found": 0, "ollama_found": 0, "added_models": 0, "errors": []}
+    stats = {"hf_found": 0, "ollama_found": 0, "added_models": 0, "updated_models": 0, "errors": []}
     if repo is None:
         repo = DatabaseRepository()
+
+    stored_file = get_stored_models_path()
+    stored_data: Dict[str, Any] = {}
+    if stored_file and stored_file.is_file():
+        try:
+            stored_data = json.loads(stored_file.read_text(encoding="utf-8"))
+        except Exception as e:
+            logger.warning(f"Could not load stored models dataset {stored_file}: {e}")
 
     # 1. Fetch HuggingFace trending text models (timeout guarded, <10s)
     hf_summaries = []
     try:
-        hf_summaries = search_huggingface_models(query="", limit=25, timeout=min(timeout, 6.0), use_cache=False)
+        hf_summaries = search_huggingface_models(query="", limit=30, timeout=min(timeout, 6.0), use_cache=False)
         stats["hf_found"] = len(hf_summaries)
     except Exception as e:
         stats["errors"].append(f"HuggingFace error: {e}")
@@ -116,13 +136,52 @@ def sync_models_from_open_apis(timeout: float = 8.0, repo: Optional[DatabaseRepo
     except Exception as e:
         stats["errors"].append(f"Ollama error: {e}")
 
-    # 3. Ingest and merge new models into local SQLite
-    existing_models = {m["id"] for m in repo.get_all_models()}
+    hf_by_id = {item.id.lower(): item for item in hf_summaries}
+    hf_by_name = {item.model_name.lower(): item for item in hf_summaries}
+    ollama_names = {tag.get("name", "").lower(): tag for tag in ollama_tags}
+
+    # 3. Check and update existing models in the stored dataset
+    models_file_modified = False
+    canonical_list = stored_data.get("canonical_models", [])
+    existing_canonical_ids = set()
+
+    for c in canonical_list:
+        cid = c.get("id", "")
+        existing_canonical_ids.add(cid)
+        hf_info = c.get("sources", {}).get("huggingface")
+        hf_repo_id = (hf_info.get("id") if isinstance(hf_info, dict) else "") or ""
+        item = hf_by_id.get(hf_repo_id.lower()) or hf_by_name.get(c.get("identity", {}).get("canonical_name", "").lower())
+
+        # Update metrics if fresher info is available from Hugging Face
+        if item:
+            if isinstance(hf_info, dict):
+                old_dl = hf_info.get("downloads", 0)
+                if item.downloads and item.downloads > old_dl:
+                    hf_info["downloads"] = item.downloads
+                    hf_info["likes"] = item.likes or hf_info.get("likes", 0)
+                    models_file_modified = True
+                    stats["updated_models"] += 1
+            if "provenance" in c and isinstance(c["provenance"], dict):
+                c["provenance"]["last_verified"] = time.strftime("%Y-%m-%d")
+
+        # Check for matching local Ollama model
+        c_name = c.get("identity", {}).get("canonical_name", "").lower()
+        for oname in ollama_names:
+            if oname.split(":")[0] in c_name or c_name in oname:
+                if "sources" in c and isinstance(c["sources"], dict):
+                    if oname not in c["sources"].get("ollama", []):
+                        c["sources"].setdefault("ollama", []).append(oname)
+                        models_file_modified = True
+                if "runtime" in c and isinstance(c["runtime"], dict):
+                    c["runtime"]["ollama"] = True
+
+    # 4. Ingest and merge newly discovered models into local dataset
+    existing_in_db = {m["id"] for m in repo.get_all_models()}
     new_canonical: List[CanonicalModelRecord] = []
 
     for item in hf_summaries:
         mid = item.id.lower().replace("/", "-").replace(".", "-")
-        if mid in existing_models:
+        if mid in existing_in_db or mid in existing_canonical_ids:
             continue
 
         param_b = item.estimated_parameters_b or _extract_param_billions(item.model_name)
@@ -135,18 +194,10 @@ def sync_models_from_open_apis(timeout: float = 8.0, repo: Optional[DatabaseRepo
 
         # Determine family
         family = "Community"
-        if "llama" in item.model_name.lower():
-            family = "Llama"
-        elif "qwen" in item.model_name.lower():
-            family = "Qwen"
-        elif "mistral" in item.model_name.lower():
-            family = "Mistral"
-        elif "gemma" in item.model_name.lower():
-            family = "Gemma"
-        elif "deepseek" in item.model_name.lower():
-            family = "DeepSeek"
-        elif "phi" in item.model_name.lower():
-            family = "Phi"
+        for fam in ["Llama", "Qwen", "Mistral", "Gemma", "DeepSeek", "Phi"]:
+            if fam.lower() in item.model_name.lower():
+                family = fam
+                break
 
         # Construct CanonicalModelRecord
         record = CanonicalModelRecord(
@@ -191,9 +242,22 @@ def sync_models_from_open_apis(timeout: float = 8.0, repo: Optional[DatabaseRepo
             },
         )
         new_canonical.append(record)
-        existing_models.add(mid)
+        existing_in_db.add(mid)
+        existing_canonical_ids.add(mid)
 
-    # Ingest new canonical records into database
+        # Append to stored dataset
+        if stored_file and "canonical_models" in stored_data:
+            stored_data["canonical_models"].append(record.model_dump(exclude_none=True))
+            models_file_modified = True
+
+    # 5. Save updated models back to stored models.json file
+    if models_file_modified and stored_file and stored_file.is_file():
+        try:
+            stored_file.write_text(json.dumps(stored_data, indent=2), encoding="utf-8")
+        except Exception as e:
+            logger.warning(f"Could not persist updated models to {stored_file}: {e}")
+
+    # 6. Ingest new canonical records into database
     if new_canonical:
         stats["added_models"] = len(new_canonical)
         repo.insert_models(new_canonical)

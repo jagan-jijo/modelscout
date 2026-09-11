@@ -2290,7 +2290,9 @@
       },
       "sources": {
         "huggingface": {
-          "id": "Qwen/Qwen3-8B"
+          "id": "Qwen/Qwen3-8B",
+          "downloads": 12880447,
+          "likes": 1367
         },
         "ollama": [
           "qwen3:8b"
@@ -2361,7 +2363,7 @@
         }
       ],
       "provenance": {
-        "last_verified": "2026-09-10",
+        "last_verified": "2026-09-12",
         "confidence": "high"
       }
     },
@@ -2472,7 +2474,9 @@
       },
       "sources": {
         "huggingface": {
-          "id": "meta-llama/Llama-3.1-8B-Instruct"
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "downloads": 5620096,
+          "likes": 6902
         },
         "ollama": [
           "llama3.1:8b"
@@ -2550,7 +2554,7 @@
         }
       ],
       "provenance": {
-        "last_verified": "2026-09-10",
+        "last_verified": "2026-09-12",
         "confidence": "high"
       }
     },
@@ -3357,7 +3361,9 @@
       },
       "sources": {
         "huggingface": {
-          "id": "Qwen/Qwen3-0.6B"
+          "id": "Qwen/Qwen3-0.6B",
+          "downloads": 20685071,
+          "likes": 1596
         },
         "ollama": [
           "qwen3:0.6b"
@@ -3408,7 +3414,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-11",
+        "last_verified": "2026-09-12",
         "sources": [
           "https://huggingface.co/Qwen/Qwen3-0.6B"
         ],
@@ -3424,7 +3430,9 @@
       },
       "sources": {
         "huggingface": {
-          "id": "Qwen/Qwen3-1.7B"
+          "id": "Qwen/Qwen3-1.7B",
+          "downloads": 3464727,
+          "likes": 537
         },
         "ollama": [
           "qwen3:1.7b"
@@ -3475,7 +3483,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-11",
+        "last_verified": "2026-09-12",
         "sources": [
           "https://huggingface.co/Qwen/Qwen3-1.7B"
         ],
@@ -3491,7 +3499,9 @@
       },
       "sources": {
         "huggingface": {
-          "id": "Qwen/Qwen3-4B"
+          "id": "Qwen/Qwen3-4B",
+          "downloads": 6222186,
+          "likes": 697
         },
         "ollama": [
           "qwen3:4b"
@@ -3542,7 +3552,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-11",
+        "last_verified": "2026-09-12",
         "sources": [
           "https://huggingface.co/Qwen/Qwen3-4B"
         ],
@@ -3625,7 +3635,9 @@
       },
       "sources": {
         "huggingface": {
-          "id": "Qwen/Qwen3-32B"
+          "id": "Qwen/Qwen3-32B",
+          "downloads": 5273218,
+          "likes": 745
         },
         "ollama": [
           "qwen3:32b"
@@ -3676,7 +3688,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-11",
+        "last_verified": "2026-09-12",
         "sources": [
           "https://huggingface.co/Qwen/Qwen3-32B"
         ],
@@ -3826,7 +3838,9 @@
       },
       "sources": {
         "huggingface": {
-          "id": "meta-llama/Llama-3.2-1B-Instruct"
+          "id": "meta-llama/Llama-3.2-1B-Instruct",
+          "downloads": 6258911,
+          "likes": 1626
         },
         "ollama": [
           "llama3.2:1b"
@@ -3877,7 +3891,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-11",
+        "last_verified": "2026-09-12",
         "sources": [
           "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
         ],
@@ -4898,7 +4912,9 @@
       },
       "sources": {
         "huggingface": {
-          "id": "openai/gpt-oss-20b"
+          "id": "openai/gpt-oss-20b",
+          "downloads": 6599829,
+          "likes": 5019
         },
         "ollama": [
           "gpt-oss:20b"
@@ -4949,7 +4965,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-11",
+        "last_verified": "2026-09-12",
         "sources": [
           "https://huggingface.co/openai/gpt-oss-20b"
         ],
@@ -4965,7 +4981,9 @@
       },
       "sources": {
         "huggingface": {
-          "id": "openai/gpt-oss-120b"
+          "id": "openai/gpt-oss-120b",
+          "downloads": 5463732,
+          "likes": 5188
         },
         "ollama": [
           "gpt-oss:120b"
@@ -5016,7 +5034,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-11",
+        "last_verified": "2026-09-12",
         "sources": [
           "https://huggingface.co/openai/gpt-oss-120b"
         ],
@@ -5300,7 +5318,9 @@
       },
       "sources": {
         "huggingface": {
-          "id": "Qwen/Qwen2.5-0.5B-Instruct"
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "downloads": 7225322,
+          "likes": 623
         },
         "ollama": [
           "qwen2.5:0.5b"
@@ -5351,7 +5371,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-11",
+        "last_verified": "2026-09-12",
         "sources": [
           "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct"
         ],
@@ -5367,7 +5387,9 @@
       },
       "sources": {
         "huggingface": {
-          "id": "Qwen/Qwen2.5-1.5B-Instruct"
+          "id": "Qwen/Qwen2.5-1.5B-Instruct",
+          "downloads": 7268416,
+          "likes": 825
         },
         "ollama": [
           "qwen2.5:1.5b"
@@ -5418,7 +5440,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-11",
+        "last_verified": "2026-09-12",
         "sources": [
           "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct"
         ],
@@ -5434,7 +5456,9 @@
       },
       "sources": {
         "huggingface": {
-          "id": "Qwen/Qwen2.5-3B-Instruct"
+          "id": "Qwen/Qwen2.5-3B-Instruct",
+          "downloads": 5415262,
+          "likes": 566
         },
         "ollama": [
           "qwen2.5:3b"
@@ -5485,7 +5509,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-11",
+        "last_verified": "2026-09-12",
         "sources": [
           "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct"
         ],
@@ -5501,7 +5525,9 @@
       },
       "sources": {
         "huggingface": {
-          "id": "Qwen/Qwen2.5-7B-Instruct"
+          "id": "Qwen/Qwen2.5-7B-Instruct",
+          "downloads": 10059299,
+          "likes": 1588
         },
         "ollama": [
           "qwen2.5:7b"
@@ -5552,7 +5578,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-11",
+        "last_verified": "2026-09-12",
         "sources": [
           "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
         ],
@@ -7634,6 +7660,2046 @@
           "https://huggingface.co/bigcode/starcoder2-15b"
         ],
         "confidence": "high"
+      }
+    },
+    {
+      "id": "qwen-qwen2-5-7b-instruct-awq",
+      "identity": {
+        "canonical_name": "Qwen2.5-7B-Instruct-AWQ",
+        "family": "Qwen",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen2.5-7B-Instruct-AWQ",
+          "downloads": 3579323,
+          "likes": 51
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 7000000000,
+        "active_parameters": 7000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-AWQ"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-AWQ"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-AWQ"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-AWQ"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "qwen-qwen3-1-7b",
+      "identity": {
+        "canonical_name": "Qwen3-1.7B",
+        "family": "Qwen",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3-1.7B",
+          "downloads": 3464727,
+          "likes": 537
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 1700000000,
+        "active_parameters": 1700000000
+      },
+      "context": {
+        "maximum_tokens": 32768
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen3-1.7B"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen3-1.7B"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/Qwen/Qwen3-1.7B"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3-1.7B"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "nvidia-nvidia-nemotron-3-nano-4b-bf16",
+      "identity": {
+        "canonical_name": "NVIDIA-Nemotron-3-Nano-4B-BF16",
+        "family": "Community",
+        "publisher": "nvidia"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+          "downloads": 3451595,
+          "likes": 117
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 4000000000,
+        "active_parameters": 4000000000
+      },
+      "context": {
+        "maximum_tokens": 32768
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "eleutherai-pythia-160m",
+      "identity": {
+        "canonical_name": "pythia-160m",
+        "family": "Community",
+        "publisher": "EleutherAI"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "EleutherAI/pythia-160m",
+          "downloads": 3400230,
+          "likes": 45
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 7000000000,
+        "active_parameters": 7000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/EleutherAI/pythia-160m"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/EleutherAI/pythia-160m"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/EleutherAI/pythia-160m"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/EleutherAI/pythia-160m"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "jonathancoletti-qwen3-8-27b-uncensored-gguf",
+      "identity": {
+        "canonical_name": "Qwen3.8-27B-Uncensored-GGUF",
+        "family": "Qwen",
+        "publisher": "JonathanColetti"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
+          "downloads": 2883270,
+          "likes": 1063
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 27000000000,
+        "active_parameters": 27000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "qwen-qwen3-0-6b",
+      "identity": {
+        "canonical_name": "Qwen3-0.6B",
+        "family": "Qwen",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3-0.6B",
+          "downloads": 20685071,
+          "likes": 1596
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 600000000,
+        "active_parameters": 600000000
+      },
+      "context": {
+        "maximum_tokens": 32768
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen3-0.6B"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen3-0.6B"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/Qwen/Qwen3-0.6B"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3-0.6B"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "trl-internal-testing-tiny-qwen2forcausallm-2-5",
+      "identity": {
+        "canonical_name": "tiny-Qwen2ForCausalLM-2.5",
+        "family": "Qwen",
+        "publisher": "trl-internal-testing"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "trl-internal-testing/tiny-Qwen2ForCausalLM-2.5",
+          "downloads": 17924207,
+          "likes": 25
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 7000000000,
+        "active_parameters": 7000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/trl-internal-testing/tiny-Qwen2ForCausalLM-2.5"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/trl-internal-testing/tiny-Qwen2ForCausalLM-2.5"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/trl-internal-testing/tiny-Qwen2ForCausalLM-2.5"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/trl-internal-testing/tiny-Qwen2ForCausalLM-2.5"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "openai-community-gpt2",
+      "identity": {
+        "canonical_name": "gpt2",
+        "family": "Community",
+        "publisher": "openai-community"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "openai-community/gpt2",
+          "downloads": 15074191,
+          "likes": 3941
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 7000000000,
+        "active_parameters": 7000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/openai-community/gpt2"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/openai-community/gpt2"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/openai-community/gpt2"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/openai-community/gpt2"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "qwen-qwen3-8b",
+      "identity": {
+        "canonical_name": "Qwen3-8B",
+        "family": "Qwen",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3-8B",
+          "downloads": 12880447,
+          "likes": 1367
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 8000000000,
+        "active_parameters": 8000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen3-8B"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen3-8B"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/Qwen/Qwen3-8B"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3-8B"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "unsloth-qwen3-coder-30b-a3b-instruct-gguf",
+      "identity": {
+        "canonical_name": "Qwen3-Coder-30B-A3B-Instruct-GGUF",
+        "family": "Qwen",
+        "publisher": "unsloth"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+          "downloads": 12853002,
+          "likes": 989
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 30000000000,
+        "active_parameters": 30000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": true,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "qwen-qwen2-5-7b-instruct",
+      "identity": {
+        "canonical_name": "Qwen2.5-7B-Instruct",
+        "family": "Qwen",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen2.5-7B-Instruct",
+          "downloads": 10059299,
+          "likes": 1588
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 7000000000,
+        "active_parameters": 7000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "nvidia-qwen3-6-35b-a3b-nvfp4",
+      "identity": {
+        "canonical_name": "Qwen3.6-35B-A3B-NVFP4",
+        "family": "Qwen",
+        "publisher": "nvidia"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "nvidia/Qwen3.6-35B-A3B-NVFP4",
+          "downloads": 9828497,
+          "likes": 592
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 35000000000,
+        "active_parameters": 35000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "facebook-opt-125m",
+      "identity": {
+        "canonical_name": "opt-125m",
+        "family": "Community",
+        "publisher": "facebook"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "facebook/opt-125m",
+          "downloads": 8346527,
+          "likes": 296
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 7000000000,
+        "active_parameters": 7000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/facebook/opt-125m"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/facebook/opt-125m"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/facebook/opt-125m"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/facebook/opt-125m"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "qwen-qwen2-5-1-5b-instruct",
+      "identity": {
+        "canonical_name": "Qwen2.5-1.5B-Instruct",
+        "family": "Qwen",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen2.5-1.5B-Instruct",
+          "downloads": 7268416,
+          "likes": 825
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 1500000000,
+        "active_parameters": 1500000000
+      },
+      "context": {
+        "maximum_tokens": 32768
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "farbodtavakkoli-otel-2-0-llm-31b-it",
+      "identity": {
+        "canonical_name": "OTel-2.0-LLM-31B-IT",
+        "family": "Community",
+        "publisher": "farbodtavakkoli"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "farbodtavakkoli/OTel-2.0-LLM-31B-IT",
+          "downloads": 7246115,
+          "likes": 15
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 31000000000,
+        "active_parameters": 31000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/farbodtavakkoli/OTel-2.0-LLM-31B-IT"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/farbodtavakkoli/OTel-2.0-LLM-31B-IT"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/farbodtavakkoli/OTel-2.0-LLM-31B-IT"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/farbodtavakkoli/OTel-2.0-LLM-31B-IT"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "qwen-qwen2-5-0-5b-instruct",
+      "identity": {
+        "canonical_name": "Qwen2.5-0.5B-Instruct",
+        "family": "Qwen",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "downloads": 7225322,
+          "likes": 623
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 500000000,
+        "active_parameters": 500000000
+      },
+      "context": {
+        "maximum_tokens": 32768
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "openai-gpt-oss-20b",
+      "identity": {
+        "canonical_name": "gpt-oss-20b",
+        "family": "Community",
+        "publisher": "openai"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "openai/gpt-oss-20b",
+          "downloads": 6599829,
+          "likes": 5019
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 20000000000,
+        "active_parameters": 20000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/openai/gpt-oss-20b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/openai/gpt-oss-20b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/openai/gpt-oss-20b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/openai/gpt-oss-20b"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "meta-llama-llama-3-2-1b-instruct",
+      "identity": {
+        "canonical_name": "Llama-3.2-1B-Instruct",
+        "family": "Llama",
+        "publisher": "meta-llama"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "meta-llama/Llama-3.2-1B-Instruct",
+          "downloads": 6258911,
+          "likes": 1626
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 1000000000,
+        "active_parameters": 1000000000
+      },
+      "context": {
+        "maximum_tokens": 32768
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "qwen-qwen3-4b",
+      "identity": {
+        "canonical_name": "Qwen3-4B",
+        "family": "Qwen",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3-4B",
+          "downloads": 6222186,
+          "likes": 697
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 4000000000,
+        "active_parameters": 4000000000
+      },
+      "context": {
+        "maximum_tokens": 32768
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen3-4B"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen3-4B"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/Qwen/Qwen3-4B"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3-4B"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "meta-llama-llama-3-1-8b-instruct",
+      "identity": {
+        "canonical_name": "Llama-3.1-8B-Instruct",
+        "family": "Llama",
+        "publisher": "meta-llama"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "downloads": 5620096,
+          "likes": 6902
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 8000000000,
+        "active_parameters": 8000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "openai-gpt-oss-120b",
+      "identity": {
+        "canonical_name": "gpt-oss-120b",
+        "family": "Community",
+        "publisher": "openai"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "openai/gpt-oss-120b",
+          "downloads": 5463732,
+          "likes": 5188
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 120000000000,
+        "active_parameters": 120000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/openai/gpt-oss-120b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/openai/gpt-oss-120b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/openai/gpt-oss-120b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/openai/gpt-oss-120b"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "qwen-qwen2-5-3b-instruct",
+      "identity": {
+        "canonical_name": "Qwen2.5-3B-Instruct",
+        "family": "Qwen",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen2.5-3B-Instruct",
+          "downloads": 5415262,
+          "likes": 566
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 3000000000,
+        "active_parameters": 3000000000
+      },
+      "context": {
+        "maximum_tokens": 32768
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "qwen-qwen3-32b",
+      "identity": {
+        "canonical_name": "Qwen3-32B",
+        "family": "Qwen",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3-32B",
+          "downloads": 5273218,
+          "likes": 745
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 32000000000,
+        "active_parameters": 32000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen3-32B"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen3-32B"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/Qwen/Qwen3-32B"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3-32B"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "dphn-dolphin-2-9-1-yi-1-5-34b",
+      "identity": {
+        "canonical_name": "dolphin-2.9.1-yi-1.5-34b",
+        "family": "Phi",
+        "publisher": "dphn"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "dphn/dolphin-2.9.1-yi-1.5-34b",
+          "downloads": 4809337,
+          "likes": 65
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 34000000000,
+        "active_parameters": 34000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/dphn/dolphin-2.9.1-yi-1.5-34b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/dphn/dolphin-2.9.1-yi-1.5-34b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/dphn/dolphin-2.9.1-yi-1.5-34b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/dphn/dolphin-2.9.1-yi-1.5-34b"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "deepseek-ai-deepseek-v4-flash-0731",
+      "identity": {
+        "canonical_name": "DeepSeek-V4-Flash-0731",
+        "family": "DeepSeek",
+        "publisher": "deepseek-ai"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+          "downloads": 4397122,
+          "likes": 3931
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 7000000000,
+        "active_parameters": 7000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "ornith-ai-ornith-1-5-9b-gguf",
+      "identity": {
+        "canonical_name": "Ornith-1.5-9B-GGUF",
+        "family": "Community",
+        "publisher": "ornith-ai"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "ornith-ai/Ornith-1.5-9B-GGUF",
+          "downloads": 4238715,
+          "likes": 347
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 9000000000,
+        "active_parameters": 9000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "ornith-ai-ornith-1-0-9b-gguf",
+      "identity": {
+        "canonical_name": "Ornith-1.0-9B-GGUF",
+        "family": "Community",
+        "publisher": "ornith-ai"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "ornith-ai/Ornith-1.0-9B-GGUF",
+          "downloads": 3847352,
+          "likes": 665
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 9000000000,
+        "active_parameters": 9000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/ornith-ai/Ornith-1.0-9B-GGUF"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/ornith-ai/Ornith-1.0-9B-GGUF"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/ornith-ai/Ornith-1.0-9B-GGUF"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/ornith-ai/Ornith-1.0-9B-GGUF"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "qwen-qwen-72b",
+      "identity": {
+        "canonical_name": "Qwen-72B",
+        "family": "Qwen",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen-72B",
+          "downloads": 3790415,
+          "likes": 362
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 72000000000,
+        "active_parameters": 72000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen-72B"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen-72B"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/Qwen/Qwen-72B"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen-72B"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "ornith-ai-ornith-1-5-35b-a3b-gguf",
+      "identity": {
+        "canonical_name": "Ornith-1.5-35B-A3B-GGUF",
+        "family": "Community",
+        "publisher": "ornith-ai"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+          "downloads": 3702705,
+          "likes": 396
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 35000000000,
+        "active_parameters": 35000000000
+      },
+      "context": {
+        "maximum_tokens": 131072
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "qwen-qwen3-4b-instruct-2507",
+      "identity": {
+        "canonical_name": "Qwen3-4B-Instruct-2507",
+        "family": "Qwen",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3-4B-Instruct-2507",
+          "downloads": 3579530,
+          "likes": 959
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 4000000000,
+        "active_parameters": 4000000000
+      },
+      "context": {
+        "maximum_tokens": 32768
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-12",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507"
+        ],
+        "confidence": "medium"
       }
     }
   ],

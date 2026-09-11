@@ -296,8 +296,8 @@ class DatabaseRepository:
                     (b.model_id, b.benchmark, b.score, b.normalized_score if b.normalized_score is not None else b.score, b.source, b.source_url, b.date, b.evidence_type, b.confidence, b.tier, b.retrieved_at,
                      b.model_id, b.benchmark, b.source, b.date, b.score),
                 )
-                stats["benchmarks"] += 1
-
+            cursor.execute("CREATE TABLE IF NOT EXISTS catalog_sync_meta (key TEXT PRIMARY KEY, val TEXT)")
+            cursor.execute("INSERT OR REPLACE INTO catalog_sync_meta (key, val) VALUES ('last_dataset_mtime', ?)", (str(_get_dataset_mtime()),))
             conn.commit()
             return stats
         finally:
