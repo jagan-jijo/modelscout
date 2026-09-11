@@ -1,0 +1,3085 @@
+{
+  "nvidia_gpus": [
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 960",
+      "architecture": "Maxwell",
+      "vram_gb": 4,
+      "memory_bandwidth_gbps": 112,
+      "compute_capability": "5.2",
+      "aliases": [
+        "GTX 960",
+        "960"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 970",
+      "architecture": "Maxwell",
+      "vram_gb": 4,
+      "memory_bandwidth_gbps": 224,
+      "compute_capability": "5.2",
+      "aliases": [
+        "GTX 970",
+        "970"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 980",
+      "architecture": "Maxwell",
+      "vram_gb": 4,
+      "memory_bandwidth_gbps": 224,
+      "compute_capability": "5.2",
+      "aliases": [
+        "GTX 980",
+        "980"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 980 Ti",
+      "architecture": "Maxwell",
+      "vram_gb": 6,
+      "memory_bandwidth_gbps": 336,
+      "compute_capability": "5.2",
+      "aliases": [
+        "GTX 980 Ti",
+        "980 Ti"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 1050 Ti",
+      "architecture": "Pascal",
+      "vram_gb": 4,
+      "memory_bandwidth_gbps": 112,
+      "compute_capability": "6.1",
+      "aliases": [
+        "GTX 1050 Ti",
+        "1050 Ti"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 1060 6GB",
+      "architecture": "Pascal",
+      "vram_gb": 6,
+      "memory_bandwidth_gbps": 192,
+      "compute_capability": "6.1",
+      "aliases": [
+        "GTX 1060",
+        "1060 6GB",
+        "GTX 1060 6GB"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 1070",
+      "architecture": "Pascal",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 256,
+      "compute_capability": "6.1",
+      "aliases": [
+        "GTX 1070",
+        "1070"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 1070 Ti",
+      "architecture": "Pascal",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 256,
+      "compute_capability": "6.1",
+      "aliases": [
+        "GTX 1070 Ti",
+        "1070 Ti"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 1080",
+      "architecture": "Pascal",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 320,
+      "compute_capability": "6.1",
+      "aliases": [
+        "GTX 1080",
+        "1080"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 1080 Ti",
+      "architecture": "Pascal",
+      "vram_gb": 11,
+      "memory_bandwidth_gbps": 484,
+      "compute_capability": "6.1",
+      "aliases": [
+        "GTX 1080 Ti",
+        "1080 Ti"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 1650",
+      "architecture": "Turing",
+      "vram_gb": 4,
+      "memory_bandwidth_gbps": 128,
+      "compute_capability": "7.5",
+      "aliases": [
+        "GTX 1650",
+        "1650"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 1650 Super",
+      "architecture": "Turing",
+      "vram_gb": 4,
+      "memory_bandwidth_gbps": 192,
+      "compute_capability": "7.5",
+      "aliases": [
+        "GTX 1650 Super",
+        "1650 Super"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 1660",
+      "architecture": "Turing",
+      "vram_gb": 6,
+      "memory_bandwidth_gbps": 192,
+      "compute_capability": "7.5",
+      "aliases": [
+        "GTX 1660",
+        "1660"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 1660 Super",
+      "architecture": "Turing",
+      "vram_gb": 6,
+      "memory_bandwidth_gbps": 336,
+      "compute_capability": "7.5",
+      "aliases": [
+        "GTX 1660 Super",
+        "1660 Super"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 1660 Ti",
+      "architecture": "Turing",
+      "vram_gb": 6,
+      "memory_bandwidth_gbps": 288,
+      "compute_capability": "7.5",
+      "aliases": [
+        "GTX 1660 Ti",
+        "1660 Ti"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 2060 6GB",
+      "architecture": "Turing",
+      "vram_gb": 6,
+      "memory_bandwidth_gbps": 336,
+      "compute_capability": "7.5",
+      "aliases": [
+        "RTX 2060",
+        "2060"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 2060 12GB",
+      "architecture": "Turing",
+      "vram_gb": 12,
+      "memory_bandwidth_gbps": 336,
+      "compute_capability": "7.5",
+      "aliases": [
+        "RTX 2060 12GB",
+        "2060 12GB"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 2060 Super",
+      "architecture": "Turing",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 448,
+      "compute_capability": "7.5",
+      "aliases": [
+        "RTX 2060 Super",
+        "2060 Super"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 2070",
+      "architecture": "Turing",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 448,
+      "compute_capability": "7.5",
+      "aliases": [
+        "RTX 2070",
+        "2070"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 2070 Super",
+      "architecture": "Turing",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 448,
+      "compute_capability": "7.5",
+      "aliases": [
+        "RTX 2070 Super",
+        "2070 Super"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 2080",
+      "architecture": "Turing",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 448,
+      "compute_capability": "7.5",
+      "aliases": [
+        "RTX 2080",
+        "2080"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 2080 Super",
+      "architecture": "Turing",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 496,
+      "compute_capability": "7.5",
+      "aliases": [
+        "RTX 2080 Super",
+        "2080 Super"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 2080 Ti",
+      "architecture": "Turing",
+      "vram_gb": 11,
+      "memory_bandwidth_gbps": 616,
+      "compute_capability": "7.5",
+      "aliases": [
+        "RTX 2080 Ti",
+        "2080 Ti"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA Titan RTX",
+      "architecture": "Turing",
+      "vram_gb": 24,
+      "memory_bandwidth_gbps": 672,
+      "compute_capability": "7.5",
+      "aliases": [
+        "Titan RTX",
+        "Titan 24GB"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3050 8GB",
+      "architecture": "Ampere",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 224,
+      "compute_capability": "8.6",
+      "aliases": [
+        "RTX 3050",
+        "3050"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3060 12GB",
+      "architecture": "Ampere",
+      "vram_gb": 12,
+      "memory_bandwidth_gbps": 360,
+      "compute_capability": "8.6",
+      "aliases": [
+        "RTX 3060",
+        "3060",
+        "3060 12GB"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3060 Ti",
+      "architecture": "Ampere",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 448,
+      "compute_capability": "8.6",
+      "aliases": [
+        "RTX 3060 Ti",
+        "3060 Ti"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3070",
+      "architecture": "Ampere",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 448,
+      "compute_capability": "8.6",
+      "aliases": [
+        "RTX 3070",
+        "3070"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3070 Ti",
+      "architecture": "Ampere",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 608,
+      "compute_capability": "8.6",
+      "aliases": [
+        "RTX 3070 Ti",
+        "3070 Ti"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3080 10GB",
+      "architecture": "Ampere",
+      "vram_gb": 10,
+      "memory_bandwidth_gbps": 760,
+      "compute_capability": "8.6",
+      "aliases": [
+        "RTX 3080",
+        "3080",
+        "3080 10GB"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3080 12GB",
+      "architecture": "Ampere",
+      "vram_gb": 12,
+      "memory_bandwidth_gbps": 912,
+      "compute_capability": "8.6",
+      "aliases": [
+        "RTX 3080 12GB",
+        "3080 12GB"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3080 Ti",
+      "architecture": "Ampere",
+      "vram_gb": 12,
+      "memory_bandwidth_gbps": 912,
+      "compute_capability": "8.6",
+      "aliases": [
+        "RTX 3080 Ti",
+        "3080 Ti"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3090",
+      "architecture": "Ampere",
+      "vram_gb": 24,
+      "memory_bandwidth_gbps": 936,
+      "compute_capability": "8.6",
+      "aliases": [
+        "RTX 3090",
+        "3090",
+        "3090 24GB"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3090 Ti",
+      "architecture": "Ampere",
+      "vram_gb": 24,
+      "memory_bandwidth_gbps": 1008,
+      "compute_capability": "8.6",
+      "aliases": [
+        "RTX 3090 Ti",
+        "3090 Ti"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4060",
+      "architecture": "Ada Lovelace",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 272,
+      "compute_capability": "8.9",
+      "aliases": [
+        "RTX 4060",
+        "4060"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4060 Ti 8GB",
+      "architecture": "Ada Lovelace",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 288,
+      "compute_capability": "8.9",
+      "aliases": [
+        "RTX 4060 Ti",
+        "4060 Ti"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4060 Ti 16GB",
+      "architecture": "Ada Lovelace",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 288,
+      "compute_capability": "8.9",
+      "aliases": [
+        "RTX 4060 Ti 16GB",
+        "4060 Ti 16GB",
+        "4060 16GB"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4070",
+      "architecture": "Ada Lovelace",
+      "vram_gb": 12,
+      "memory_bandwidth_gbps": 504,
+      "compute_capability": "8.9",
+      "aliases": [
+        "RTX 4070",
+        "4070"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4070 Super",
+      "architecture": "Ada Lovelace",
+      "vram_gb": 12,
+      "memory_bandwidth_gbps": 504,
+      "compute_capability": "8.9",
+      "aliases": [
+        "RTX 4070 Super",
+        "4070 Super"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4070 Ti",
+      "architecture": "Ada Lovelace",
+      "vram_gb": 12,
+      "memory_bandwidth_gbps": 504,
+      "compute_capability": "8.9",
+      "aliases": [
+        "RTX 4070 Ti",
+        "4070 Ti"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4070 Ti Super",
+      "architecture": "Ada Lovelace",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 672,
+      "compute_capability": "8.9",
+      "aliases": [
+        "RTX 4070 Ti Super",
+        "4070 Ti Super"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4080",
+      "architecture": "Ada Lovelace",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 716,
+      "compute_capability": "8.9",
+      "aliases": [
+        "RTX 4080",
+        "4080"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4080 Super",
+      "architecture": "Ada Lovelace",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 736,
+      "compute_capability": "8.9",
+      "aliases": [
+        "RTX 4080 Super",
+        "4080 Super"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4090",
+      "architecture": "Ada Lovelace",
+      "vram_gb": 24,
+      "memory_bandwidth_gbps": 1008,
+      "compute_capability": "8.9",
+      "aliases": [
+        "RTX 4090",
+        "4090",
+        "GeForce 4090"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4090 D",
+      "architecture": "Ada Lovelace",
+      "vram_gb": 24,
+      "memory_bandwidth_gbps": 1008,
+      "compute_capability": "8.9",
+      "aliases": [
+        "RTX 4090 D",
+        "4090 D"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 5070",
+      "architecture": "Blackwell",
+      "vram_gb": 12,
+      "memory_bandwidth_gbps": 672,
+      "compute_capability": "10.0",
+      "aliases": [
+        "RTX 5070",
+        "5070"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 5080",
+      "architecture": "Blackwell",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 1024,
+      "compute_capability": "10.0",
+      "aliases": [
+        "RTX 5080",
+        "5080"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 5090",
+      "architecture": "Blackwell",
+      "vram_gb": 32,
+      "memory_bandwidth_gbps": 1792,
+      "compute_capability": "10.0",
+      "aliases": [
+        "RTX 5090",
+        "5090"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+      "architecture": "Ampere",
+      "vram_gb": 6,
+      "memory_bandwidth_gbps": 336,
+      "compute_capability": "8.6",
+      "aliases": [
+        "RTX 3060 Mobile",
+        "3060 Laptop"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+      "architecture": "Ampere",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 448,
+      "compute_capability": "8.6",
+      "aliases": [
+        "RTX 3070 Mobile",
+        "3070 Laptop"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "architecture": "Ada Lovelace",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 256,
+      "compute_capability": "8.9",
+      "aliases": [
+        "RTX 4060 Mobile",
+        "4060 Laptop"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "architecture": "Ada Lovelace",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 256,
+      "compute_capability": "8.9",
+      "aliases": [
+        "RTX 4070 Mobile",
+        "4070 Laptop"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+      "architecture": "Ada Lovelace",
+      "vram_gb": 12,
+      "memory_bandwidth_gbps": 432,
+      "compute_capability": "8.9",
+      "aliases": [
+        "RTX 4080 Mobile",
+        "4080 Laptop"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "architecture": "Ada Lovelace",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 576,
+      "compute_capability": "8.9",
+      "aliases": [
+        "RTX 4090 Mobile",
+        "4090 Laptop"
+      ],
+      "cuda_support": true
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 1060 3GB",
+      "architecture": "Pascal",
+      "family": "GeForce GTX",
+      "series": "10-series",
+      "vram_gb": 3.0,
+      "memory_type": "GDDR5",
+      "memory_bandwidth_gbps": 192.0,
+      "compute_capability": "6.1",
+      "cuda_support": true,
+      "aliases": [
+        "GTX 1060 3GB",
+        "1060 3GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA TITAN X (Pascal)",
+      "architecture": "Pascal",
+      "family": "TITAN",
+      "series": "10-series",
+      "vram_gb": 12.0,
+      "memory_type": "GDDR5X",
+      "memory_bandwidth_gbps": 480.0,
+      "compute_capability": "6.1",
+      "cuda_support": true,
+      "aliases": [
+        "TITAN X",
+        "Titan X Pascal"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA TITAN Xp",
+      "architecture": "Pascal",
+      "family": "TITAN",
+      "series": "10-series",
+      "vram_gb": 12.0,
+      "memory_type": "GDDR5X",
+      "memory_bandwidth_gbps": 547.0,
+      "compute_capability": "6.1",
+      "cuda_support": true,
+      "aliases": [
+        "TITAN Xp",
+        "Titan Xp"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce GTX 1630",
+      "architecture": "Turing",
+      "family": "GeForce GTX",
+      "series": "16-series",
+      "vram_gb": 4.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 96.0,
+      "compute_capability": "7.5",
+      "cuda_support": true,
+      "aliases": [
+        "GTX 1630",
+        "1630"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 2050 Laptop GPU",
+      "architecture": "Ampere",
+      "family": "GeForce RTX",
+      "series": "20-series",
+      "vram_gb": 4.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 112.0,
+      "compute_capability": "7.5",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 2050",
+        "2050 Mobile"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 2060 Laptop GPU",
+      "architecture": "Turing",
+      "family": "GeForce RTX",
+      "series": "20-series",
+      "vram_gb": 6.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 264.0,
+      "compute_capability": "7.5",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 2060 Mobile",
+        "2060 Laptop"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 2070 Laptop GPU",
+      "architecture": "Turing",
+      "family": "GeForce RTX",
+      "series": "20-series",
+      "vram_gb": 8.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 448.0,
+      "compute_capability": "7.5",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 2070 Mobile",
+        "2070 Laptop"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 2070 Super Laptop GPU",
+      "architecture": "Turing",
+      "family": "GeForce RTX",
+      "series": "20-series",
+      "vram_gb": 8.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 448.0,
+      "compute_capability": "7.5",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 2070 Super Mobile"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 2080 Laptop GPU",
+      "architecture": "Turing",
+      "family": "GeForce RTX",
+      "series": "20-series",
+      "vram_gb": 8.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 448.0,
+      "compute_capability": "7.5",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 2080 Mobile",
+        "2080 Laptop"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 2080 Super Laptop GPU",
+      "architecture": "Turing",
+      "family": "GeForce RTX",
+      "series": "20-series",
+      "vram_gb": 8.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 448.0,
+      "compute_capability": "7.5",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 2080 Super Mobile"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3050 6GB",
+      "architecture": "Ampere",
+      "family": "GeForce RTX",
+      "series": "30-series",
+      "vram_gb": 6.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 168.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 3050 6GB",
+        "3050 6GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+      "architecture": "Ampere",
+      "family": "GeForce RTX",
+      "series": "30-series",
+      "vram_gb": 4.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 176.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 3050 Mobile",
+        "3050 Laptop"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+      "architecture": "Ampere",
+      "family": "GeForce RTX",
+      "series": "30-series",
+      "vram_gb": 4.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 192.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 3050 Ti Mobile"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3060 8GB",
+      "architecture": "Ampere",
+      "family": "GeForce RTX",
+      "series": "30-series",
+      "vram_gb": 8.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 240.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 3060 8GB",
+        "3060 8GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+      "architecture": "Ampere",
+      "family": "GeForce RTX",
+      "series": "30-series",
+      "vram_gb": 8.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 448.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 3070 Ti Mobile"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3080 Laptop GPU",
+      "architecture": "Ampere",
+      "family": "GeForce RTX",
+      "series": "30-series",
+      "vram_gb": 16.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 448.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 3080 Mobile",
+        "3080 Laptop 16GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 3080 Ti Laptop GPU",
+      "architecture": "Ampere",
+      "family": "GeForce RTX",
+      "series": "30-series",
+      "vram_gb": 16.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 512.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 3080 Ti Mobile"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "architecture": "Ada Lovelace",
+      "family": "GeForce RTX",
+      "series": "40-series",
+      "vram_gb": 6.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 192.0,
+      "compute_capability": "8.9",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 4050 Mobile",
+        "4050 Laptop"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 5060",
+      "architecture": "Blackwell",
+      "family": "GeForce RTX",
+      "series": "50-series",
+      "vram_gb": 8.0,
+      "memory_type": "GDDR7",
+      "memory_bandwidth_gbps": 448.0,
+      "compute_capability": "10.0",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 5060",
+        "5060"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 5060 Ti",
+      "architecture": "Blackwell",
+      "family": "GeForce RTX",
+      "series": "50-series",
+      "vram_gb": 16.0,
+      "memory_type": "GDDR7",
+      "memory_bandwidth_gbps": 576.0,
+      "compute_capability": "10.0",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 5060 Ti",
+        "5060 Ti"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "architecture": "Blackwell",
+      "family": "GeForce RTX",
+      "series": "50-series",
+      "vram_gb": 16.0,
+      "memory_type": "GDDR7",
+      "memory_bandwidth_gbps": 896.0,
+      "compute_capability": "10.0",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 5070 Ti",
+        "5070 Ti"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 5090 D",
+      "architecture": "Blackwell",
+      "family": "GeForce RTX",
+      "series": "50-series",
+      "vram_gb": 32.0,
+      "memory_type": "GDDR7",
+      "memory_bandwidth_gbps": 1792.0,
+      "compute_capability": "10.0",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 5090 D",
+        "5090 D"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA Quadro RTX 3000 Laptop",
+      "architecture": "Turing",
+      "family": "Quadro RTX",
+      "series": "Quadro",
+      "vram_gb": 6.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 336.0,
+      "compute_capability": "7.5",
+      "cuda_support": true,
+      "aliases": [
+        "Quadro RTX 3000",
+        "RTX 3000"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA Quadro RTX 4000",
+      "architecture": "Turing",
+      "family": "Quadro RTX",
+      "series": "Quadro",
+      "vram_gb": 8.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 416.0,
+      "compute_capability": "7.5",
+      "cuda_support": true,
+      "aliases": [
+        "Quadro RTX 4000",
+        "RTX 4000"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA Quadro RTX 5000",
+      "architecture": "Turing",
+      "family": "Quadro RTX",
+      "series": "Quadro",
+      "vram_gb": 16.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 448.0,
+      "compute_capability": "7.5",
+      "cuda_support": true,
+      "aliases": [
+        "Quadro RTX 5000",
+        "RTX 5000"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA Quadro RTX 6000",
+      "architecture": "Turing",
+      "family": "Quadro RTX",
+      "series": "Quadro",
+      "vram_gb": 24.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 672.0,
+      "compute_capability": "7.5",
+      "cuda_support": true,
+      "aliases": [
+        "Quadro RTX 6000",
+        "RTX 6000"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA Quadro RTX 8000",
+      "architecture": "Turing",
+      "family": "Quadro RTX",
+      "series": "Quadro",
+      "vram_gb": 48.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 672.0,
+      "compute_capability": "7.5",
+      "cuda_support": true,
+      "aliases": [
+        "Quadro RTX 8000",
+        "RTX 8000"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX A2000 6GB",
+      "architecture": "Ampere",
+      "family": "RTX Workstation",
+      "series": "Ampere",
+      "vram_gb": 6.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 288.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "RTX A2000",
+        "A2000 6GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX A2000 12GB",
+      "architecture": "Ampere",
+      "family": "RTX Workstation",
+      "series": "Ampere",
+      "vram_gb": 12.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 288.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "RTX A2000 12GB",
+        "A2000 12GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX A4000",
+      "architecture": "Ampere",
+      "family": "RTX Workstation",
+      "series": "Ampere",
+      "vram_gb": 16.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 448.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "RTX A4000",
+        "A4000"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX A4500",
+      "architecture": "Ampere",
+      "family": "RTX Workstation",
+      "series": "Ampere",
+      "vram_gb": 20.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 640.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "RTX A4500",
+        "A4500"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX A5000",
+      "architecture": "Ampere",
+      "family": "RTX Workstation",
+      "series": "Ampere",
+      "vram_gb": 24.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 768.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "RTX A5000",
+        "A5000"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX A5500",
+      "architecture": "Ampere",
+      "family": "RTX Workstation",
+      "series": "Ampere",
+      "vram_gb": 24.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 768.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "RTX A5500",
+        "A5500"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX A6000",
+      "architecture": "Ampere",
+      "family": "RTX Workstation",
+      "series": "Ampere",
+      "vram_gb": 48.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 768.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "RTX A6000",
+        "A6000 48GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX A3000 Laptop GPU",
+      "architecture": "Ampere",
+      "family": "RTX Workstation",
+      "series": "Ampere",
+      "vram_gb": 6.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 264.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "A3000 Mobile"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX A4000 Laptop GPU",
+      "architecture": "Ampere",
+      "family": "RTX Workstation",
+      "series": "Ampere",
+      "vram_gb": 8.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 384.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "A4000 Mobile"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX A5000 Laptop GPU",
+      "architecture": "Ampere",
+      "family": "RTX Workstation",
+      "series": "Ampere",
+      "vram_gb": 16.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 448.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "A5000 Mobile"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX 2000 Ada Generation",
+      "architecture": "Ada Lovelace",
+      "family": "RTX Workstation",
+      "series": "Ada",
+      "vram_gb": 16.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 224.0,
+      "compute_capability": "8.9",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 2000 Ada",
+        "2000 Ada"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX 4000 SFF Ada Generation",
+      "architecture": "Ada Lovelace",
+      "family": "RTX Workstation",
+      "series": "Ada",
+      "vram_gb": 20.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 280.0,
+      "compute_capability": "8.9",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 4000 SFF Ada",
+        "4000 SFF Ada"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX 4000 Ada Generation",
+      "architecture": "Ada Lovelace",
+      "family": "RTX Workstation",
+      "series": "Ada",
+      "vram_gb": 20.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 360.0,
+      "compute_capability": "8.9",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 4000 Ada",
+        "4000 Ada"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX 4500 Ada Generation",
+      "architecture": "Ada Lovelace",
+      "family": "RTX Workstation",
+      "series": "Ada",
+      "vram_gb": 24.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 432.0,
+      "compute_capability": "8.9",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 4500 Ada",
+        "4500 Ada"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX 5000 Ada Generation",
+      "architecture": "Ada Lovelace",
+      "family": "RTX Workstation",
+      "series": "Ada",
+      "vram_gb": 32.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 576.0,
+      "compute_capability": "8.9",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 5000 Ada",
+        "5000 Ada"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX 6000 Ada Generation",
+      "architecture": "Ada Lovelace",
+      "family": "RTX Workstation",
+      "series": "Ada",
+      "vram_gb": 48.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 960.0,
+      "compute_capability": "8.9",
+      "cuda_support": true,
+      "aliases": [
+        "RTX 6000 Ada",
+        "6000 Ada",
+        "RTX 6000Ada"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA Tesla P40",
+      "architecture": "Pascal",
+      "family": "Tesla",
+      "series": "Pascal",
+      "vram_gb": 24.0,
+      "memory_type": "GDDR5",
+      "memory_bandwidth_gbps": 346.0,
+      "compute_capability": "6.1",
+      "cuda_support": true,
+      "aliases": [
+        "Tesla P40",
+        "P40",
+        "P40 24GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA Tesla P100 PCIe",
+      "architecture": "Pascal",
+      "family": "Tesla",
+      "series": "Pascal",
+      "vram_gb": 16.0,
+      "memory_type": "HBM2",
+      "memory_bandwidth_gbps": 732.0,
+      "compute_capability": "6.0",
+      "cuda_support": true,
+      "aliases": [
+        "Tesla P100",
+        "P100 PCIe"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA Tesla P100 SXM2",
+      "architecture": "Pascal",
+      "family": "Tesla",
+      "series": "Pascal",
+      "vram_gb": 16.0,
+      "memory_type": "HBM2",
+      "memory_bandwidth_gbps": 732.0,
+      "compute_capability": "6.0",
+      "cuda_support": true,
+      "aliases": [
+        "P100 SXM2",
+        "Tesla P100 SXM2"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA Tesla P4",
+      "architecture": "Pascal",
+      "family": "Tesla",
+      "series": "Pascal",
+      "vram_gb": 8.0,
+      "memory_type": "GDDR5",
+      "memory_bandwidth_gbps": 192.0,
+      "compute_capability": "6.1",
+      "cuda_support": true,
+      "aliases": [
+        "Tesla P4",
+        "P4"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA TITAN V",
+      "architecture": "Volta",
+      "family": "TITAN",
+      "series": "Volta",
+      "vram_gb": 12.0,
+      "memory_type": "HBM2",
+      "memory_bandwidth_gbps": 653.0,
+      "compute_capability": "7.0",
+      "cuda_support": true,
+      "aliases": [
+        "TITAN V",
+        "Titan V"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA Tesla V100 PCIe 16GB",
+      "architecture": "Volta",
+      "family": "Tesla",
+      "series": "Volta",
+      "vram_gb": 16.0,
+      "memory_type": "HBM2",
+      "memory_bandwidth_gbps": 900.0,
+      "compute_capability": "7.0",
+      "cuda_support": true,
+      "aliases": [
+        "Tesla V100 16GB",
+        "V100 16GB",
+        "V100 PCIe"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA Tesla V100 PCIe 32GB",
+      "architecture": "Volta",
+      "family": "Tesla",
+      "series": "Volta",
+      "vram_gb": 32.0,
+      "memory_type": "HBM2",
+      "memory_bandwidth_gbps": 900.0,
+      "compute_capability": "7.0",
+      "cuda_support": true,
+      "aliases": [
+        "Tesla V100 32GB",
+        "V100 32GB",
+        "V100-32GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA Tesla V100 SXM2 16GB",
+      "architecture": "Volta",
+      "family": "Tesla",
+      "series": "Volta",
+      "vram_gb": 16.0,
+      "memory_type": "HBM2",
+      "memory_bandwidth_gbps": 900.0,
+      "compute_capability": "7.0",
+      "cuda_support": true,
+      "aliases": [
+        "V100 SXM2 16GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA Tesla V100 SXM2 32GB",
+      "architecture": "Volta",
+      "family": "Tesla",
+      "series": "Volta",
+      "vram_gb": 32.0,
+      "memory_type": "HBM2",
+      "memory_bandwidth_gbps": 900.0,
+      "compute_capability": "7.0",
+      "cuda_support": true,
+      "aliases": [
+        "V100 SXM2 32GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA Tesla V100S PCIe 32GB",
+      "architecture": "Volta",
+      "family": "Tesla",
+      "series": "Volta",
+      "vram_gb": 32.0,
+      "memory_type": "HBM2",
+      "memory_bandwidth_gbps": 1134.0,
+      "compute_capability": "7.0",
+      "cuda_support": true,
+      "aliases": [
+        "V100S",
+        "Tesla V100S"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA Tesla T4",
+      "architecture": "Turing",
+      "family": "Tesla",
+      "series": "Turing",
+      "vram_gb": 16.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 320.0,
+      "compute_capability": "7.5",
+      "cuda_support": true,
+      "aliases": [
+        "Tesla T4",
+        "T4 16GB",
+        "T4"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA A100 PCIe 40GB",
+      "architecture": "Ampere",
+      "family": "Data Center",
+      "series": "Ampere",
+      "vram_gb": 40.0,
+      "memory_type": "HBM2",
+      "memory_bandwidth_gbps": 1555.0,
+      "compute_capability": "8.0",
+      "cuda_support": true,
+      "aliases": [
+        "A100 40GB",
+        "A100 PCIe 40GB",
+        "A100-40GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA A100 PCIe 80GB",
+      "architecture": "Ampere",
+      "family": "Data Center",
+      "series": "Ampere",
+      "vram_gb": 80.0,
+      "memory_type": "HBM2e",
+      "memory_bandwidth_gbps": 1935.0,
+      "compute_capability": "8.0",
+      "cuda_support": true,
+      "aliases": [
+        "A100 80GB",
+        "A100 PCIe 80GB",
+        "A100-80GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA A100 SXM4 40GB",
+      "architecture": "Ampere",
+      "family": "Data Center",
+      "series": "Ampere",
+      "vram_gb": 40.0,
+      "memory_type": "HBM2",
+      "memory_bandwidth_gbps": 1555.0,
+      "compute_capability": "8.0",
+      "cuda_support": true,
+      "aliases": [
+        "A100 SXM4 40GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA A100 SXM4 80GB",
+      "architecture": "Ampere",
+      "family": "Data Center",
+      "series": "Ampere",
+      "vram_gb": 80.0,
+      "memory_type": "HBM2e",
+      "memory_bandwidth_gbps": 2039.0,
+      "compute_capability": "8.0",
+      "cuda_support": true,
+      "aliases": [
+        "A100 SXM 80GB",
+        "A100 SXM4 80GB",
+        "A100 SXM"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA A800 PCIe 80GB",
+      "architecture": "Ampere",
+      "family": "Data Center",
+      "series": "Ampere",
+      "vram_gb": 80.0,
+      "memory_type": "HBM2e",
+      "memory_bandwidth_gbps": 1500.0,
+      "compute_capability": "8.0",
+      "cuda_support": true,
+      "aliases": [
+        "A800",
+        "A800 80GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA A800 SXM4 80GB",
+      "architecture": "Ampere",
+      "family": "Data Center",
+      "series": "Ampere",
+      "vram_gb": 80.0,
+      "memory_type": "HBM2e",
+      "memory_bandwidth_gbps": 2039.0,
+      "compute_capability": "8.0",
+      "cuda_support": true,
+      "aliases": [
+        "A800 SXM"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA A10",
+      "architecture": "Ampere",
+      "family": "Data Center",
+      "series": "Ampere",
+      "vram_gb": 24.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 600.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "A10 24GB",
+        "A10"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA A16",
+      "architecture": "Ampere",
+      "family": "Data Center",
+      "series": "Ampere",
+      "vram_gb": 64.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 800.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "A16 64GB",
+        "A16"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA A30",
+      "architecture": "Ampere",
+      "family": "Data Center",
+      "series": "Ampere",
+      "vram_gb": 24.0,
+      "memory_type": "HBM2",
+      "memory_bandwidth_gbps": 933.0,
+      "compute_capability": "8.0",
+      "cuda_support": true,
+      "aliases": [
+        "A30 24GB",
+        "A30"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA A40",
+      "architecture": "Ampere",
+      "family": "Data Center",
+      "series": "Ampere",
+      "vram_gb": 48.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 696.0,
+      "compute_capability": "8.6",
+      "cuda_support": true,
+      "aliases": [
+        "A40 48GB",
+        "A40"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA H100 PCIe 80GB",
+      "architecture": "Hopper",
+      "family": "Data Center",
+      "series": "Hopper",
+      "vram_gb": 80.0,
+      "memory_type": "HBM2e",
+      "memory_bandwidth_gbps": 2000.0,
+      "compute_capability": "9.0",
+      "cuda_support": true,
+      "aliases": [
+        "H100 PCIe",
+        "H100 80GB",
+        "H100-80GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA H100 SXM5 80GB",
+      "architecture": "Hopper",
+      "family": "Data Center",
+      "series": "Hopper",
+      "vram_gb": 80.0,
+      "memory_type": "HBM3",
+      "memory_bandwidth_gbps": 3350.0,
+      "compute_capability": "9.0",
+      "cuda_support": true,
+      "aliases": [
+        "H100 SXM",
+        "H100 SXM5",
+        "H100 SXM 80GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA H100 NVL 94GB",
+      "architecture": "Hopper",
+      "family": "Data Center",
+      "series": "Hopper",
+      "vram_gb": 94.0,
+      "memory_type": "HBM3",
+      "memory_bandwidth_gbps": 3900.0,
+      "compute_capability": "9.0",
+      "cuda_support": true,
+      "aliases": [
+        "H100 NVL",
+        "H100 NVL 94GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA H200 SXM5 141GB",
+      "architecture": "Hopper",
+      "family": "Data Center",
+      "series": "Hopper",
+      "vram_gb": 141.0,
+      "memory_type": "HBM3e",
+      "memory_bandwidth_gbps": 4800.0,
+      "compute_capability": "9.0",
+      "cuda_support": true,
+      "aliases": [
+        "H200",
+        "H200 SXM",
+        "H200 141GB",
+        "H200 SXM5"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA H800 PCIe 80GB",
+      "architecture": "Hopper",
+      "family": "Data Center",
+      "series": "Hopper",
+      "vram_gb": 80.0,
+      "memory_type": "HBM2e",
+      "memory_bandwidth_gbps": 2000.0,
+      "compute_capability": "9.0",
+      "cuda_support": true,
+      "aliases": [
+        "H800",
+        "H800 PCIe"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA H800 SXM5 80GB",
+      "architecture": "Hopper",
+      "family": "Data Center",
+      "series": "Hopper",
+      "vram_gb": 80.0,
+      "memory_type": "HBM3",
+      "memory_bandwidth_gbps": 3350.0,
+      "compute_capability": "9.0",
+      "cuda_support": true,
+      "aliases": [
+        "H800 SXM"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA L4",
+      "architecture": "Ada Lovelace",
+      "family": "Data Center",
+      "series": "Ada",
+      "vram_gb": 24.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 300.0,
+      "compute_capability": "8.9",
+      "cuda_support": true,
+      "aliases": [
+        "L4 24GB",
+        "L4",
+        "NVIDIA L4 24GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA L40",
+      "architecture": "Ada Lovelace",
+      "family": "Data Center",
+      "series": "Ada",
+      "vram_gb": 48.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 864.0,
+      "compute_capability": "8.9",
+      "cuda_support": true,
+      "aliases": [
+        "L40 48GB",
+        "L40"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA L40S",
+      "architecture": "Ada Lovelace",
+      "family": "Data Center",
+      "series": "Ada",
+      "vram_gb": 48.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 864.0,
+      "compute_capability": "8.9",
+      "cuda_support": true,
+      "aliases": [
+        "L40S 48GB",
+        "L40S",
+        "NVIDIA L40S"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GH200 Grace Hopper 96GB",
+      "architecture": "Hopper",
+      "family": "Grace Hopper",
+      "series": "GH200",
+      "vram_gb": 96.0,
+      "memory_type": "HBM3",
+      "memory_bandwidth_gbps": 4000.0,
+      "compute_capability": "9.0",
+      "cuda_support": true,
+      "aliases": [
+        "GH200",
+        "Grace Hopper",
+        "GH200 96GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GH200 Grace Hopper 144GB",
+      "architecture": "Hopper",
+      "family": "Grace Hopper",
+      "series": "GH200",
+      "vram_gb": 144.0,
+      "memory_type": "HBM3e",
+      "memory_bandwidth_gbps": 4900.0,
+      "compute_capability": "9.0",
+      "cuda_support": true,
+      "aliases": [
+        "GH200 144GB",
+        "Grace Hopper 144GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GH200 Grace Hopper 480GB",
+      "architecture": "Hopper",
+      "family": "Grace Hopper",
+      "series": "GH200",
+      "vram_gb": 480.0,
+      "memory_type": "LPDDR5X + HBM3",
+      "memory_bandwidth_gbps": 4500.0,
+      "compute_capability": "9.0",
+      "cuda_support": true,
+      "aliases": [
+        "GH200 480GB",
+        "Grace Hopper 480GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA B100 192GB",
+      "architecture": "Blackwell",
+      "family": "Data Center",
+      "series": "Blackwell",
+      "vram_gb": 192.0,
+      "memory_type": "HBM3e",
+      "memory_bandwidth_gbps": 8000.0,
+      "compute_capability": "10.0",
+      "cuda_support": true,
+      "aliases": [
+        "B100",
+        "B100 192GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA B200 192GB",
+      "architecture": "Blackwell",
+      "family": "Data Center",
+      "series": "Blackwell",
+      "vram_gb": 192.0,
+      "memory_type": "HBM3e",
+      "memory_bandwidth_gbps": 8000.0,
+      "compute_capability": "10.0",
+      "cuda_support": true,
+      "aliases": [
+        "B200",
+        "B200 192GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GB200 Superchip",
+      "architecture": "Blackwell",
+      "family": "Data Center",
+      "series": "Blackwell",
+      "vram_gb": 384.0,
+      "memory_type": "HBM3e",
+      "memory_bandwidth_gbps": 16000.0,
+      "compute_capability": "10.0",
+      "cuda_support": true,
+      "aliases": [
+        "GB200",
+        "GB200 NVL72"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 5050",
+      "architecture": "Blackwell",
+      "family": "GeForce RTX 50",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 320,
+      "cuda_support": true,
+      "rocm_support": false,
+      "aliases": [
+        "RTX 5050",
+        "RTX 5050"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX PRO 2000 Blackwell",
+      "architecture": "Blackwell",
+      "family": "RTX PRO",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 288,
+      "cuda_support": true,
+      "rocm_support": false,
+      "aliases": [
+        "RTX PRO 2000 Blackwell",
+        "RTX PRO 2000 Blackwell"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX PRO 4000 Blackwell",
+      "architecture": "Blackwell",
+      "family": "RTX PRO",
+      "vram_gb": 24,
+      "memory_bandwidth_gbps": 432,
+      "cuda_support": true,
+      "rocm_support": false,
+      "aliases": [
+        "RTX PRO 4000 Blackwell",
+        "RTX PRO 4000 Blackwell"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX PRO 4000 SFF Blackwell",
+      "architecture": "Blackwell",
+      "family": "RTX PRO",
+      "vram_gb": 24,
+      "memory_bandwidth_gbps": 432,
+      "cuda_support": true,
+      "rocm_support": false,
+      "aliases": [
+        "RTX PRO 4000 SFF Blackwell",
+        "RTX PRO 4000 SFF Blackwell"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX PRO 4500 Blackwell",
+      "architecture": "Blackwell",
+      "family": "RTX PRO",
+      "vram_gb": 32,
+      "memory_bandwidth_gbps": 640,
+      "cuda_support": true,
+      "rocm_support": false,
+      "aliases": [
+        "RTX PRO 4500 Blackwell",
+        "RTX PRO 4500 Blackwell"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX PRO 5000 Blackwell",
+      "architecture": "Blackwell",
+      "family": "RTX PRO",
+      "vram_gb": 48,
+      "memory_bandwidth_gbps": 1344,
+      "cuda_support": true,
+      "rocm_support": false,
+      "aliases": [
+        "RTX PRO 5000 Blackwell",
+        "RTX PRO 5000 Blackwell"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA RTX PRO 6000 Blackwell",
+      "architecture": "Blackwell",
+      "family": "RTX PRO",
+      "vram_gb": 96,
+      "memory_bandwidth_gbps": 1792,
+      "cuda_support": true,
+      "rocm_support": false,
+      "aliases": [
+        "RTX PRO 6000 Blackwell",
+        "RTX PRO 6000 Blackwell"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA B200",
+      "architecture": "Blackwell",
+      "family": "Blackwell Data Center",
+      "series": "Blackwell Data Center",
+      "vram_gb": 180,
+      "memory_bandwidth_gbps": 8000,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "B200",
+        "B200"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA B100",
+      "architecture": "Blackwell",
+      "family": "Blackwell Data Center",
+      "series": "Blackwell Data Center",
+      "vram_gb": 192,
+      "memory_bandwidth_gbps": 8000,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "B100",
+        "B100"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA H200",
+      "architecture": "Hopper",
+      "family": "Hopper Data Center",
+      "series": "Hopper Data Center",
+      "vram_gb": 141,
+      "memory_bandwidth_gbps": 4800,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "H200",
+        "H200"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA H100 NVL",
+      "architecture": "Hopper",
+      "family": "Hopper Data Center",
+      "series": "Hopper Data Center",
+      "vram_gb": 94,
+      "memory_bandwidth_gbps": 3900,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "H100 NVL",
+        "H100 NVL"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA H100",
+      "architecture": "Hopper",
+      "family": "Hopper Data Center",
+      "series": "Hopper Data Center",
+      "vram_gb": 80,
+      "memory_bandwidth_gbps": 3350,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "H100",
+        "H100"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4080 SUPER",
+      "architecture": "Ada Lovelace",
+      "family": "GeForce RTX 40",
+      "series": "GeForce RTX 40",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 736,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "RTX 4080 SUPER",
+        "RTX 4080 SUPER"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4070 Ti SUPER",
+      "architecture": "Ada Lovelace",
+      "family": "GeForce RTX 40",
+      "series": "GeForce RTX 40",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 672,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "RTX 4070 Ti SUPER",
+        "RTX 4070 Ti SUPER"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4070 SUPER",
+      "architecture": "Ada Lovelace",
+      "family": "GeForce RTX 40",
+      "series": "GeForce RTX 40",
+      "vram_gb": 12,
+      "memory_bandwidth_gbps": 504,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "RTX 4070 SUPER",
+        "RTX 4070 SUPER"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA A100 80GB",
+      "architecture": "Ampere",
+      "family": "A-Series Data Center",
+      "series": "A-Series Data Center",
+      "vram_gb": 80,
+      "memory_bandwidth_gbps": 2039,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "A100 80GB",
+        "A100 80GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA A100 40GB",
+      "architecture": "Ampere",
+      "family": "A-Series Data Center",
+      "series": "A-Series Data Center",
+      "vram_gb": 40,
+      "memory_bandwidth_gbps": 1555,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "A100 40GB",
+        "A100 40GB"
+      ]
+    }
+  ],
+  "amd_gpus": [
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 480 8GB",
+      "architecture": "Polaris",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 256,
+      "aliases": [
+        "RX 480",
+        "480",
+        "RX 480 8GB"
+      ],
+      "rocm_support": false
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 580 8GB",
+      "architecture": "Polaris",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 256,
+      "aliases": [
+        "RX 580",
+        "580",
+        "RX 580 8GB"
+      ],
+      "rocm_support": false
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 590 8GB",
+      "architecture": "Polaris",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 256,
+      "aliases": [
+        "RX 590",
+        "590"
+      ],
+      "rocm_support": false
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX Vega 56",
+      "architecture": "Vega",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 410,
+      "aliases": [
+        "Vega 56",
+        "RX Vega 56"
+      ],
+      "rocm_support": false
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX Vega 64",
+      "architecture": "Vega",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 484,
+      "aliases": [
+        "Vega 64",
+        "RX Vega 64"
+      ],
+      "rocm_support": false
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon VII",
+      "architecture": "Vega 20",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 1024,
+      "aliases": [
+        "Radeon VII",
+        "Radeon 7"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 5600 XT",
+      "architecture": "RDNA",
+      "vram_gb": 6,
+      "memory_bandwidth_gbps": 288,
+      "aliases": [
+        "RX 5600 XT",
+        "5600 XT"
+      ],
+      "rocm_support": false
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 5700",
+      "architecture": "RDNA",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 448,
+      "aliases": [
+        "RX 5700",
+        "5700"
+      ],
+      "rocm_support": false
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 5700 XT",
+      "architecture": "RDNA",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 448,
+      "aliases": [
+        "RX 5700 XT",
+        "5700 XT"
+      ],
+      "rocm_support": false
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 6600",
+      "architecture": "RDNA 2",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 224,
+      "aliases": [
+        "RX 6600",
+        "6600"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 6600 XT",
+      "architecture": "RDNA 2",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 256,
+      "aliases": [
+        "RX 6600 XT",
+        "6600 XT"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 6650 XT",
+      "architecture": "RDNA 2",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 280,
+      "aliases": [
+        "RX 6650 XT",
+        "6650 XT"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 6700 XT",
+      "architecture": "RDNA 2",
+      "vram_gb": 12,
+      "memory_bandwidth_gbps": 384,
+      "aliases": [
+        "RX 6700 XT",
+        "6700 XT"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 6750 XT",
+      "architecture": "RDNA 2",
+      "vram_gb": 12,
+      "memory_bandwidth_gbps": 432,
+      "aliases": [
+        "RX 6750 XT",
+        "6750 XT"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 6800",
+      "architecture": "RDNA 2",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 512,
+      "aliases": [
+        "RX 6800",
+        "6800"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 6800 XT",
+      "architecture": "RDNA 2",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 512,
+      "aliases": [
+        "RX 6800 XT",
+        "6800 XT"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 6900 XT",
+      "architecture": "RDNA 2",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 512,
+      "aliases": [
+        "RX 6900 XT",
+        "6900 XT"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 6950 XT",
+      "architecture": "RDNA 2",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 576,
+      "aliases": [
+        "RX 6950 XT",
+        "6950 XT"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 7600",
+      "architecture": "RDNA 3",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 288,
+      "aliases": [
+        "RX 7600",
+        "7600"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 7600 XT",
+      "architecture": "RDNA 3",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 288,
+      "aliases": [
+        "RX 7600 XT",
+        "7600 XT"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 7700 XT",
+      "architecture": "RDNA 3",
+      "vram_gb": 12,
+      "memory_bandwidth_gbps": 432,
+      "aliases": [
+        "RX 7700 XT",
+        "7700 XT"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 7800 XT",
+      "architecture": "RDNA 3",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 624,
+      "aliases": [
+        "RX 7800 XT",
+        "7800 XT"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 7900 GRE",
+      "architecture": "RDNA 3",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 576,
+      "aliases": [
+        "RX 7900 GRE",
+        "7900 GRE"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 7900 XT",
+      "architecture": "RDNA 3",
+      "vram_gb": 20,
+      "memory_bandwidth_gbps": 800,
+      "aliases": [
+        "RX 7900 XT",
+        "7900 XT"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 7900 XTX",
+      "architecture": "RDNA 3",
+      "vram_gb": 24,
+      "memory_bandwidth_gbps": 960,
+      "aliases": [
+        "RX 7900 XTX",
+        "7900 XTX"
+      ],
+      "rocm_support": true
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Instinct MI25",
+      "architecture": "Vega",
+      "family": "Instinct",
+      "series": "MI",
+      "vram_gb": 16.0,
+      "memory_type": "HBM2",
+      "memory_bandwidth_gbps": 484.0,
+      "rocm_support": true,
+      "aliases": [
+        "MI25",
+        "Instinct MI25"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Instinct MI50",
+      "architecture": "Vega 20",
+      "family": "Instinct",
+      "series": "MI",
+      "vram_gb": 32.0,
+      "memory_type": "HBM2",
+      "memory_bandwidth_gbps": 1024.0,
+      "rocm_support": true,
+      "aliases": [
+        "MI50",
+        "Instinct MI50"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Instinct MI60",
+      "architecture": "Vega 20",
+      "family": "Instinct",
+      "series": "MI",
+      "vram_gb": 32.0,
+      "memory_type": "HBM2",
+      "memory_bandwidth_gbps": 1024.0,
+      "rocm_support": true,
+      "aliases": [
+        "MI60",
+        "Instinct MI60"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Instinct MI100",
+      "architecture": "CDNA",
+      "family": "Instinct",
+      "series": "MI",
+      "vram_gb": 32.0,
+      "memory_type": "HBM2",
+      "memory_bandwidth_gbps": 1228.0,
+      "rocm_support": true,
+      "aliases": [
+        "MI100",
+        "Instinct MI100"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Instinct MI210",
+      "architecture": "CDNA 2",
+      "family": "Instinct",
+      "series": "MI",
+      "vram_gb": 64.0,
+      "memory_type": "HBM2e",
+      "memory_bandwidth_gbps": 1638.0,
+      "rocm_support": true,
+      "aliases": [
+        "MI210",
+        "Instinct MI210"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Instinct MI250",
+      "architecture": "CDNA 2",
+      "family": "Instinct",
+      "series": "MI",
+      "vram_gb": 128.0,
+      "memory_type": "HBM2e",
+      "memory_bandwidth_gbps": 3276.0,
+      "rocm_support": true,
+      "aliases": [
+        "MI250",
+        "Instinct MI250"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Instinct MI250X",
+      "architecture": "CDNA 2",
+      "family": "Instinct",
+      "series": "MI",
+      "vram_gb": 128.0,
+      "memory_type": "HBM2e",
+      "memory_bandwidth_gbps": 3276.0,
+      "rocm_support": true,
+      "aliases": [
+        "MI250X",
+        "Instinct MI250X"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Instinct MI300A",
+      "architecture": "CDNA 3",
+      "family": "Instinct",
+      "series": "MI",
+      "vram_gb": 128.0,
+      "memory_type": "HBM3",
+      "memory_bandwidth_gbps": 5300.0,
+      "rocm_support": true,
+      "aliases": [
+        "MI300A",
+        "Instinct MI300A"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Instinct MI300X",
+      "architecture": "CDNA 3",
+      "family": "Instinct",
+      "series": "MI",
+      "vram_gb": 192.0,
+      "memory_type": "HBM3",
+      "memory_bandwidth_gbps": 5300.0,
+      "rocm_support": true,
+      "aliases": [
+        "MI300X",
+        "Instinct MI300X",
+        "MI300 192GB"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon Pro W7900",
+      "architecture": "RDNA 3",
+      "family": "Radeon Pro",
+      "series": "W7000",
+      "vram_gb": 48.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 864.0,
+      "rocm_support": true,
+      "aliases": [
+        "W7900",
+        "Radeon Pro W7900",
+        "W7900 48GB"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon Pro W7800",
+      "architecture": "RDNA 3",
+      "family": "Radeon Pro",
+      "series": "W7000",
+      "vram_gb": 32.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 576.0,
+      "rocm_support": true,
+      "aliases": [
+        "W7800",
+        "Radeon Pro W7800"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon Pro W6800",
+      "architecture": "RDNA 2",
+      "family": "Radeon Pro",
+      "series": "W6000",
+      "vram_gb": 32.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 512.0,
+      "rocm_support": true,
+      "aliases": [
+        "W6800",
+        "Radeon Pro W6800"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 9060",
+      "architecture": "RDNA 4",
+      "family": "Radeon RX 9000",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 288,
+      "cuda_support": false,
+      "rocm_support": true,
+      "aliases": [
+        "Radeon RX 9060",
+        "Radeon RX 9060"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 9060 XT 8GB",
+      "architecture": "RDNA 4",
+      "family": "Radeon RX 9000",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 320,
+      "cuda_support": false,
+      "rocm_support": true,
+      "aliases": [
+        "Radeon RX 9060 XT 8GB",
+        "Radeon RX 9060 XT 8GB"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 9060 XT 16GB",
+      "architecture": "RDNA 4",
+      "family": "Radeon RX 9000",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 320,
+      "cuda_support": false,
+      "rocm_support": true,
+      "aliases": [
+        "Radeon RX 9060 XT 16GB",
+        "Radeon RX 9060 XT 16GB"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 9070",
+      "architecture": "RDNA 4",
+      "family": "Radeon RX 9000",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 640,
+      "cuda_support": false,
+      "rocm_support": true,
+      "aliases": [
+        "Radeon RX 9070",
+        "Radeon RX 9070"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 9070 XT",
+      "architecture": "RDNA 4",
+      "family": "Radeon RX 9000",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 640,
+      "cuda_support": false,
+      "rocm_support": true,
+      "aliases": [
+        "Radeon RX 9070 XT",
+        "Radeon RX 9070 XT"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Instinct MI325X",
+      "architecture": "CDNA 3",
+      "family": "Instinct",
+      "vram_gb": 256,
+      "memory_bandwidth_gbps": 6000,
+      "cuda_support": false,
+      "rocm_support": true,
+      "aliases": [
+        "Instinct MI325X",
+        "Instinct MI325X"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Instinct MI350X",
+      "architecture": "CDNA 4",
+      "family": "Instinct",
+      "vram_gb": 288,
+      "memory_bandwidth_gbps": 8000,
+      "cuda_support": false,
+      "rocm_support": true,
+      "aliases": [
+        "Instinct MI350X",
+        "Instinct MI350X"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Instinct MI355X",
+      "architecture": "CDNA 4",
+      "family": "Instinct",
+      "vram_gb": 288,
+      "memory_bandwidth_gbps": 8000,
+      "cuda_support": false,
+      "rocm_support": true,
+      "aliases": [
+        "Instinct MI355X",
+        "Instinct MI355X"
+      ]
+    }
+  ],
+  "intel_gpus": [
+    {
+      "vendor": "Intel",
+      "name": "Intel Arc A310",
+      "architecture": "Alchemist",
+      "vram_gb": 4,
+      "memory_bandwidth_gbps": 124,
+      "aliases": [
+        "Arc A310",
+        "A310"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Arc A380",
+      "architecture": "Alchemist",
+      "vram_gb": 6,
+      "memory_bandwidth_gbps": 186,
+      "aliases": [
+        "Arc A380",
+        "A380"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Arc A580",
+      "architecture": "Alchemist",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 512,
+      "aliases": [
+        "Arc A580",
+        "A580"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Arc A750",
+      "architecture": "Alchemist",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 512,
+      "aliases": [
+        "Arc A750",
+        "A750"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Arc A770 8GB",
+      "architecture": "Alchemist",
+      "vram_gb": 8,
+      "memory_bandwidth_gbps": 512,
+      "aliases": [
+        "Arc A770 8GB",
+        "A770 8GB"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Arc A770 16GB",
+      "architecture": "Alchemist",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 560,
+      "aliases": [
+        "Arc A770",
+        "A770",
+        "A770 16GB"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Arc Battlemage B570",
+      "architecture": "Battlemage",
+      "vram_gb": 10,
+      "memory_bandwidth_gbps": 380,
+      "aliases": [
+        "Battlemage B570",
+        "B570"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Arc Battlemage B580",
+      "architecture": "Battlemage",
+      "vram_gb": 12,
+      "memory_bandwidth_gbps": 456,
+      "aliases": [
+        "Battlemage B580",
+        "B580"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Data Center GPU Flex 140",
+      "architecture": "Xe-HPG",
+      "family": "Data Center GPU",
+      "series": "Flex",
+      "vram_gb": 12.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 336.0,
+      "aliases": [
+        "Flex 140",
+        "GPU Flex 140"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Data Center GPU Flex 170",
+      "architecture": "Xe-HPG",
+      "family": "Data Center GPU",
+      "series": "Flex",
+      "vram_gb": 16.0,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 560.0,
+      "aliases": [
+        "Flex 170",
+        "GPU Flex 170"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Data Center GPU Max 1100",
+      "architecture": "Xe-HPC",
+      "family": "Data Center GPU",
+      "series": "Max",
+      "vram_gb": 48.0,
+      "memory_type": "HBM2e",
+      "memory_bandwidth_gbps": 1228.0,
+      "aliases": [
+        "Max 1100",
+        "GPU Max 1100",
+        "Ponte Vecchio 1100"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Data Center GPU Max 1550",
+      "architecture": "Xe-HPC",
+      "family": "Data Center GPU",
+      "series": "Max",
+      "vram_gb": 128.0,
+      "memory_type": "HBM2e",
+      "memory_bandwidth_gbps": 3276.0,
+      "aliases": [
+        "Max 1550",
+        "GPU Max 1550",
+        "Ponte Vecchio 1550"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Gaudi 2",
+      "architecture": "Gaudi",
+      "family": "Gaudi",
+      "series": "Gaudi 2",
+      "vram_gb": 96.0,
+      "memory_type": "HBM2e",
+      "memory_bandwidth_gbps": 2457.0,
+      "aliases": [
+        "Gaudi 2",
+        "Gaudi2",
+        "Habana Gaudi 2"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Gaudi 3",
+      "architecture": "Gaudi",
+      "family": "Gaudi",
+      "series": "Gaudi 3",
+      "vram_gb": 128.0,
+      "memory_type": "HBM3",
+      "memory_bandwidth_gbps": 3700.0,
+      "aliases": [
+        "Gaudi 3",
+        "Gaudi3",
+        "Habana Gaudi 3"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Arc Pro B50 Graphics",
+      "architecture": "Battlemage",
+      "family": "Arc Pro B-Series",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 224,
+      "cuda_support": false,
+      "rocm_support": false,
+      "aliases": [
+        "Arc Pro B50 Graphics",
+        "Arc Pro B50"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Arc Pro B60 Graphics",
+      "architecture": "Battlemage",
+      "family": "Arc Pro B-Series",
+      "vram_gb": 24,
+      "memory_bandwidth_gbps": 456,
+      "cuda_support": false,
+      "rocm_support": false,
+      "aliases": [
+        "Arc Pro B60 Graphics",
+        "Arc Pro B60"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Arc Pro B65 Graphics",
+      "architecture": "Battlemage",
+      "family": "Arc Pro B-Series",
+      "vram_gb": 32,
+      "memory_bandwidth_gbps": 608,
+      "cuda_support": false,
+      "rocm_support": false,
+      "aliases": [
+        "Arc Pro B65 Graphics",
+        "Arc Pro B65"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Arc Pro B70 Graphics",
+      "architecture": "Battlemage",
+      "family": "Arc Pro B-Series",
+      "vram_gb": 32,
+      "memory_bandwidth_gbps": 608,
+      "cuda_support": false,
+      "rocm_support": false,
+      "aliases": [
+        "Arc Pro B70 Graphics",
+        "Arc Pro B70"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Arc 140V Graphics",
+      "architecture": "Xe2-LPG",
+      "family": "Lunar Lake Integrated",
+      "series": "Lunar Lake Integrated",
+      "vram_gb": 16,
+      "memory_bandwidth_gbps": 136,
+      "cuda_support": false,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "Arc 140V Graphics",
+        "Arc 140V"
+      ]
+    }
+  ]
+}

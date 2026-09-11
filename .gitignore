@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Testing & Cache
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Databases & Runtime Data
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+.cache/
+*.log
+
+# Raw Datasets & Temporary Scratch Files
+dataset.json.raw
+scratch/
+
+# IDE & OS Artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Private notes, credentials and local tooling
+.local/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+.memory/
+.context/
+.agents/
+.codex/
+*.bak
+*.backup
+*.swp
+*.db-wal
+*.db-shm
+
+# Build and verification output
+.runtime/
+*.whl
+*.tar.gz

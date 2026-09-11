@@ -1,0 +1,4162 @@
+{
+  "apple_silicon": [
+    {
+      "id": "apple-m1",
+      "vendor": "Apple",
+      "name": "Apple M1",
+      "family": "M1",
+      "generation": 1,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 8,
+      "gpu_cores": 8,
+      "memory_bandwidth_gbps": 68.25,
+      "base_ghz": 3.2,
+      "boost_ghz": 3.2,
+      "frequency_ghz": "3.20 GHz",
+      "aliases": [
+        "M1",
+        "Apple M1",
+        "m1",
+        "3.20 GHz"
+      ],
+      "metal_support": true,
+      "unified_memory": true,
+      "max_unified_memory_gb": 16
+    },
+    {
+      "id": "apple-m1-pro",
+      "vendor": "Apple",
+      "name": "Apple M1 Pro",
+      "family": "M1",
+      "generation": 1,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 10,
+      "gpu_cores": 16,
+      "memory_bandwidth_gbps": 200.0,
+      "base_ghz": 3.2,
+      "boost_ghz": 3.2,
+      "frequency_ghz": "3.20 GHz",
+      "aliases": [
+        "M1 Pro",
+        "Apple M1 Pro",
+        "m1 pro",
+        "3.20 GHz"
+      ],
+      "metal_support": true,
+      "unified_memory": true,
+      "max_unified_memory_gb": 32
+    },
+    {
+      "id": "apple-m1-max",
+      "vendor": "Apple",
+      "name": "Apple M1 Max",
+      "family": "M1",
+      "generation": 1,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 10,
+      "gpu_cores": 32,
+      "memory_bandwidth_gbps": 400.0,
+      "base_ghz": 3.2,
+      "boost_ghz": 3.2,
+      "frequency_ghz": "3.20 GHz",
+      "aliases": [
+        "M1 Max",
+        "Apple M1 Max",
+        "m1 max",
+        "3.20 GHz"
+      ],
+      "metal_support": true,
+      "unified_memory": true,
+      "max_unified_memory_gb": 64
+    },
+    {
+      "id": "apple-m1-ultra",
+      "vendor": "Apple",
+      "name": "Apple M1 Ultra",
+      "family": "M1",
+      "generation": 1,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 20,
+      "gpu_cores": 64,
+      "memory_bandwidth_gbps": 800.0,
+      "base_ghz": 3.2,
+      "boost_ghz": 3.2,
+      "frequency_ghz": "3.20 GHz",
+      "aliases": [
+        "M1 Ultra",
+        "Apple M1 Ultra",
+        "m1 ultra",
+        "3.20 GHz"
+      ],
+      "metal_support": true,
+      "unified_memory": true,
+      "max_unified_memory_gb": 128
+    },
+    {
+      "id": "apple-m2",
+      "vendor": "Apple",
+      "name": "Apple M2",
+      "family": "M2",
+      "generation": 2,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 8,
+      "gpu_cores": 10,
+      "memory_bandwidth_gbps": 100.0,
+      "base_ghz": 3.5,
+      "boost_ghz": 3.5,
+      "frequency_ghz": "3.50 GHz",
+      "aliases": [
+        "M2",
+        "Apple M2",
+        "m2",
+        "3.50 GHz"
+      ],
+      "metal_support": true,
+      "unified_memory": true,
+      "max_unified_memory_gb": 24
+    },
+    {
+      "id": "apple-m2-pro",
+      "vendor": "Apple",
+      "name": "Apple M2 Pro",
+      "family": "M2",
+      "generation": 2,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 12,
+      "gpu_cores": 19,
+      "memory_bandwidth_gbps": 200.0,
+      "base_ghz": 3.5,
+      "boost_ghz": 3.5,
+      "frequency_ghz": "3.50 GHz",
+      "aliases": [
+        "M2 Pro",
+        "Apple M2 Pro",
+        "m2 pro",
+        "3.50 GHz"
+      ],
+      "metal_support": true,
+      "unified_memory": true,
+      "max_unified_memory_gb": 32
+    },
+    {
+      "id": "apple-m2-max",
+      "vendor": "Apple",
+      "name": "Apple M2 Max",
+      "family": "M2",
+      "generation": 2,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 12,
+      "gpu_cores": 38,
+      "memory_bandwidth_gbps": 400.0,
+      "base_ghz": 3.5,
+      "boost_ghz": 3.5,
+      "frequency_ghz": "3.50 GHz",
+      "aliases": [
+        "M2 Max",
+        "Apple M2 Max",
+        "m2 max",
+        "3.50 GHz"
+      ],
+      "metal_support": true,
+      "unified_memory": true,
+      "max_unified_memory_gb": 96
+    },
+    {
+      "id": "apple-m2-ultra",
+      "vendor": "Apple",
+      "name": "Apple M2 Ultra",
+      "family": "M2",
+      "generation": 2,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 24,
+      "gpu_cores": 76,
+      "memory_bandwidth_gbps": 800.0,
+      "base_ghz": 3.5,
+      "boost_ghz": 3.5,
+      "frequency_ghz": "3.50 GHz",
+      "aliases": [
+        "M2 Ultra",
+        "Apple M2 Ultra",
+        "m2 ultra",
+        "3.50 GHz"
+      ],
+      "metal_support": true,
+      "unified_memory": true,
+      "max_unified_memory_gb": 192
+    },
+    {
+      "id": "apple-m3",
+      "vendor": "Apple",
+      "name": "Apple M3",
+      "family": "M3",
+      "generation": 3,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 8,
+      "gpu_cores": 10,
+      "memory_bandwidth_gbps": 100.0,
+      "base_ghz": 4.05,
+      "boost_ghz": 4.05,
+      "frequency_ghz": "4.05 GHz",
+      "aliases": [
+        "M3",
+        "Apple M3",
+        "m3",
+        "4.05 GHz"
+      ],
+      "metal_support": true,
+      "unified_memory": true,
+      "max_unified_memory_gb": 24
+    },
+    {
+      "id": "apple-m3-pro",
+      "vendor": "Apple",
+      "name": "Apple M3 Pro",
+      "family": "M3",
+      "generation": 3,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 12,
+      "gpu_cores": 18,
+      "memory_bandwidth_gbps": 150.0,
+      "base_ghz": 4.05,
+      "boost_ghz": 4.05,
+      "frequency_ghz": "4.05 GHz",
+      "aliases": [
+        "M3 Pro",
+        "Apple M3 Pro",
+        "m3 pro",
+        "4.05 GHz"
+      ],
+      "metal_support": true,
+      "unified_memory": true,
+      "max_unified_memory_gb": 36
+    },
+    {
+      "id": "apple-m3-max",
+      "vendor": "Apple",
+      "name": "Apple M3 Max",
+      "family": "M3",
+      "generation": 3,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 16,
+      "gpu_cores": 40,
+      "memory_bandwidth_gbps": 400.0,
+      "base_ghz": 4.05,
+      "boost_ghz": 4.05,
+      "frequency_ghz": "4.05 GHz",
+      "aliases": [
+        "M3 Max",
+        "Apple M3 Max",
+        "m3 max",
+        "4.05 GHz"
+      ],
+      "metal_support": true,
+      "unified_memory": true,
+      "max_unified_memory_gb": 128
+    },
+    {
+      "id": "apple-m3-ultra",
+      "vendor": "Apple",
+      "name": "Apple M3 Ultra",
+      "family": "M3",
+      "generation": 3,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 32,
+      "gpu_cores": 80,
+      "memory_bandwidth_gbps": 800.0,
+      "base_ghz": 4.05,
+      "boost_ghz": 4.05,
+      "frequency_ghz": "4.05 GHz",
+      "aliases": [
+        "M3 Ultra",
+        "Apple M3 Ultra",
+        "m3 ultra",
+        "4.05 GHz"
+      ],
+      "metal_support": true,
+      "unified_memory": true,
+      "max_unified_memory_gb": 256
+    },
+    {
+      "id": "apple-m4",
+      "vendor": "Apple",
+      "name": "Apple M4",
+      "family": "M4",
+      "generation": 4,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 10,
+      "gpu_cores": 10,
+      "memory_bandwidth_gbps": 120.0,
+      "base_ghz": 4.41,
+      "boost_ghz": 4.41,
+      "frequency_ghz": "4.41 GHz",
+      "aliases": [
+        "M4",
+        "Apple M4",
+        "m4",
+        "4.41 GHz"
+      ],
+      "metal_support": true,
+      "unified_memory": true,
+      "max_unified_memory_gb": 32
+    },
+    {
+      "id": "apple-m4-pro",
+      "vendor": "Apple",
+      "name": "Apple M4 Pro",
+      "family": "M4",
+      "generation": 4,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 14,
+      "gpu_cores": 20,
+      "memory_bandwidth_gbps": 273.0,
+      "base_ghz": 4.51,
+      "boost_ghz": 4.51,
+      "frequency_ghz": "4.51 GHz",
+      "aliases": [
+        "M4 Pro",
+        "Apple M4 Pro",
+        "m4 pro",
+        "4.51 GHz"
+      ],
+      "metal_support": true,
+      "unified_memory": true,
+      "max_unified_memory_gb": 64
+    },
+    {
+      "id": "apple-m4-max",
+      "vendor": "Apple",
+      "name": "Apple M4 Max",
+      "family": "M4",
+      "generation": 4,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 16,
+      "gpu_cores": 40,
+      "memory_bandwidth_gbps": 546.0,
+      "base_ghz": 4.51,
+      "boost_ghz": 4.51,
+      "frequency_ghz": "4.51 GHz",
+      "aliases": [
+        "M4 Max",
+        "Apple M4 Max",
+        "m4 max",
+        "4.51 GHz"
+      ],
+      "metal_support": true,
+      "unified_memory": true,
+      "max_unified_memory_gb": 128
+    },
+    {
+      "id": "apple-m5",
+      "vendor": "Apple",
+      "name": "Apple M5",
+      "family": "M5",
+      "generation": 5,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 10,
+      "gpu_cores": 10,
+      "memory_bandwidth_gbps": 153.6,
+      "max_unified_memory_gb": 32,
+      "metal_support": true,
+      "unified_memory": true,
+      "aliases": [
+        "M5",
+        "Apple M5"
+      ]
+    },
+    {
+      "id": "apple-m5-pro",
+      "vendor": "Apple",
+      "name": "Apple M5 Pro",
+      "family": "M5",
+      "generation": 5,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 18,
+      "gpu_cores": 20,
+      "memory_bandwidth_gbps": 307.2,
+      "max_unified_memory_gb": 128,
+      "metal_support": true,
+      "unified_memory": true,
+      "aliases": [
+        "M5 Pro",
+        "Apple M5 Pro"
+      ]
+    },
+    {
+      "id": "apple-m5-max",
+      "vendor": "Apple",
+      "name": "Apple M5 Max",
+      "family": "M5",
+      "generation": 5,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 18,
+      "gpu_cores": 40,
+      "memory_bandwidth_gbps": 614.4,
+      "max_unified_memory_gb": 256,
+      "metal_support": true,
+      "unified_memory": true,
+      "aliases": [
+        "M5 Max",
+        "Apple M5 Max"
+      ]
+    },
+    {
+      "id": "apple-m5-ultra",
+      "vendor": "Apple",
+      "name": "Apple M5 Ultra",
+      "family": "M5",
+      "generation": 5,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 36,
+      "gpu_cores": 80,
+      "memory_bandwidth_gbps": 1200.0,
+      "max_unified_memory_gb": 512,
+      "metal_support": true,
+      "unified_memory": true,
+      "aliases": [
+        "M5 Ultra",
+        "Apple M5 Ultra"
+      ]
+    },
+    {
+      "id": "apple-m4-ultra",
+      "vendor": "Apple",
+      "name": "Apple M4 Ultra",
+      "family": "M4",
+      "generation": 4,
+      "architecture": "Apple Silicon",
+      "memory_type": "unified",
+      "cpu_cores": 32,
+      "gpu_cores": 80,
+      "memory_bandwidth_gbps": 1092.0,
+      "max_unified_memory_gb": 256,
+      "metal_support": true,
+      "unified_memory": true,
+      "aliases": [
+        "M4 Ultra",
+        "Apple M4 Ultra"
+      ]
+    }
+  ],
+  "amd_cpus": [
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 1800X",
+      "family": "Ryzen",
+      "series": "1000",
+      "architecture": "Zen",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.0,
+      "frequency_ghz": "3.60 - 4.00 GHz",
+      "aliases": [
+        "1800X",
+        "Ryzen 1800X",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 1700X",
+      "family": "Ryzen",
+      "series": "1000",
+      "architecture": "Zen",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.4,
+      "boost_ghz": 3.8,
+      "frequency_ghz": "3.40 - 3.80 GHz",
+      "aliases": [
+        "1700X",
+        "Ryzen 1700X",
+        "3.4 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 1700",
+      "family": "Ryzen",
+      "series": "1000",
+      "architecture": "Zen",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.0,
+      "boost_ghz": 3.7,
+      "frequency_ghz": "3.00 - 3.70 GHz",
+      "aliases": [
+        "1700",
+        "Ryzen 1700",
+        "3.0 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 1600X",
+      "family": "Ryzen",
+      "series": "1000",
+      "architecture": "Zen",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.0,
+      "frequency_ghz": "3.60 - 4.00 GHz",
+      "aliases": [
+        "1600X",
+        "Ryzen 1600X",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 1600",
+      "family": "Ryzen",
+      "series": "1000",
+      "architecture": "Zen",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.2,
+      "boost_ghz": 3.6,
+      "frequency_ghz": "3.20 - 3.60 GHz",
+      "aliases": [
+        "1600",
+        "Ryzen 1600",
+        "3.2 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 2700X",
+      "family": "Ryzen",
+      "series": "2000",
+      "architecture": "Zen+",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.7,
+      "boost_ghz": 4.3,
+      "frequency_ghz": "3.70 - 4.30 GHz",
+      "aliases": [
+        "2700X",
+        "Ryzen 2700X",
+        "3.7 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 2700",
+      "family": "Ryzen",
+      "series": "2000",
+      "architecture": "Zen+",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.2,
+      "boost_ghz": 4.1,
+      "frequency_ghz": "3.20 - 4.10 GHz",
+      "aliases": [
+        "2700",
+        "Ryzen 2700",
+        "3.2 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 2600X",
+      "family": "Ryzen",
+      "series": "2000",
+      "architecture": "Zen+",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.2,
+      "frequency_ghz": "3.60 - 4.20 GHz",
+      "aliases": [
+        "2600X",
+        "Ryzen 2600X",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 2600",
+      "family": "Ryzen",
+      "series": "2000",
+      "architecture": "Zen+",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.4,
+      "boost_ghz": 3.9,
+      "frequency_ghz": "3.40 - 3.90 GHz",
+      "aliases": [
+        "2600",
+        "Ryzen 2600",
+        "3.4 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 3950X",
+      "family": "Ryzen",
+      "series": "3000",
+      "architecture": "Zen 2",
+      "cores": 16,
+      "threads": 32,
+      "base_ghz": 3.5,
+      "boost_ghz": 4.7,
+      "frequency_ghz": "3.50 - 4.70 GHz",
+      "aliases": [
+        "3950X",
+        "Ryzen 3950X",
+        "3.5 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 3900X",
+      "family": "Ryzen",
+      "series": "3000",
+      "architecture": "Zen 2",
+      "cores": 12,
+      "threads": 24,
+      "base_ghz": 3.8,
+      "boost_ghz": 4.6,
+      "frequency_ghz": "3.80 - 4.60 GHz",
+      "aliases": [
+        "3900X",
+        "Ryzen 3900X",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 3800X",
+      "family": "Ryzen",
+      "series": "3000",
+      "architecture": "Zen 2",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.9,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "3.90 - 4.50 GHz",
+      "aliases": [
+        "3800X",
+        "Ryzen 3800X",
+        "3.9 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 3700X",
+      "family": "Ryzen",
+      "series": "3000",
+      "architecture": "Zen 2",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.4,
+      "frequency_ghz": "3.60 - 4.40 GHz",
+      "aliases": [
+        "3700X",
+        "Ryzen 3700X",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 3600X",
+      "family": "Ryzen",
+      "series": "3000",
+      "architecture": "Zen 2",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.8,
+      "boost_ghz": 4.4,
+      "frequency_ghz": "3.80 - 4.40 GHz",
+      "aliases": [
+        "3600X",
+        "Ryzen 3600X",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 3600",
+      "family": "Ryzen",
+      "series": "3000",
+      "architecture": "Zen 2",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.2,
+      "frequency_ghz": "3.60 - 4.20 GHz",
+      "aliases": [
+        "3600",
+        "Ryzen 3600",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 5950X",
+      "family": "Ryzen",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 16,
+      "threads": 32,
+      "base_ghz": 3.4,
+      "boost_ghz": 4.9,
+      "frequency_ghz": "3.40 - 4.90 GHz",
+      "aliases": [
+        "5950X",
+        "Ryzen 5950X",
+        "3.4 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 5900X",
+      "family": "Ryzen",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 12,
+      "threads": 24,
+      "base_ghz": 3.7,
+      "boost_ghz": 4.8,
+      "frequency_ghz": "3.70 - 4.80 GHz",
+      "aliases": [
+        "5900X",
+        "Ryzen 5900X",
+        "3.7 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 5800X3D",
+      "family": "Ryzen",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.4,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "3.40 - 4.50 GHz",
+      "aliases": [
+        "5800X3D",
+        "Ryzen 5800X3D",
+        "3.4 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 5800X",
+      "family": "Ryzen",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.8,
+      "boost_ghz": 4.7,
+      "frequency_ghz": "3.80 - 4.70 GHz",
+      "aliases": [
+        "5800X",
+        "Ryzen 5800X",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 5700X",
+      "family": "Ryzen",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.4,
+      "boost_ghz": 4.6,
+      "frequency_ghz": "3.40 - 4.60 GHz",
+      "aliases": [
+        "5700X",
+        "Ryzen 5700X",
+        "3.4 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 5600X",
+      "family": "Ryzen",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.7,
+      "boost_ghz": 4.6,
+      "frequency_ghz": "3.70 - 4.60 GHz",
+      "aliases": [
+        "5600X",
+        "Ryzen 5600X",
+        "3.7 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 5600",
+      "family": "Ryzen",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.5,
+      "boost_ghz": 4.4,
+      "frequency_ghz": "3.50 - 4.40 GHz",
+      "aliases": [
+        "5600",
+        "Ryzen 5600",
+        "3.5 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 7950X3D",
+      "family": "Ryzen",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 16,
+      "threads": 32,
+      "base_ghz": 4.2,
+      "boost_ghz": 5.7,
+      "frequency_ghz": "4.20 - 5.70 GHz",
+      "aliases": [
+        "7950X3D",
+        "Ryzen 7950X3D",
+        "4.2 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 7950X",
+      "family": "Ryzen",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 16,
+      "threads": 32,
+      "base_ghz": 4.5,
+      "boost_ghz": 5.7,
+      "frequency_ghz": "4.50 - 5.70 GHz",
+      "aliases": [
+        "7950X",
+        "Ryzen 7950X",
+        "4.5 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 7900X3D",
+      "family": "Ryzen",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 12,
+      "threads": 24,
+      "base_ghz": 4.4,
+      "boost_ghz": 5.6,
+      "frequency_ghz": "4.40 - 5.60 GHz",
+      "aliases": [
+        "7900X3D",
+        "Ryzen 7900X3D",
+        "4.4 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 7900X",
+      "family": "Ryzen",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 12,
+      "threads": 24,
+      "base_ghz": 4.7,
+      "boost_ghz": 5.6,
+      "frequency_ghz": "4.70 - 5.60 GHz",
+      "aliases": [
+        "7900X",
+        "Ryzen 7900X",
+        "4.7 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 7800X3D",
+      "family": "Ryzen",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 4.2,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "4.20 - 5.00 GHz",
+      "aliases": [
+        "7800X3D",
+        "Ryzen 7800X3D",
+        "4.2 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 7700X",
+      "family": "Ryzen",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 4.5,
+      "boost_ghz": 5.4,
+      "frequency_ghz": "4.50 - 5.40 GHz",
+      "aliases": [
+        "7700X",
+        "Ryzen 7700X",
+        "4.5 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 7600X",
+      "family": "Ryzen",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 4.7,
+      "boost_ghz": 5.3,
+      "frequency_ghz": "4.70 - 5.30 GHz",
+      "aliases": [
+        "7600X",
+        "Ryzen 7600X",
+        "4.7 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 7600",
+      "family": "Ryzen",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.8,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "3.80 - 5.10 GHz",
+      "aliases": [
+        "7600",
+        "Ryzen 7600",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 9950X",
+      "family": "Ryzen",
+      "series": "9000",
+      "architecture": "Zen 5",
+      "cores": 16,
+      "threads": 32,
+      "base_ghz": 4.3,
+      "boost_ghz": 5.7,
+      "frequency_ghz": "4.30 - 5.70 GHz",
+      "aliases": [
+        "9950X",
+        "Ryzen 9950X",
+        "4.3 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 9900X",
+      "family": "Ryzen",
+      "series": "9000",
+      "architecture": "Zen 5",
+      "cores": 12,
+      "threads": 24,
+      "base_ghz": 4.4,
+      "boost_ghz": 5.6,
+      "frequency_ghz": "4.40 - 5.60 GHz",
+      "aliases": [
+        "9900X",
+        "Ryzen 9900X",
+        "4.4 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 9700X",
+      "family": "Ryzen",
+      "series": "9000",
+      "architecture": "Zen 5",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.8,
+      "boost_ghz": 5.5,
+      "frequency_ghz": "3.80 - 5.50 GHz",
+      "aliases": [
+        "9700X",
+        "Ryzen 9700X",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 9600X",
+      "family": "Ryzen",
+      "series": "9000",
+      "architecture": "Zen 5",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.9,
+      "boost_ghz": 5.4,
+      "frequency_ghz": "3.90 - 5.40 GHz",
+      "aliases": [
+        "9600X",
+        "Ryzen 9600X",
+        "3.9 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 7840HS",
+      "family": "Ryzen",
+      "series": "7000 Mobile",
+      "architecture": "Zen 4",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.8,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "3.80 - 5.10 GHz",
+      "aliases": [
+        "7840HS",
+        "Ryzen 7840HS",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 7940HS",
+      "family": "Ryzen",
+      "series": "7000 Mobile",
+      "architecture": "Zen 4",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 4.0,
+      "boost_ghz": 5.2,
+      "frequency_ghz": "4.00 - 5.20 GHz",
+      "aliases": [
+        "7940HS",
+        "Ryzen 7940HS",
+        "4.0 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen AI 9 HX 370",
+      "family": "Ryzen AI",
+      "series": "AI 300",
+      "architecture": "Zen 5",
+      "cores": 12,
+      "threads": 24,
+      "base_ghz": 2.0,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "2.00 - 5.10 GHz",
+      "aliases": [
+        "HX 370",
+        "Ryzen AI 9",
+        "2.0 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 3 1200",
+      "family": "Ryzen",
+      "series": "1000",
+      "architecture": "Zen",
+      "cores": 4,
+      "threads": 4,
+      "base_ghz": 3.1,
+      "boost_ghz": 3.4,
+      "frequency_ghz": "3.10 - 3.40 GHz",
+      "aliases": [
+        "1200",
+        "Ryzen 1200",
+        "3.1 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 3 1300X",
+      "family": "Ryzen",
+      "series": "1000",
+      "architecture": "Zen",
+      "cores": 4,
+      "threads": 4,
+      "base_ghz": 3.5,
+      "boost_ghz": 3.7,
+      "frequency_ghz": "3.50 - 3.70 GHz",
+      "aliases": [
+        "1300X",
+        "Ryzen 1300X",
+        "3.5 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 3 2200G",
+      "family": "Ryzen",
+      "series": "2000",
+      "architecture": "Zen",
+      "cores": 4,
+      "threads": 4,
+      "base_ghz": 3.5,
+      "boost_ghz": 3.7,
+      "frequency_ghz": "3.50 - 3.70 GHz",
+      "aliases": [
+        "2200G",
+        "Ryzen 2200G",
+        "3.5 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 3 3100",
+      "family": "Ryzen",
+      "series": "3000",
+      "architecture": "Zen 2",
+      "cores": 4,
+      "threads": 8,
+      "base_ghz": 3.6,
+      "boost_ghz": 3.9,
+      "frequency_ghz": "3.60 - 3.90 GHz",
+      "aliases": [
+        "3100",
+        "Ryzen 3100",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 3 3200G",
+      "family": "Ryzen",
+      "series": "3000",
+      "architecture": "Zen+",
+      "cores": 4,
+      "threads": 4,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.0,
+      "frequency_ghz": "3.60 - 4.00 GHz",
+      "aliases": [
+        "3200G",
+        "Ryzen 3200G",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 3 3300X",
+      "family": "Ryzen",
+      "series": "3000",
+      "architecture": "Zen 2",
+      "cores": 4,
+      "threads": 8,
+      "base_ghz": 3.8,
+      "boost_ghz": 4.3,
+      "frequency_ghz": "3.80 - 4.30 GHz",
+      "aliases": [
+        "3300X",
+        "Ryzen 3300X",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 3 4100",
+      "family": "Ryzen",
+      "series": "4000",
+      "architecture": "Zen 2",
+      "cores": 4,
+      "threads": 8,
+      "base_ghz": 3.8,
+      "boost_ghz": 4.0,
+      "frequency_ghz": "3.80 - 4.00 GHz",
+      "aliases": [
+        "4100",
+        "Ryzen 4100",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 2400G",
+      "family": "Ryzen",
+      "series": "2000",
+      "architecture": "Zen",
+      "cores": 4,
+      "threads": 8,
+      "base_ghz": 3.6,
+      "boost_ghz": 3.9,
+      "frequency_ghz": "3.60 - 3.90 GHz",
+      "aliases": [
+        "2400G",
+        "Ryzen 2400G",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 3400G",
+      "family": "Ryzen",
+      "series": "3000",
+      "architecture": "Zen+",
+      "cores": 4,
+      "threads": 8,
+      "base_ghz": 3.7,
+      "boost_ghz": 4.2,
+      "frequency_ghz": "3.70 - 4.20 GHz",
+      "aliases": [
+        "3400G",
+        "Ryzen 3400G",
+        "3.7 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 3500X",
+      "family": "Ryzen",
+      "series": "3000",
+      "architecture": "Zen 2",
+      "cores": 6,
+      "threads": 6,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.1,
+      "frequency_ghz": "3.60 - 4.10 GHz",
+      "aliases": [
+        "3500X",
+        "Ryzen 3500X",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 4500",
+      "family": "Ryzen",
+      "series": "4000",
+      "architecture": "Zen 2",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.1,
+      "frequency_ghz": "3.60 - 4.10 GHz",
+      "aliases": [
+        "4500",
+        "Ryzen 4500",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 4600G",
+      "family": "Ryzen",
+      "series": "4000",
+      "architecture": "Zen 2",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.7,
+      "boost_ghz": 4.2,
+      "frequency_ghz": "3.70 - 4.20 GHz",
+      "aliases": [
+        "4600G",
+        "Ryzen 4600G",
+        "3.7 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 5500",
+      "family": "Ryzen",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.2,
+      "frequency_ghz": "3.60 - 4.20 GHz",
+      "aliases": [
+        "5500",
+        "Ryzen 5500",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 5600G",
+      "family": "Ryzen",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.9,
+      "boost_ghz": 4.4,
+      "frequency_ghz": "3.90 - 4.40 GHz",
+      "aliases": [
+        "5600G",
+        "Ryzen 5600G",
+        "3.9 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 5600GT",
+      "family": "Ryzen",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.6,
+      "frequency_ghz": "3.60 - 4.60 GHz",
+      "aliases": [
+        "5600GT",
+        "Ryzen 5600GT",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 7500F",
+      "family": "Ryzen",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.7,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "3.70 - 5.00 GHz",
+      "aliases": [
+        "7500F",
+        "Ryzen 7500F",
+        "3.7 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 8500G",
+      "family": "Ryzen",
+      "series": "8000",
+      "architecture": "Zen 4",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.5,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "3.50 - 5.00 GHz",
+      "aliases": [
+        "8500G",
+        "Ryzen 8500G",
+        "3.5 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 8600G",
+      "family": "Ryzen",
+      "series": "8000",
+      "architecture": "Zen 4",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 4.3,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "4.30 - 5.00 GHz",
+      "aliases": [
+        "8600G",
+        "Ryzen 8600G",
+        "4.3 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 4700G",
+      "family": "Ryzen",
+      "series": "4000",
+      "architecture": "Zen 2",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.4,
+      "frequency_ghz": "3.60 - 4.40 GHz",
+      "aliases": [
+        "4700G",
+        "Ryzen 4700G",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 5700",
+      "family": "Ryzen",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.7,
+      "boost_ghz": 4.6,
+      "frequency_ghz": "3.70 - 4.60 GHz",
+      "aliases": [
+        "5700",
+        "Ryzen 5700",
+        "3.7 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 5700G",
+      "family": "Ryzen",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.8,
+      "boost_ghz": 4.6,
+      "frequency_ghz": "3.80 - 4.60 GHz",
+      "aliases": [
+        "5700G",
+        "Ryzen 5700G",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 5700X3D",
+      "family": "Ryzen",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.0,
+      "boost_ghz": 4.1,
+      "frequency_ghz": "3.00 - 4.10 GHz",
+      "aliases": [
+        "5700X3D",
+        "Ryzen 5700X3D",
+        "3.0 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 7700",
+      "family": "Ryzen",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.8,
+      "boost_ghz": 5.3,
+      "frequency_ghz": "3.80 - 5.30 GHz",
+      "aliases": [
+        "7700",
+        "Ryzen 7700",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 8700G",
+      "family": "Ryzen",
+      "series": "8000",
+      "architecture": "Zen 4",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 4.2,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "4.20 - 5.10 GHz",
+      "aliases": [
+        "8700G",
+        "Ryzen 8700G",
+        "4.2 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 9800X3D",
+      "family": "Ryzen",
+      "series": "9000",
+      "architecture": "Zen 5",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 4.7,
+      "boost_ghz": 5.2,
+      "frequency_ghz": "4.70 - 5.20 GHz",
+      "aliases": [
+        "9800X3D",
+        "Ryzen 9800X3D",
+        "4.7 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 3900XT",
+      "family": "Ryzen",
+      "series": "3000",
+      "architecture": "Zen 2",
+      "cores": 12,
+      "threads": 24,
+      "base_ghz": 3.8,
+      "boost_ghz": 4.7,
+      "frequency_ghz": "3.80 - 4.70 GHz",
+      "aliases": [
+        "3900XT",
+        "Ryzen 3900XT",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 7900",
+      "family": "Ryzen",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 12,
+      "threads": 24,
+      "base_ghz": 3.7,
+      "boost_ghz": 5.4,
+      "frequency_ghz": "3.70 - 5.40 GHz",
+      "aliases": [
+        "7900",
+        "Ryzen 7900",
+        "3.7 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 4800H",
+      "family": "Ryzen Mobile",
+      "series": "4000",
+      "architecture": "Zen 2",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 2.9,
+      "boost_ghz": 4.2,
+      "frequency_ghz": "2.90 - 4.20 GHz",
+      "aliases": [
+        "4800H",
+        "Ryzen 4800H",
+        "2.9 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 4900H",
+      "family": "Ryzen Mobile",
+      "series": "4000",
+      "architecture": "Zen 2",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.3,
+      "boost_ghz": 4.4,
+      "frequency_ghz": "3.30 - 4.40 GHz",
+      "aliases": [
+        "4900H",
+        "Ryzen 4900H",
+        "3.3 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 5800H",
+      "family": "Ryzen Mobile",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.2,
+      "boost_ghz": 4.4,
+      "frequency_ghz": "3.20 - 4.40 GHz",
+      "aliases": [
+        "5800H",
+        "Ryzen 5800H",
+        "3.2 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 5900HX",
+      "family": "Ryzen Mobile",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.3,
+      "boost_ghz": 4.6,
+      "frequency_ghz": "3.30 - 4.60 GHz",
+      "aliases": [
+        "5900HX",
+        "Ryzen 5900HX",
+        "3.3 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 6800H",
+      "family": "Ryzen Mobile",
+      "series": "6000",
+      "architecture": "Zen 3+",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.2,
+      "boost_ghz": 4.7,
+      "frequency_ghz": "3.20 - 4.70 GHz",
+      "aliases": [
+        "6800H",
+        "Ryzen 6800H",
+        "3.2 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 6900HX",
+      "family": "Ryzen Mobile",
+      "series": "6000",
+      "architecture": "Zen 3+",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.3,
+      "boost_ghz": 4.9,
+      "frequency_ghz": "3.30 - 4.90 GHz",
+      "aliases": [
+        "6900HX",
+        "Ryzen 6900HX",
+        "3.3 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 7840U",
+      "family": "Ryzen Mobile",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.3,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "3.30 - 5.10 GHz",
+      "aliases": [
+        "7840U",
+        "Ryzen 7840U",
+        "3.3 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 8845HS",
+      "family": "Ryzen Mobile",
+      "series": "8000",
+      "architecture": "Zen 4",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.8,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "3.80 - 5.10 GHz",
+      "aliases": [
+        "8845HS",
+        "Ryzen 8845HS",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 8945HS",
+      "family": "Ryzen Mobile",
+      "series": "8000",
+      "architecture": "Zen 4",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 4.0,
+      "boost_ghz": 5.2,
+      "frequency_ghz": "4.00 - 5.20 GHz",
+      "aliases": [
+        "8945HS",
+        "Ryzen 8945HS",
+        "4.0 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen AI 9 365",
+      "family": "Ryzen AI",
+      "series": "300",
+      "architecture": "Zen 5",
+      "cores": 10,
+      "threads": 20,
+      "base_ghz": 2.0,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "2.00 - 5.00 GHz",
+      "aliases": [
+        "AI 9 365",
+        "Ryzen AI 365",
+        "2.0 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper 1950X",
+      "family": "Ryzen Threadripper",
+      "series": "1000",
+      "architecture": "Zen",
+      "cores": 16,
+      "threads": 32,
+      "base_ghz": 3.4,
+      "boost_ghz": 4.0,
+      "frequency_ghz": "3.40 - 4.00 GHz",
+      "aliases": [
+        "1950X",
+        "Threadripper 1950X",
+        "3.4 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper 2950X",
+      "family": "Ryzen Threadripper",
+      "series": "2000",
+      "architecture": "Zen+",
+      "cores": 16,
+      "threads": 32,
+      "base_ghz": 3.5,
+      "boost_ghz": 4.4,
+      "frequency_ghz": "3.50 - 4.40 GHz",
+      "aliases": [
+        "2950X",
+        "Threadripper 2950X",
+        "3.5 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper 2990WX",
+      "family": "Ryzen Threadripper",
+      "series": "2000",
+      "architecture": "Zen+",
+      "cores": 32,
+      "threads": 64,
+      "base_ghz": 3.0,
+      "boost_ghz": 4.2,
+      "frequency_ghz": "3.00 - 4.20 GHz",
+      "aliases": [
+        "2990WX",
+        "Threadripper 2990WX",
+        "3.0 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper 3960X",
+      "family": "Ryzen Threadripper",
+      "series": "3000",
+      "architecture": "Zen 2",
+      "cores": 24,
+      "threads": 48,
+      "base_ghz": 3.8,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "3.80 - 4.50 GHz",
+      "aliases": [
+        "3960X",
+        "Threadripper 3960X",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper 3970X",
+      "family": "Ryzen Threadripper",
+      "series": "3000",
+      "architecture": "Zen 2",
+      "cores": 32,
+      "threads": 64,
+      "base_ghz": 3.7,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "3.70 - 4.50 GHz",
+      "aliases": [
+        "3970X",
+        "Threadripper 3970X",
+        "3.7 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper 3990X",
+      "family": "Ryzen Threadripper",
+      "series": "3000",
+      "architecture": "Zen 2",
+      "cores": 64,
+      "threads": 128,
+      "base_ghz": 2.9,
+      "boost_ghz": 4.3,
+      "frequency_ghz": "2.90 - 4.30 GHz",
+      "aliases": [
+        "3990X",
+        "Threadripper 3990X",
+        "2.9 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper PRO 5955WX",
+      "family": "Ryzen Threadripper",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 16,
+      "threads": 32,
+      "base_ghz": 4.0,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "4.00 - 4.50 GHz",
+      "aliases": [
+        "5955WX",
+        "Threadripper 5955WX",
+        "4.0 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper PRO 5995WX",
+      "family": "Ryzen Threadripper",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 64,
+      "threads": 128,
+      "base_ghz": 2.7,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "2.70 - 4.50 GHz",
+      "aliases": [
+        "5995WX",
+        "Threadripper 5995WX",
+        "2.7 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper 7960X",
+      "family": "Ryzen Threadripper",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 24,
+      "threads": 48,
+      "base_ghz": 4.2,
+      "boost_ghz": 5.3,
+      "frequency_ghz": "4.20 - 5.30 GHz",
+      "aliases": [
+        "7960X",
+        "Threadripper 7960X",
+        "4.2 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper 7970X",
+      "family": "Ryzen Threadripper",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 32,
+      "threads": 64,
+      "base_ghz": 4.0,
+      "boost_ghz": 5.3,
+      "frequency_ghz": "4.00 - 5.30 GHz",
+      "aliases": [
+        "7970X",
+        "Threadripper 7970X",
+        "4.0 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper 7980X",
+      "family": "Ryzen Threadripper",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 64,
+      "threads": 128,
+      "base_ghz": 3.2,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "3.20 - 5.10 GHz",
+      "aliases": [
+        "7980X",
+        "Threadripper 7980X",
+        "3.2 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper PRO 7995WX",
+      "family": "Ryzen Threadripper",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 96,
+      "threads": 192,
+      "base_ghz": 2.5,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "2.50 - 5.10 GHz",
+      "aliases": [
+        "7995WX",
+        "Threadripper 7995WX",
+        "2.5 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD EPYC 7742",
+      "family": "EPYC",
+      "series": "7002 (Rome)",
+      "architecture": "Zen 2",
+      "cores": 64,
+      "threads": 128,
+      "base_ghz": 2.25,
+      "boost_ghz": 3.4,
+      "frequency_ghz": "2.25 - 3.40 GHz",
+      "aliases": [
+        "EPYC 7742",
+        "7742",
+        "2.25 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD EPYC 7763",
+      "family": "EPYC",
+      "series": "7003 (Milan)",
+      "architecture": "Zen 3",
+      "cores": 64,
+      "threads": 128,
+      "base_ghz": 2.45,
+      "boost_ghz": 3.5,
+      "frequency_ghz": "2.45 - 3.50 GHz",
+      "aliases": [
+        "EPYC 7763",
+        "7763",
+        "2.45 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD EPYC 7773X",
+      "family": "EPYC",
+      "series": "7003 (Milan-X)",
+      "architecture": "Zen 3",
+      "cores": 64,
+      "threads": 128,
+      "base_ghz": 2.2,
+      "boost_ghz": 3.5,
+      "frequency_ghz": "2.20 - 3.50 GHz",
+      "aliases": [
+        "EPYC 7773X",
+        "7773X",
+        "2.2 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD EPYC 9654",
+      "family": "EPYC",
+      "series": "9004 (Genoa)",
+      "architecture": "Zen 4",
+      "cores": 96,
+      "threads": 192,
+      "base_ghz": 2.4,
+      "boost_ghz": 3.7,
+      "frequency_ghz": "2.40 - 3.70 GHz",
+      "aliases": [
+        "EPYC 9654",
+        "9654",
+        "2.4 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD EPYC 9684X",
+      "family": "EPYC",
+      "series": "9004 (Genoa-X)",
+      "architecture": "Zen 4",
+      "cores": 96,
+      "threads": 192,
+      "base_ghz": 2.55,
+      "boost_ghz": 3.7,
+      "frequency_ghz": "2.55 - 3.70 GHz",
+      "aliases": [
+        "EPYC 9684X",
+        "9684X",
+        "2.55 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD EPYC 9754",
+      "family": "EPYC",
+      "series": "9704 (Bergamo)",
+      "architecture": "Zen 4c",
+      "cores": 128,
+      "threads": 256,
+      "base_ghz": 2.25,
+      "boost_ghz": 3.1,
+      "frequency_ghz": "2.25 - 3.10 GHz",
+      "aliases": [
+        "EPYC 9754",
+        "9754",
+        "2.25 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD EPYC 9655",
+      "family": "EPYC",
+      "series": "9005 (Turin)",
+      "architecture": "Zen 5",
+      "cores": 96,
+      "threads": 192,
+      "base_ghz": 2.6,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "2.60 - 4.50 GHz",
+      "aliases": [
+        "EPYC 9655",
+        "9655",
+        "2.6 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD EPYC 9965",
+      "family": "EPYC",
+      "series": "9005 (Turin Dense)",
+      "architecture": "Zen 5c",
+      "cores": 192,
+      "threads": 384,
+      "base_ghz": 2.25,
+      "boost_ghz": 3.7,
+      "frequency_ghz": "2.25 - 3.70 GHz",
+      "aliases": [
+        "EPYC 9965",
+        "9965",
+        "2.25 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper PRO 3995WX",
+      "family": "Ryzen Threadripper",
+      "series": "3000",
+      "architecture": "Zen 2",
+      "cores": 64,
+      "threads": 128,
+      "base_ghz": 2.7,
+      "boost_ghz": 4.2,
+      "frequency_ghz": "2.70 - 4.20 GHz",
+      "aliases": [
+        "3995WX",
+        "Threadripper 3995WX",
+        "2.7 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper PRO 3975WX",
+      "family": "Ryzen Threadripper",
+      "series": "3000",
+      "architecture": "Zen 2",
+      "cores": 32,
+      "threads": 64,
+      "base_ghz": 3.5,
+      "boost_ghz": 4.2,
+      "frequency_ghz": "3.50 - 4.20 GHz",
+      "aliases": [
+        "3975WX",
+        "Threadripper 3975WX",
+        "3.5 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper PRO 5975WX",
+      "family": "Ryzen Threadripper",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 32,
+      "threads": 64,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "3.60 - 4.50 GHz",
+      "aliases": [
+        "5975WX",
+        "Threadripper 5975WX",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper PRO 5965WX",
+      "family": "Ryzen Threadripper",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 24,
+      "threads": 48,
+      "base_ghz": 3.8,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "3.80 - 4.50 GHz",
+      "aliases": [
+        "5965WX",
+        "Threadripper 5965WX",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper PRO 7985WX",
+      "family": "Ryzen Threadripper",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 64,
+      "threads": 128,
+      "base_ghz": 3.2,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "3.20 - 5.10 GHz",
+      "aliases": [
+        "7985WX",
+        "Threadripper 7985WX",
+        "3.2 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper PRO 7975WX",
+      "family": "Ryzen Threadripper",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 32,
+      "threads": 64,
+      "base_ghz": 4.0,
+      "boost_ghz": 5.3,
+      "frequency_ghz": "4.00 - 5.30 GHz",
+      "aliases": [
+        "7975WX",
+        "Threadripper 7975WX",
+        "4.0 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper PRO 7965WX",
+      "family": "Ryzen Threadripper",
+      "series": "7000",
+      "architecture": "Zen 4",
+      "cores": 24,
+      "threads": 48,
+      "base_ghz": 4.2,
+      "boost_ghz": 5.3,
+      "frequency_ghz": "4.20 - 5.30 GHz",
+      "aliases": [
+        "7965WX",
+        "Threadripper 7965WX",
+        "4.2 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 5600X3D",
+      "family": "Ryzen",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.3,
+      "boost_ghz": 4.4,
+      "frequency_ghz": "3.30 - 4.40 GHz",
+      "aliases": [
+        "5600X3D",
+        "Ryzen 5600X3D",
+        "3.3 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 7 8700F",
+      "family": "Ryzen",
+      "series": "8000",
+      "architecture": "Zen 4",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 4.1,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "4.10 - 5.00 GHz",
+      "aliases": [
+        "8700F",
+        "Ryzen 8700F",
+        "4.1 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 5 8400F",
+      "family": "Ryzen",
+      "series": "8000",
+      "architecture": "Zen 4",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 4.2,
+      "boost_ghz": 4.7,
+      "frequency_ghz": "4.20 - 4.70 GHz",
+      "aliases": [
+        "8400F",
+        "Ryzen 8400F",
+        "4.2 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 3 5300G",
+      "family": "Ryzen",
+      "series": "5000",
+      "architecture": "Zen 3",
+      "cores": 4,
+      "threads": 8,
+      "base_ghz": 4.0,
+      "boost_ghz": 4.2,
+      "frequency_ghz": "4.00 - 4.20 GHz",
+      "aliases": [
+        "5300G",
+        "Ryzen 5300G",
+        "4.0 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 3 4300G",
+      "family": "Ryzen",
+      "series": "4000",
+      "architecture": "Zen 2",
+      "cores": 4,
+      "threads": 8,
+      "base_ghz": 3.8,
+      "boost_ghz": 4.0,
+      "frequency_ghz": "3.80 - 4.00 GHz",
+      "aliases": [
+        "4300G",
+        "Ryzen 4300G",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper PRO 9955WX",
+      "family": "Threadripper PRO",
+      "series": "9000 WX",
+      "architecture": "Zen 5",
+      "cores": 16,
+      "threads": 32,
+      "boost_ghz": 5.4,
+      "frequency_ghz": "Up to 5.4 GHz",
+      "aliases": [
+        "Ryzen Threadripper PRO 9955WX",
+        "9955WX"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper PRO 9965WX",
+      "family": "Threadripper PRO",
+      "series": "9000 WX",
+      "architecture": "Zen 5",
+      "cores": 24,
+      "threads": 48,
+      "boost_ghz": 5.4,
+      "frequency_ghz": "Up to 5.4 GHz",
+      "aliases": [
+        "Ryzen Threadripper PRO 9965WX",
+        "9965WX"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper PRO 9975WX",
+      "family": "Threadripper PRO",
+      "series": "9000 WX",
+      "architecture": "Zen 5",
+      "cores": 32,
+      "threads": 64,
+      "boost_ghz": 5.4,
+      "frequency_ghz": "Up to 5.4 GHz",
+      "aliases": [
+        "Ryzen Threadripper PRO 9975WX",
+        "9975WX"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper PRO 9985WX",
+      "family": "Threadripper PRO",
+      "series": "9000 WX",
+      "architecture": "Zen 5",
+      "cores": 64,
+      "threads": 128,
+      "boost_ghz": 5.4,
+      "frequency_ghz": "Up to 5.4 GHz",
+      "aliases": [
+        "Ryzen Threadripper PRO 9985WX",
+        "9985WX"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen Threadripper PRO 9995WX",
+      "family": "Threadripper PRO",
+      "series": "9000 WX",
+      "architecture": "Zen 5",
+      "cores": 96,
+      "threads": 192,
+      "boost_ghz": 5.4,
+      "frequency_ghz": "Up to 5.4 GHz",
+      "aliases": [
+        "Ryzen Threadripper PRO 9995WX",
+        "9995WX"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 9950X3D",
+      "family": "Ryzen 9",
+      "series": "9000X3D",
+      "architecture": "Zen 5",
+      "cores": 16,
+      "threads": 32,
+      "boost_ghz": 5.7,
+      "frequency_ghz": "Up to 5.7 GHz",
+      "aliases": [
+        "Ryzen 9 9950X3D",
+        "9950X3D"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen 9 9900X3D",
+      "family": "Ryzen 9",
+      "series": "9000X3D",
+      "architecture": "Zen 5",
+      "cores": 12,
+      "threads": 24,
+      "boost_ghz": 5.5,
+      "frequency_ghz": "Up to 5.5 GHz",
+      "aliases": [
+        "Ryzen 9 9900X3D",
+        "9900X3D"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen AI Max+ 395",
+      "family": "Ryzen AI Max",
+      "series": "300",
+      "architecture": "Zen 5",
+      "cores": 16,
+      "threads": 32,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "Up to 5.1 GHz",
+      "aliases": [
+        "Ryzen AI Max+ 395",
+        "395"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen AI Max 390",
+      "family": "Ryzen AI Max",
+      "series": "300",
+      "architecture": "Zen 5",
+      "cores": 12,
+      "threads": 24,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "Up to 5.0 GHz",
+      "aliases": [
+        "Ryzen AI Max 390",
+        "390"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen AI Max 385",
+      "family": "Ryzen AI Max",
+      "series": "300",
+      "architecture": "Zen 5",
+      "cores": 8,
+      "threads": 16,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "Up to 5.0 GHz",
+      "aliases": [
+        "Ryzen AI Max 385",
+        "385"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD EPYC 9755",
+      "family": "EPYC",
+      "series": "9005",
+      "architecture": "Zen 5",
+      "cores": 128,
+      "threads": 256,
+      "boost_ghz": 4.1,
+      "frequency_ghz": "Up to 4.1 GHz",
+      "aliases": [
+        "EPYC 9755",
+        "9755"
+      ]
+    }
+  ],
+  "intel_cpus": [
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-6700K",
+      "family": "Core",
+      "generation": 6,
+      "cores": 4,
+      "threads": 8,
+      "base_ghz": 4.0,
+      "boost_ghz": 4.2,
+      "frequency_ghz": "4.00 - 4.20 GHz",
+      "aliases": [
+        "i7-6700K",
+        "6700K",
+        "4.0 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-6700",
+      "family": "Core",
+      "generation": 6,
+      "cores": 4,
+      "threads": 8,
+      "base_ghz": 3.4,
+      "boost_ghz": 4.0,
+      "frequency_ghz": "3.40 - 4.00 GHz",
+      "aliases": [
+        "i7-6700",
+        "6700",
+        "3.4 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-6600K",
+      "family": "Core",
+      "generation": 6,
+      "cores": 4,
+      "threads": 4,
+      "base_ghz": 3.5,
+      "boost_ghz": 3.9,
+      "frequency_ghz": "3.50 - 3.90 GHz",
+      "aliases": [
+        "i5-6600K",
+        "6600K",
+        "3.5 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-7700K",
+      "family": "Core",
+      "generation": 7,
+      "cores": 4,
+      "threads": 8,
+      "base_ghz": 4.2,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "4.20 - 4.50 GHz",
+      "aliases": [
+        "i7-7700K",
+        "7700K",
+        "4.2 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-7700",
+      "family": "Core",
+      "generation": 7,
+      "cores": 4,
+      "threads": 8,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.2,
+      "frequency_ghz": "3.60 - 4.20 GHz",
+      "aliases": [
+        "i7-7700",
+        "7700",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-7600K",
+      "family": "Core",
+      "generation": 7,
+      "cores": 4,
+      "threads": 4,
+      "base_ghz": 3.8,
+      "boost_ghz": 4.2,
+      "frequency_ghz": "3.80 - 4.20 GHz",
+      "aliases": [
+        "i5-7600K",
+        "7600K",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-8700K",
+      "family": "Core",
+      "generation": 8,
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.7,
+      "boost_ghz": 4.7,
+      "frequency_ghz": "3.70 - 4.70 GHz",
+      "aliases": [
+        "i7-8700K",
+        "8700K",
+        "3.7 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-8700",
+      "family": "Core",
+      "generation": 8,
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.2,
+      "boost_ghz": 4.6,
+      "frequency_ghz": "3.20 - 4.60 GHz",
+      "aliases": [
+        "i7-8700",
+        "8700",
+        "3.2 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-8600K",
+      "family": "Core",
+      "generation": 8,
+      "cores": 6,
+      "threads": 6,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.3,
+      "frequency_ghz": "3.60 - 4.30 GHz",
+      "aliases": [
+        "i5-8600K",
+        "8600K",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-8400",
+      "family": "Core",
+      "generation": 8,
+      "cores": 6,
+      "threads": 6,
+      "base_ghz": 2.8,
+      "boost_ghz": 4.0,
+      "frequency_ghz": "2.80 - 4.00 GHz",
+      "aliases": [
+        "i5-8400",
+        "8400",
+        "2.8 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i9-9900K",
+      "family": "Core",
+      "generation": 9,
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.6,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "3.60 - 5.00 GHz",
+      "aliases": [
+        "i9-9900K",
+        "9900K",
+        "3.6 GHz",
+        "5.0 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-9700K",
+      "family": "Core",
+      "generation": 9,
+      "cores": 8,
+      "threads": 8,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.9,
+      "frequency_ghz": "3.60 - 4.90 GHz",
+      "aliases": [
+        "i7-9700K",
+        "9700K",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-9600K",
+      "family": "Core",
+      "generation": 9,
+      "cores": 6,
+      "threads": 6,
+      "base_ghz": 3.7,
+      "boost_ghz": 4.6,
+      "frequency_ghz": "3.70 - 4.60 GHz",
+      "aliases": [
+        "i5-9600K",
+        "9600K",
+        "3.7 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i9-10900K",
+      "family": "Core",
+      "generation": 10,
+      "cores": 10,
+      "threads": 20,
+      "base_ghz": 3.7,
+      "boost_ghz": 5.3,
+      "frequency_ghz": "3.70 - 5.30 GHz",
+      "aliases": [
+        "i9-10900K",
+        "10900K",
+        "3.7 GHz",
+        "5.3 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-10700K",
+      "family": "Core",
+      "generation": 10,
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.8,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "3.80 - 5.10 GHz",
+      "aliases": [
+        "i7-10700K",
+        "10700K",
+        "3.8 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-10700",
+      "family": "Core",
+      "generation": 10,
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 2.9,
+      "boost_ghz": 4.8,
+      "frequency_ghz": "2.90 - 4.80 GHz",
+      "aliases": [
+        "i7-10700",
+        "10700",
+        "2.9 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-10600K",
+      "family": "Core",
+      "generation": 10,
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 4.1,
+      "boost_ghz": 4.8,
+      "frequency_ghz": "4.10 - 4.80 GHz",
+      "aliases": [
+        "i5-10600K",
+        "10600K",
+        "4.1 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-10400",
+      "family": "Core",
+      "generation": 10,
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 2.9,
+      "boost_ghz": 4.3,
+      "frequency_ghz": "2.90 - 4.30 GHz",
+      "aliases": [
+        "i5-10400",
+        "10400",
+        "2.9 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i9-11900K",
+      "family": "Core",
+      "generation": 11,
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.5,
+      "boost_ghz": 5.3,
+      "frequency_ghz": "3.50 - 5.30 GHz",
+      "aliases": [
+        "i9-11900K",
+        "11900K",
+        "3.5 GHz",
+        "5.3 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-11700K",
+      "family": "Core",
+      "generation": 11,
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 3.6,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "3.60 - 5.00 GHz",
+      "aliases": [
+        "i7-11700K",
+        "11700K",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-11600K",
+      "family": "Core",
+      "generation": 11,
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.9,
+      "boost_ghz": 4.9,
+      "frequency_ghz": "3.90 - 4.90 GHz",
+      "aliases": [
+        "i5-11600K",
+        "11600K",
+        "3.9 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-11400",
+      "family": "Core",
+      "generation": 11,
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 2.6,
+      "boost_ghz": 4.4,
+      "frequency_ghz": "2.60 - 4.40 GHz",
+      "aliases": [
+        "i5-11400",
+        "11400",
+        "2.6 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i9-12900K",
+      "family": "Core",
+      "generation": 12,
+      "cores": 16,
+      "threads": 24,
+      "base_ghz": 3.2,
+      "boost_ghz": 5.2,
+      "frequency_ghz": "3.20 - 5.20 GHz",
+      "aliases": [
+        "i9-12900K",
+        "12900K",
+        "3.2 GHz",
+        "5.2 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-12700K",
+      "family": "Core",
+      "generation": 12,
+      "cores": 12,
+      "threads": 20,
+      "base_ghz": 3.6,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "3.60 - 5.00 GHz",
+      "aliases": [
+        "i7-12700K",
+        "12700K",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-12700",
+      "family": "Core",
+      "generation": 12,
+      "cores": 12,
+      "threads": 20,
+      "base_ghz": 2.1,
+      "boost_ghz": 4.9,
+      "frequency_ghz": "2.10 - 4.90 GHz",
+      "aliases": [
+        "i7-12700",
+        "12700",
+        "2.1 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-12600K",
+      "family": "Core",
+      "generation": 12,
+      "cores": 10,
+      "threads": 16,
+      "base_ghz": 3.7,
+      "boost_ghz": 4.9,
+      "frequency_ghz": "3.70 - 4.90 GHz",
+      "aliases": [
+        "i5-12600K",
+        "12600K",
+        "3.7 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-12400",
+      "family": "Core",
+      "generation": 12,
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 2.5,
+      "boost_ghz": 4.4,
+      "frequency_ghz": "2.50 - 4.40 GHz",
+      "aliases": [
+        "i5-12400",
+        "12400",
+        "2.5 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i9-13900K",
+      "family": "Core",
+      "generation": 13,
+      "cores": 24,
+      "threads": 32,
+      "base_ghz": 3.0,
+      "boost_ghz": 5.8,
+      "frequency_ghz": "3.00 - 5.80 GHz",
+      "aliases": [
+        "i9-13900K",
+        "13900K",
+        "3.0 GHz",
+        "5.8 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-13700K",
+      "family": "Core",
+      "generation": 13,
+      "cores": 16,
+      "threads": 24,
+      "base_ghz": 3.4,
+      "boost_ghz": 5.4,
+      "frequency_ghz": "3.40 - 5.40 GHz",
+      "aliases": [
+        "i7-13700K",
+        "13700K",
+        "3.4 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-13700",
+      "family": "Core",
+      "generation": 13,
+      "cores": 16,
+      "threads": 24,
+      "base_ghz": 2.1,
+      "boost_ghz": 5.2,
+      "frequency_ghz": "2.10 - 5.20 GHz",
+      "aliases": [
+        "i7-13700",
+        "13700",
+        "2.1 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-13600K",
+      "family": "Core",
+      "generation": 13,
+      "cores": 14,
+      "threads": 20,
+      "base_ghz": 3.5,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "3.50 - 5.10 GHz",
+      "aliases": [
+        "i5-13600K",
+        "13600K",
+        "3.5 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-13400",
+      "family": "Core",
+      "generation": 13,
+      "cores": 10,
+      "threads": 16,
+      "base_ghz": 2.5,
+      "boost_ghz": 4.6,
+      "frequency_ghz": "2.50 - 4.60 GHz",
+      "aliases": [
+        "i5-13400",
+        "13400",
+        "2.5 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i9-14900K",
+      "family": "Core",
+      "generation": 14,
+      "cores": 24,
+      "threads": 32,
+      "base_ghz": 3.2,
+      "boost_ghz": 6.0,
+      "frequency_ghz": "3.20 - 6.00 GHz",
+      "aliases": [
+        "i9-14900K",
+        "14900K",
+        "3.2 GHz",
+        "6.0 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-14700K",
+      "family": "Core",
+      "generation": 14,
+      "cores": 20,
+      "threads": 28,
+      "base_ghz": 3.4,
+      "boost_ghz": 5.6,
+      "frequency_ghz": "3.40 - 5.60 GHz",
+      "aliases": [
+        "i7-14700K",
+        "14700K",
+        "3.4 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-14600K",
+      "family": "Core",
+      "generation": 14,
+      "cores": 14,
+      "threads": 20,
+      "base_ghz": 3.5,
+      "boost_ghz": 5.3,
+      "frequency_ghz": "3.50 - 5.30 GHz",
+      "aliases": [
+        "i5-14600K",
+        "14600K",
+        "3.5 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-14400",
+      "family": "Core",
+      "generation": 14,
+      "cores": 10,
+      "threads": 16,
+      "base_ghz": 2.5,
+      "boost_ghz": 4.7,
+      "frequency_ghz": "2.50 - 4.70 GHz",
+      "aliases": [
+        "i5-14400",
+        "14400",
+        "2.5 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 9 185H",
+      "family": "Core Ultra",
+      "generation": 1,
+      "cores": 16,
+      "threads": 22,
+      "base_ghz": 2.3,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "2.30 - 5.10 GHz",
+      "aliases": [
+        "Ultra 9 185H",
+        "185H",
+        "Core Ultra 9"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 7 155H",
+      "family": "Core Ultra",
+      "generation": 1,
+      "cores": 16,
+      "threads": 22,
+      "base_ghz": 1.4,
+      "boost_ghz": 4.8,
+      "frequency_ghz": "1.40 - 4.80 GHz",
+      "aliases": [
+        "Ultra 7 155H",
+        "155H",
+        "Core Ultra 7"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 5 125H",
+      "family": "Core Ultra",
+      "generation": 1,
+      "cores": 14,
+      "threads": 18,
+      "base_ghz": 1.2,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "1.20 - 4.50 GHz",
+      "aliases": [
+        "Ultra 5 125H",
+        "125H",
+        "Core Ultra 5"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-13700H",
+      "family": "Core",
+      "generation": 13,
+      "cores": 14,
+      "threads": 20,
+      "base_ghz": 2.4,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "2.40 - 5.00 GHz",
+      "aliases": [
+        "13700H",
+        "i7-13700H",
+        "2.4 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-12700H",
+      "family": "Core",
+      "generation": 12,
+      "cores": 14,
+      "threads": 20,
+      "base_ghz": 2.3,
+      "boost_ghz": 4.7,
+      "frequency_ghz": "2.30 - 4.70 GHz",
+      "aliases": [
+        "12700H",
+        "i7-12700H",
+        "2.3 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-11800H",
+      "family": "Core",
+      "generation": 11,
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 2.3,
+      "boost_ghz": 4.6,
+      "frequency_ghz": "2.30 - 4.60 GHz",
+      "aliases": [
+        "11800H",
+        "i7-11800H",
+        "2.3 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-10750H",
+      "family": "Core",
+      "generation": 10,
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 2.6,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "2.60 - 5.00 GHz",
+      "aliases": [
+        "10750H",
+        "i7-10750H",
+        "2.6 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i3-6100",
+      "family": "Core",
+      "generation": 6,
+      "cores": 2,
+      "threads": 4,
+      "base_ghz": 3.7,
+      "boost_ghz": 3.7,
+      "frequency_ghz": "3.70 GHz",
+      "aliases": [
+        "i3-6100",
+        "6100",
+        "3.7 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i3-7100",
+      "family": "Core",
+      "generation": 7,
+      "cores": 2,
+      "threads": 4,
+      "base_ghz": 3.9,
+      "boost_ghz": 3.9,
+      "frequency_ghz": "3.90 GHz",
+      "aliases": [
+        "i3-7100",
+        "7100",
+        "3.9 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i3-8100",
+      "family": "Core",
+      "generation": 8,
+      "cores": 4,
+      "threads": 4,
+      "base_ghz": 3.6,
+      "boost_ghz": 3.6,
+      "frequency_ghz": "3.60 GHz",
+      "aliases": [
+        "i3-8100",
+        "8100",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i3-9100",
+      "family": "Core",
+      "generation": 9,
+      "cores": 4,
+      "threads": 4,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.2,
+      "frequency_ghz": "3.60 - 4.20 GHz",
+      "aliases": [
+        "i3-9100",
+        "9100",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i3-10100",
+      "family": "Core",
+      "generation": 10,
+      "cores": 4,
+      "threads": 8,
+      "base_ghz": 3.6,
+      "boost_ghz": 4.3,
+      "frequency_ghz": "3.60 - 4.30 GHz",
+      "aliases": [
+        "i3-10100",
+        "10100",
+        "3.6 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i3-12100",
+      "family": "Core",
+      "generation": 12,
+      "cores": 4,
+      "threads": 8,
+      "base_ghz": 3.3,
+      "boost_ghz": 4.3,
+      "frequency_ghz": "3.30 - 4.30 GHz",
+      "aliases": [
+        "i3-12100",
+        "12100",
+        "3.3 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i3-13100",
+      "family": "Core",
+      "generation": 13,
+      "cores": 4,
+      "threads": 8,
+      "base_ghz": 3.4,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "3.40 - 4.50 GHz",
+      "aliases": [
+        "i3-13100",
+        "13100",
+        "3.4 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i3-14100",
+      "family": "Core",
+      "generation": 14,
+      "cores": 4,
+      "threads": 8,
+      "base_ghz": 3.5,
+      "boost_ghz": 4.7,
+      "frequency_ghz": "3.50 - 4.70 GHz",
+      "aliases": [
+        "i3-14100",
+        "14100",
+        "3.5 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-12600",
+      "family": "Core",
+      "generation": 12,
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.3,
+      "boost_ghz": 4.8,
+      "frequency_ghz": "3.30 - 4.80 GHz",
+      "aliases": [
+        "i5-12600",
+        "12600",
+        "3.3 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-13500",
+      "family": "Core",
+      "generation": 13,
+      "cores": 14,
+      "threads": 20,
+      "base_ghz": 2.5,
+      "boost_ghz": 4.8,
+      "frequency_ghz": "2.50 - 4.80 GHz",
+      "aliases": [
+        "i5-13500",
+        "13500",
+        "2.5 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-14700",
+      "family": "Core",
+      "generation": 14,
+      "cores": 20,
+      "threads": 28,
+      "base_ghz": 2.1,
+      "boost_ghz": 5.4,
+      "frequency_ghz": "2.10 - 5.40 GHz",
+      "aliases": [
+        "i7-14700",
+        "14700",
+        "2.1 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i9-13900KS",
+      "family": "Core",
+      "generation": 13,
+      "cores": 24,
+      "threads": 32,
+      "base_ghz": 3.2,
+      "boost_ghz": 6.0,
+      "frequency_ghz": "3.20 - 6.00 GHz",
+      "aliases": [
+        "i9-13900KS",
+        "13900KS",
+        "3.2 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i9-14900KS",
+      "family": "Core",
+      "generation": 14,
+      "cores": 24,
+      "threads": 32,
+      "base_ghz": 3.2,
+      "boost_ghz": 6.2,
+      "frequency_ghz": "3.20 - 6.20 GHz",
+      "aliases": [
+        "i9-14900KS",
+        "14900KS",
+        "3.2 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 9 285K",
+      "family": "Core Ultra",
+      "series": "Series 2",
+      "architecture": "Arrow Lake",
+      "generation": 15,
+      "cores": 24,
+      "threads": 24,
+      "base_ghz": 3.7,
+      "boost_ghz": 5.7,
+      "frequency_ghz": "3.70 - 5.70 GHz",
+      "aliases": [
+        "Ultra 9 285K",
+        "285K",
+        "3.7 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 7 265K",
+      "family": "Core Ultra",
+      "series": "Series 2",
+      "architecture": "Arrow Lake",
+      "generation": 15,
+      "cores": 20,
+      "threads": 20,
+      "base_ghz": 3.9,
+      "boost_ghz": 5.5,
+      "frequency_ghz": "3.90 - 5.50 GHz",
+      "aliases": [
+        "Ultra 7 265K",
+        "265K",
+        "3.9 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 5 245K",
+      "family": "Core Ultra",
+      "series": "Series 2",
+      "architecture": "Arrow Lake",
+      "generation": 15,
+      "cores": 14,
+      "threads": 14,
+      "base_ghz": 4.2,
+      "boost_ghz": 5.2,
+      "frequency_ghz": "4.20 - 5.20 GHz",
+      "aliases": [
+        "Ultra 5 245K",
+        "245K",
+        "4.2 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i9-13980HX",
+      "family": "Core Mobile",
+      "generation": 13,
+      "cores": 24,
+      "threads": 32,
+      "base_ghz": 2.2,
+      "boost_ghz": 5.6,
+      "frequency_ghz": "2.20 - 5.60 GHz",
+      "aliases": [
+        "i9-13980HX",
+        "13980HX",
+        "2.2 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i9-14900HX",
+      "family": "Core Mobile",
+      "generation": 14,
+      "cores": 24,
+      "threads": 32,
+      "base_ghz": 2.2,
+      "boost_ghz": 5.8,
+      "frequency_ghz": "2.20 - 5.80 GHz",
+      "aliases": [
+        "i9-14900HX",
+        "14900HX",
+        "2.2 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Xeon 6980P",
+      "family": "Xeon",
+      "generation": 6,
+      "architecture": "Granite Rapids",
+      "cores": 128,
+      "threads": 256,
+      "base_ghz": 2.0,
+      "boost_ghz": 3.9,
+      "frequency_ghz": "2.00 - 3.90 GHz",
+      "aliases": [
+        "Xeon 6980P",
+        "6980P",
+        "2.0 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Xeon Platinum 8592+",
+      "family": "Xeon",
+      "generation": 5,
+      "architecture": "Emerald Rapids",
+      "cores": 64,
+      "threads": 128,
+      "base_ghz": 1.9,
+      "boost_ghz": 3.9,
+      "frequency_ghz": "1.90 - 3.90 GHz",
+      "aliases": [
+        "Xeon 8592+",
+        "8592+",
+        "1.9 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Xeon Platinum 8490H",
+      "family": "Xeon",
+      "generation": 4,
+      "architecture": "Sapphire Rapids",
+      "cores": 60,
+      "threads": 120,
+      "base_ghz": 1.9,
+      "boost_ghz": 3.5,
+      "frequency_ghz": "1.90 - 3.50 GHz",
+      "aliases": [
+        "Xeon 8490H",
+        "8490H",
+        "1.9 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Xeon Platinum 8380",
+      "family": "Xeon",
+      "generation": 3,
+      "architecture": "Ice Lake",
+      "cores": 40,
+      "threads": 80,
+      "base_ghz": 2.3,
+      "boost_ghz": 3.4,
+      "frequency_ghz": "2.30 - 3.40 GHz",
+      "aliases": [
+        "Xeon 8380",
+        "8380",
+        "2.3 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Xeon Platinum 8280",
+      "family": "Xeon",
+      "generation": 2,
+      "architecture": "Cascade Lake",
+      "cores": 28,
+      "threads": 56,
+      "base_ghz": 2.7,
+      "boost_ghz": 4.0,
+      "frequency_ghz": "2.70 - 4.00 GHz",
+      "aliases": [
+        "Xeon 8280",
+        "8280",
+        "2.7 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Xeon Platinum 8180",
+      "family": "Xeon",
+      "generation": 1,
+      "architecture": "Skylake-SP",
+      "cores": 28,
+      "threads": 56,
+      "base_ghz": 2.5,
+      "boost_ghz": 3.8,
+      "frequency_ghz": "2.50 - 3.80 GHz",
+      "aliases": [
+        "Xeon 8180",
+        "8180",
+        "2.5 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Xeon E5-2699 v4",
+      "family": "Xeon",
+      "generation": 4,
+      "architecture": "Broadwell-EP",
+      "cores": 22,
+      "threads": 44,
+      "base_ghz": 2.2,
+      "boost_ghz": 3.6,
+      "frequency_ghz": "2.20 - 3.60 GHz",
+      "aliases": [
+        "Xeon 2699 v4",
+        "2699v4",
+        "2.2 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Xeon E5-2680 v4",
+      "family": "Xeon",
+      "generation": 4,
+      "architecture": "Broadwell-EP",
+      "cores": 14,
+      "threads": 28,
+      "base_ghz": 2.4,
+      "boost_ghz": 3.3,
+      "frequency_ghz": "2.40 - 3.30 GHz",
+      "aliases": [
+        "Xeon 2680 v4",
+        "2680v4",
+        "2.4 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Xeon w9-3495X",
+      "family": "Xeon",
+      "generation": 4,
+      "architecture": "Sapphire Rapids",
+      "cores": 56,
+      "threads": 112,
+      "base_ghz": 1.9,
+      "boost_ghz": 4.8,
+      "frequency_ghz": "1.90 - 4.80 GHz",
+      "aliases": [
+        "w9-3495X",
+        "Xeon 3495X",
+        "1.9 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Xeon w7-3465X",
+      "family": "Xeon",
+      "generation": 4,
+      "architecture": "Sapphire Rapids",
+      "cores": 28,
+      "threads": 56,
+      "base_ghz": 2.5,
+      "boost_ghz": 4.8,
+      "frequency_ghz": "2.50 - 4.80 GHz",
+      "aliases": [
+        "w7-3465X",
+        "Xeon 3465X",
+        "2.5 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Xeon w5-3435X",
+      "family": "Xeon",
+      "generation": 4,
+      "architecture": "Sapphire Rapids",
+      "cores": 16,
+      "threads": 32,
+      "base_ghz": 3.1,
+      "boost_ghz": 4.7,
+      "frequency_ghz": "3.10 - 4.70 GHz",
+      "aliases": [
+        "w5-3435X",
+        "Xeon 3435X",
+        "3.1 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i9-10980XE",
+      "family": "Core X",
+      "generation": 10,
+      "architecture": "Cascade Lake-X",
+      "cores": 18,
+      "threads": 36,
+      "base_ghz": 3.0,
+      "boost_ghz": 4.6,
+      "frequency_ghz": "3.00 - 4.60 GHz",
+      "aliases": [
+        "i9-10980XE",
+        "10980XE",
+        "3.0 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i9-9980XE",
+      "family": "Core X",
+      "generation": 9,
+      "architecture": "Skylake-X",
+      "cores": 18,
+      "threads": 36,
+      "base_ghz": 3.0,
+      "boost_ghz": 4.4,
+      "frequency_ghz": "3.00 - 4.40 GHz",
+      "aliases": [
+        "i9-9980XE",
+        "9980XE",
+        "3.0 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i9-7980XE",
+      "family": "Core X",
+      "generation": 7,
+      "architecture": "Skylake-X",
+      "cores": 18,
+      "threads": 36,
+      "base_ghz": 2.6,
+      "boost_ghz": 4.2,
+      "frequency_ghz": "2.60 - 4.20 GHz",
+      "aliases": [
+        "i9-7980XE",
+        "7980XE",
+        "2.6 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i9-14900",
+      "family": "Core",
+      "generation": 14,
+      "cores": 24,
+      "threads": 32,
+      "base_ghz": 2.0,
+      "boost_ghz": 5.8,
+      "frequency_ghz": "2.00 - 5.80 GHz",
+      "aliases": [
+        "i9-14900",
+        "14900",
+        "2.0 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-14700F",
+      "family": "Core",
+      "generation": 14,
+      "cores": 20,
+      "threads": 28,
+      "base_ghz": 2.1,
+      "boost_ghz": 5.4,
+      "frequency_ghz": "2.10 - 5.40 GHz",
+      "aliases": [
+        "i7-14700F",
+        "14700F",
+        "2.1 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-14500",
+      "family": "Core",
+      "generation": 14,
+      "cores": 14,
+      "threads": 20,
+      "base_ghz": 2.6,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "2.60 - 5.00 GHz",
+      "aliases": [
+        "i5-14500",
+        "14500",
+        "2.6 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-13600",
+      "family": "Core",
+      "generation": 13,
+      "cores": 14,
+      "threads": 20,
+      "base_ghz": 2.7,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "2.70 - 5.00 GHz",
+      "aliases": [
+        "i5-13600",
+        "13600",
+        "2.7 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-13400F",
+      "family": "Core",
+      "generation": 13,
+      "cores": 10,
+      "threads": 16,
+      "base_ghz": 2.5,
+      "boost_ghz": 4.6,
+      "frequency_ghz": "2.50 - 4.60 GHz",
+      "aliases": [
+        "i5-13400F",
+        "13400F",
+        "2.5 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-12400F",
+      "family": "Core",
+      "generation": 12,
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 2.5,
+      "boost_ghz": 4.4,
+      "frequency_ghz": "2.50 - 4.40 GHz",
+      "aliases": [
+        "i5-12400F",
+        "12400F",
+        "2.5 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-11600",
+      "family": "Core",
+      "generation": 11,
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 2.8,
+      "boost_ghz": 4.8,
+      "frequency_ghz": "2.80 - 4.80 GHz",
+      "aliases": [
+        "i5-11600",
+        "11600",
+        "2.8 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i5-10500",
+      "family": "Core",
+      "generation": 10,
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 3.1,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "3.10 - 4.50 GHz",
+      "aliases": [
+        "i5-10500",
+        "10500",
+        "3.1 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core i7-9700",
+      "family": "Core",
+      "generation": 9,
+      "cores": 8,
+      "threads": 8,
+      "base_ghz": 3.0,
+      "boost_ghz": 4.7,
+      "frequency_ghz": "3.00 - 4.70 GHz",
+      "aliases": [
+        "i7-9700",
+        "9700",
+        "3.0 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 9 285HX",
+      "family": "Core Ultra",
+      "generation": 15,
+      "cores": 24,
+      "threads": 24,
+      "base_ghz": 2.8,
+      "boost_ghz": 5.5,
+      "frequency_ghz": "2.80 - 5.50 GHz",
+      "aliases": [
+        "Ultra 9 285HX",
+        "285HX",
+        "2.8 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 7 265HX",
+      "family": "Core Ultra",
+      "generation": 15,
+      "cores": 20,
+      "threads": 20,
+      "base_ghz": 2.6,
+      "boost_ghz": 5.3,
+      "frequency_ghz": "2.60 - 5.30 GHz",
+      "aliases": [
+        "Ultra 7 265HX",
+        "265HX",
+        "2.6 GHz"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 3 322",
+      "family": "Core Ultra",
+      "series": "Series 3",
+      "architecture": "Panther Lake",
+      "cores": 6,
+      "threads": 6,
+      "boost_ghz": 4.4,
+      "frequency_ghz": "Up to 4.4 GHz",
+      "aliases": [
+        "Core Ultra 3 322",
+        "322"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 3 325",
+      "family": "Core Ultra",
+      "series": "Series 3",
+      "architecture": "Panther Lake",
+      "cores": 8,
+      "threads": 8,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "Up to 4.5 GHz",
+      "aliases": [
+        "Core Ultra 3 325",
+        "325"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 3 332",
+      "family": "Core Ultra",
+      "series": "Series 3",
+      "architecture": "Panther Lake",
+      "cores": 6,
+      "threads": 6,
+      "boost_ghz": 4.4,
+      "frequency_ghz": "Up to 4.4 GHz",
+      "aliases": [
+        "Core Ultra 3 332",
+        "332"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 3 335",
+      "family": "Core Ultra",
+      "series": "Series 3",
+      "architecture": "Panther Lake",
+      "cores": 8,
+      "threads": 8,
+      "boost_ghz": 4.6,
+      "frequency_ghz": "Up to 4.6 GHz",
+      "aliases": [
+        "Core Ultra 3 335",
+        "335"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 5 336H",
+      "family": "Core Ultra",
+      "series": "Series 3",
+      "architecture": "Panther Lake",
+      "cores": 12,
+      "threads": 12,
+      "boost_ghz": 4.6,
+      "frequency_ghz": "Up to 4.6 GHz",
+      "aliases": [
+        "Core Ultra 5 336H",
+        "336H"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 5 338H",
+      "family": "Core Ultra",
+      "series": "Series 3",
+      "architecture": "Panther Lake",
+      "cores": 12,
+      "threads": 12,
+      "boost_ghz": 4.7,
+      "frequency_ghz": "Up to 4.7 GHz",
+      "aliases": [
+        "Core Ultra 5 338H",
+        "338H"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 5 355",
+      "family": "Core Ultra",
+      "series": "Series 3",
+      "architecture": "Panther Lake",
+      "cores": 8,
+      "threads": 8,
+      "boost_ghz": 4.7,
+      "frequency_ghz": "Up to 4.7 GHz",
+      "aliases": [
+        "Core Ultra 5 355",
+        "355"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 5 356H",
+      "family": "Core Ultra",
+      "series": "Series 3",
+      "architecture": "Panther Lake",
+      "cores": 16,
+      "threads": 16,
+      "boost_ghz": 4.7,
+      "frequency_ghz": "Up to 4.7 GHz",
+      "aliases": [
+        "Core Ultra 5 356H",
+        "356H"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 7 365",
+      "family": "Core Ultra",
+      "series": "Series 3",
+      "architecture": "Panther Lake",
+      "cores": 8,
+      "threads": 8,
+      "boost_ghz": 4.8,
+      "frequency_ghz": "Up to 4.8 GHz",
+      "aliases": [
+        "Core Ultra 7 365",
+        "365"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 7 366H",
+      "family": "Core Ultra",
+      "series": "Series 3",
+      "architecture": "Panther Lake",
+      "cores": 16,
+      "threads": 16,
+      "boost_ghz": 4.8,
+      "frequency_ghz": "Up to 4.8 GHz",
+      "aliases": [
+        "Core Ultra 7 366H",
+        "366H"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 7 386H",
+      "family": "Core Ultra",
+      "series": "Series 3",
+      "architecture": "Panther Lake",
+      "cores": 16,
+      "threads": 16,
+      "boost_ghz": 4.9,
+      "frequency_ghz": "Up to 4.9 GHz",
+      "aliases": [
+        "Core Ultra 7 386H",
+        "386H"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra X7 358H",
+      "family": "Core Ultra",
+      "series": "Series 3",
+      "architecture": "Panther Lake",
+      "cores": 16,
+      "threads": 16,
+      "boost_ghz": 4.8,
+      "frequency_ghz": "Up to 4.8 GHz",
+      "aliases": [
+        "Core Ultra X7 358H",
+        "358H"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra X7 368H",
+      "family": "Core Ultra",
+      "series": "Series 3",
+      "architecture": "Panther Lake",
+      "cores": 16,
+      "threads": 16,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "Up to 5.0 GHz",
+      "aliases": [
+        "Core Ultra X7 368H",
+        "368H"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra X9 378H",
+      "family": "Core Ultra",
+      "series": "Series 3",
+      "architecture": "Panther Lake",
+      "cores": 16,
+      "threads": 16,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "Up to 5.0 GHz",
+      "aliases": [
+        "Core Ultra X9 378H",
+        "378H"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra X9 388H",
+      "family": "Core Ultra",
+      "series": "Series 3",
+      "architecture": "Panther Lake",
+      "cores": 16,
+      "threads": 16,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "Up to 5.1 GHz",
+      "aliases": [
+        "Core Ultra X9 388H",
+        "388H"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 9 288V",
+      "family": "Core Ultra",
+      "series": "Series 2",
+      "architecture": "Lunar Lake",
+      "cores": 8,
+      "threads": 8,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "Up to 5.1 GHz",
+      "aliases": [
+        "Core Ultra 9 288V",
+        "288V"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 7 268V",
+      "family": "Core Ultra",
+      "series": "Series 2",
+      "architecture": "Lunar Lake",
+      "cores": 8,
+      "threads": 8,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "Up to 5.0 GHz",
+      "aliases": [
+        "Core Ultra 7 268V",
+        "268V"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 7 258V",
+      "family": "Core Ultra",
+      "series": "Series 2",
+      "architecture": "Lunar Lake",
+      "cores": 8,
+      "threads": 8,
+      "boost_ghz": 4.8,
+      "frequency_ghz": "Up to 4.8 GHz",
+      "aliases": [
+        "Core Ultra 7 258V",
+        "258V"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 7 256V",
+      "family": "Core Ultra",
+      "series": "Series 2",
+      "architecture": "Lunar Lake",
+      "cores": 8,
+      "threads": 8,
+      "boost_ghz": 4.8,
+      "frequency_ghz": "Up to 4.8 GHz",
+      "aliases": [
+        "Core Ultra 7 256V",
+        "256V"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 5 228V",
+      "family": "Core Ultra",
+      "series": "Series 2",
+      "architecture": "Lunar Lake",
+      "cores": 8,
+      "threads": 8,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "Up to 4.5 GHz",
+      "aliases": [
+        "Core Ultra 5 228V",
+        "228V"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 5 226V",
+      "family": "Core Ultra",
+      "series": "Series 2",
+      "architecture": "Lunar Lake",
+      "cores": 8,
+      "threads": 8,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "Up to 4.5 GHz",
+      "aliases": [
+        "Core Ultra 5 226V",
+        "226V"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Xeon 6780E",
+      "family": "Xeon 6",
+      "series": "6700E",
+      "architecture": "Sierra Forest",
+      "cores": 144,
+      "threads": 144,
+      "boost_ghz": 3.5,
+      "frequency_ghz": "Up to 3.5 GHz",
+      "aliases": [
+        "Xeon 6780E",
+        "6780E"
+      ]
+    }
+  ]
+}

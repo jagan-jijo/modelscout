@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ModelScout — What AI Models Can I Run?</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="brand">
+        <span class="logo-icon">⚡</span>
+        <span class="brand-title">ModelScout</span>
+        <span class="brand-sub">Local AI Advisor</span>
+      </div>
+      <div class="nav-links">
+        <button id="nav-btn-hw" class="active">Hardware & Advisor</button>
+        <button id="nav-btn-catalog">Model Catalogue</button>
+        <button id="nav-btn-compare">Comparison (<span id="compare-count">0</span>)</button>
+        <button id="btn-run-benchmark" class="btn-secondary" title="Opt-in 5s real CPU/RAM speed test">Benchmark System</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h1 class="hero-title">What AI Can I Realistically Run?</h1>
+      <p class="hero-subtitle">
+        Find local AI models that fit your hardware, with memory and speed estimates.
+        Benchmark scores are bundled records and still need checking against their sources.
+      </p>
+    </section>
+
+    <!-- Hardware Configuration & Detection Form -->
+    <section class="card hardware-card">
+      <div class="card-header">
+        <div>
+          <h2>Computer Hardware Configuration</h2>
+          <div class="badge badge-detected" id="hw-detected-badge">
+            <span class="badge-dot"></span> Automatically detected
+          </div>
+        </div>
+        <button id="btn-reset-hw" class="btn-link" title="Re-detect host specs">Reset to Detected</button>
+      </div>
+
+      <form id="hw-form" class="hw-grid">
+        <div class="form-group autocomplete-container">
+          <label for="input-cpu">Processor (CPU)</label>
+          <input type="text" id="input-cpu" placeholder="e.g. Apple M3 Pro, Ryzen 9 7950X..." autocomplete="off">
+          <div class="autocomplete-dropdown" id="cpu-dropdown"></div>
+        </div>
+
+        <div class="form-group autocomplete-container">
+          <label for="input-gpu">Graphics (GPU)</label>
+          <input type="text" id="input-gpu" placeholder="e.g. RTX 4090, Apple M3 Pro GPU..." autocomplete="off">
+          <div class="autocomplete-dropdown" id="gpu-dropdown"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="input-ram">System RAM (GB)</label>
+          <input type="number" id="input-ram" min="2" max="1024" step="1" placeholder="36">
+        </div>
+
+        <div class="form-group">
+          <label for="input-storage">Free Storage (GB)</label>
+          <input type="number" id="input-storage" min="1" max="16000" step="1" placeholder="512">
+        </div>
+
+        <div class="form-group">
+          <label for="select-profile">Optimization Profile</label>
+          <select id="select-profile">
+            <option value="general" selected>General Balanced</option>
+            <option value="coding">Coding & Software Dev</option>
+            <option value="reasoning">Deep Reasoning & Math</option>
+            <option value="vision">Vision & Multimodal</option>
+            <option value="fast">Fast Interactive (>20 t/s)</option>
+            <option value="quality">Maximum Quality</option>
+            <option value="low-memory">Low Memory Footprint</option>
+            <option value="cpu">CPU Only</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="select-quant">Target Quantization</label>
+          <select id="select-quant">
+            <option value="Q4_K_M" selected>Q4_K_M (Optimal Balance)</option>
+            <option value="Q5_K_M">Q5_K_M (Higher Quality)</option>
+            <option value="Q8_0">Q8_0 (Near Lossless)</option>
+          </select>
+        </div>
+      </form>
+
+      <div class="action-row" style="flex-direction: column; align-items: flex-end; gap: 8px;">
+        <button type="button" id="btn-find-out" class="btn-primary">
+          <span class="btn-icon" id="btn-find-out-icon">⚡</span> <span id="btn-find-out-text">Find Out What I Can Run</span>
+        </button>
+        <div id="analysis-status-text" class="analysis-status-text" style="display: none;"></div>
+      </div>
+    </section>
+
+    <!-- Benchmark Feedback Banner -->
+    <div id="benchmark-feedback" class="feedback-banner" style="display: none;"></div>
+
+    <!-- Results Section -->
+    <section id="results-section" class="results-section" style="display: none;">
+      <!-- AI Hardware Score Card -->
+      <div class="card score-card">
+        <div class="score-main">
+          <div class="score-circle">
+            <span class="score-val" id="score-val">--</span>
+            <span class="score-max">/ 100</span>
+          </div>
+          <div class="score-info">
+            <h3>AI Hardware Capability Score</h3>
+            <p id="score-summary" class="score-summary">Evaluating configuration...</p>
+            <div id="hw-details-snippet" class="hw-details-snippet"></div>
+          </div>
+        </div>
+
+        <div class="score-breakdown">
+          <div class="subscore">
+            <span class="subscore-label">GPU</span>
+            <span class="subscore-val" id="sub-gpu">--</span>
+          </div>
+          <div class="subscore">
+            <span class="subscore-label">Memory</span>
+            <span class="subscore-val" id="sub-mem">--</span>
+          </div>
+          <div class="subscore">
+            <span class="subscore-label">Bandwidth</span>
+            <span class="subscore-val" id="sub-bw">--</span>
+          </div>
+          <div class="subscore">
+            <span class="subscore-label">CPU</span>
+            <span class="subscore-val" id="sub-cpu">--</span>
+          </div>
+          <div class="subscore">
+            <span class="subscore-label">AI Readiness</span>
+            <span class="subscore-val" id="sub-ready">--</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Highlights Section -->
+      <div class="highlights-grid" id="highlights-container"></div>
+
+      <!-- Filters Toolbar -->
+      <div class="filters-toolbar">
+        <div class="filter-group">
+          <label>Sort By:</label>
+          <select id="filter-sort">
+            <option value="score">Recommended (Best Fit & Score)</option>
+            <option value="speed_desc">Speed (Fastest tok/s First)</option>
+            <option value="size_asc">Model Size (Smallest First)</option>
+            <option value="size_desc">Model Size (Largest First)</option>
+            <option value="benchmark_desc">Benchmark (Highest Quality First)</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label>Fit:</label>
+          <select id="filter-fit">
+            <option value="">All Fits</option>
+            <option value="full_gpu">Full GPU / Unified</option>
+            <option value="partial">Partial Offload</option>
+            <option value="cpu_only">CPU Only</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label>Speed:</label>
+          <select id="filter-speed">
+            <option value="">Any Speed</option>
+            <option value="fast">Fast (>20 tok/s)</option>
+            <option value="usable">Usable (>5 tok/s)</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label>Search:</label>
+          <input type="text" id="filter-search" placeholder="Filter model names...">
+        </div>
+      </div>
+
+      <!-- Recommendations Cards -->
+      <div class="recommendations-container" id="recs-container"></div>
+
+      <!-- Excluded Models Accordion -->
+      <div class="card excluded-card">
+        <div class="card-header pointer" id="btn-toggle-excluded">
+          <h3>Excluded Candidates (<span id="excluded-count">0</span> models)</h3>
+          <span class="toggle-icon" id="excluded-toggle-icon">▼</span>
+        </div>
+        <div class="excluded-content" id="excluded-content" style="display: none;"></div>
+      </div>
+    </section>
+
+    <!-- Full Catalogue Section -->
+    <section id="catalog-section" class="catalog-section" style="display: none;">
+      <div class="card">
+        <h2>Local AI Model Catalogue</h2>
+        <p class="dim">All models indexed locally in SQLite from dataset.json and cached sources.</p>
+        <div class="catalog-table-wrapper" id="catalog-table-container"></div>
+      </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="compare-section" class="compare-section" style="display: none;">
+      <div class="card">
+        <div class="card-header">
+          <h2>Side-by-Side Model Comparison</h2>
+          <button id="btn-clear-compare" class="btn-link">Clear Selection</button>
+        </div>
+        <div class="compare-table-wrapper" id="compare-table-container">
+          <p class="dim">Select models using the checkboxes on recommendation cards or catalogue to compare attributes side by side.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="footer-content">
+        <span>Created by <strong>Jagan Jijo</strong></span>
+        <span class="footer-dot">•</span>
+        <a href="https://jagan-jijo.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="footer-link">Portfolio: https://jagan-jijo.github.io/portfolio/</a>
+        <span class="footer-dot">•</span>
+        <a href="https://github.com/jagan-jijo/modelscout" target="_blank" rel="noopener noreferrer" class="footer-link">ModelScout on GitHub</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Model Details Modal -->
+  <div class="modal-backdrop" id="modal-backdrop" style="display: none;">
+    <div class="modal-content">
+      <button class="modal-close" id="btn-modal-close">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "version": "1.2.0",
+  "updated_at": "2026-09-11",
+  "files": [
+    "cpus.json",
+    "gpus.json",
+    "models.json"
+  ]
+}
