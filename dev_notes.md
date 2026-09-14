@@ -404,3 +404,128 @@
     ```
   - **Test Suite Status**: All 45 automated unit and integration tests passing.
   - **Git State**: Zero unreviewed commits. All changes remain in the local working tree for manual review and push.
+
+
+ Differentiating `whichllm` and `modelscout`
+  ModelScout and whichllm share the core goal of helping developers determine which local AI
+  models fit their hardware without downloading huge weights first. However, ModelScout is
+  built as a complete, multi-tiered decision engine and application platform, whereas
+  whichllm is primarily a lightweight terminal CLI tool.
+  Here is what sets ModelScout apart:
+  ──────
+  ### Feature Comparison Overview
+   Dimension          | ModelScout (modelscout-llm)         | whichllm
+  --------------------|------------------------------------|---------------------------------
+   Interfaces         | Dual: Interactive Local Web UI      | CLI only (explicitly "no TUI,
+                      | (app.py) + Rich Terminal CLI + JSON | no GUI")
+                      | + Markdown                          |
+   API & Integration  | FastAPI REST API with OpenAPI docs  | None (CLI subprocess only)
+                      | (/api/scan, /api/models,            |
+                      | /api/hardware)                      |
+   Data Layer         | Relational SQLite database          | In-memory / flat JSON cache
+                      | (repository.py) with schema         |
+                      | validation & metadata               |
+   Dataset Auto-Sync  | Filesystem mtime auto-reload        | Manual --refresh / static
+                      | (assets/*.json edits take effect    | cache
+                      | instantly)                          |
+   Hub Sources        | HuggingFace API + Local Ollama      | HuggingFace API only
+                      | Daemon probe (/api/tags) + NVIDIA   |
+                      | Build NIM                           |
+   Market Hardware    | 245 CPUs (Arrow Lake, Lunar Lake,   | Standard GPU table
+                      | Xeon 6, Ryzen 9000, M1–M5) & 214    |
+                      | GPUs (Blackwell RTX 50, B200,       |
+                      | Battlemage)                         |
+   Memory Calculation | Rigorous 4-Pool Model: Weights +    | VRAM + basic context estimate
+                      | GQA/MQA KV Cache + Dynamic          |
+                      | Activations + Runtime Overhead      |
+   Speed Bounds       | Bandwidth-bound decoding with       | Single estimated number
+                      | calibrated ±15% confidence          |
+                      | intervals                           |
+   Explainability     | Human rationales for top picks &    | Pure numeric ranking score
+                      | exact mathematical reasons for      |
+                      | exclusions                          |
+   Workload Profiles  | General, Coding, Fast, Reasoning,   | General ranking with parameter
+                      | Vision                              | filters
+   Zero-Install       | uvx modelscout-llm@latest & uvx     | uvx whichllm@latest
+                      | modelscout-llm@latest web           |
+  ──────
+  ### Key Architectural Advantages of ModelScout
+
+  #### 1. Interactive Web Dashboard in Addition to the CLI
+  • whichllm: Terminal only. As their documentation explicitly notes: "One command,
+  scriptable — whichllm prints the answer... No TUI, no keybindings to memorize."
+  • ModelScout: Delivers both. Running ./start.sh web or uvx modelscout-llm@latest web
+  launches a local FastAPI browser dashboard on port 1234. It features real-time hardware
+  gauges (CPU, GPU, RAM, VRAM), filterable model cards, interactive quantization sliders,
+  side-by-side model comparison, and visual fit badges.
+
+  #### 2. Local Ollama & Multi-Hub Integration
+  • whichllm: Focuses solely on querying Hugging Face repositories.
+  • ModelScout: Connects to the local Ollama daemon (ollama.py) via
+  http://localhost:11434/api/tags to automatically discover models you already have
+  downloaded on your machine, links them to canonical entries, and maps models to cloud-
+  deployable NVIDIA Build NIM equivalents.
+
+  #### 3. Dynamic Mtime-Based Database & Modular Datasets
+  • whichllm: Relies on a single flat file or runtime API queries.
+  • ModelScout: Uses a modular dataset split into cpus.json, gpus.json, and models.json. The
+  repository.py:22-86 uses _get_dataset_mtime() to monitor dataset modification times. If you
+  edit or add a model manually in assets/models.json, SQLite detects the new timestamp and
+  automatically re-seeds itself on the next start without requiring manual database wipes or
+  --force flags.
+  #### 4. The 4-Pool Memory Fit Math (Accounting for GQA & MQA)
+  Many calculators check only whether the file weight fits in VRAM. ModelScout splits memory
+  consumption into 4 independent pools (memory.py):
+
+  1. Weights Memory: Parameter count × bits per weight (calibrated across FP16 down to Q2_K).
+  2. Architecture-Aware KV Cache:
+                           ⎛ K ⎞
+    KV Cache = 2 × L × H × ⎜───⎟ × C × 2 bytes
+                           ⎝ A ⎠
+
+  Accurately models Grouped-Query Attention (GQA) head ratios (K/A) and Multi-Query Attention
+  (MQA) rather than assuming full Multi-Head Attention (MHA).
+  3. Activation Buffers: Dynamically scaled by hidden dimension, parameter count, and context
+  length.
+  4. Runtime Driver Overhead: Reserving 0.5–0.8 GB for Metal / CUDA driver buffers.
+
+  #### 5. Honest Confidence Ranges vs. Single Numbers
+
+  Autoregressive decoding speed is memory-bandwidth bound:
+
+                      Memory Bandwidth (GB/s)
+    Speed (tok/s) ≈ ─────────────────────────── × η
+                    Active Model Footprint (GB)
+
+  Instead of printing artificial single-point precision (e.g. 24.8 tok/s), ModelScout outputs
+  calibrated confidence ranges (e.g. 21–27 tok/s), accounting for kernel launch overhead,
+  dequantization cost, and memory controller saturation. For Mixture-of-Experts (MoE) models
+  like DeepSeek V3/R1, ModelScout correctly uses active parameters for speed and total
+  parameters for memory fit.
+
+  #### 6. Transparent Explainability Engine
+
+  ModelScout doesn't just output a number; it explains why a model was recommended or
+  rejected (explanation.py):
+
+  • "Fits comfortably in available GPU memory with 4.2 GB headroom."
+  • "Strong current benchmark results across LiveBench and Aider."
+  • Excluded models state the exact blocker: "Exceeds memory: Requires 21.5 GB, system has 
+  16.0 GB available."
+
+  #### 7. Latest 2025–2026 Hardware Catalog
+
+  ModelScout’s curated registries cover the newest hardware in the market:
+
+  • CPUs (245): Intel Lunar Lake (Core Ultra 200V), Arrow Lake (Core Ultra 200S), Xeon 6, AMD
+  Ryzen 9000/X3D, Strix Halo APUs, Turin EPYC, Apple M1 through M4 Max/Ultra and M5.
+  • GPUs (214): NVIDIA Blackwell RTX 50 series (5090, 5080, 5070, 5060), B200, GB200, Ada
+  Lovelace, Hopper, AMD RX 7000/8000, Instinct MI300X, Intel Arc Battlemage (B580/B570), and
+  Gaudi 2/3.
+
+  #### 8. Fail-Safe Startup (< 10s Guarantee)
+
+  ModelScout initiates open-endpoint model discovery in a non-blocking background daemon
+  thread (updater.py) with a strict 10-second timeout guard. If the network is slow or
+  offline, ModelScout responds instantly using its local catalog without ever hanging the CLI
+  or Web UI.

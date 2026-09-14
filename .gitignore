@@ -60,3 +60,4 @@ Thumbs.db
 .runtime/
 *.whl
 *.tar.gz
+dev_notes.md

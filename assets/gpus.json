@@ -2231,6 +2231,124 @@
         "A100 40GB",
         "A100 40GB"
       ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 5090 Laptop GPU",
+      "architecture": "Blackwell",
+      "family": "GeForce RTX Laptop",
+      "series": "50 Series Laptop",
+      "vram_gb": 24,
+      "memory_type": "GDDR7",
+      "memory_bandwidth_gbps": 896,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "RTX 5090 Laptop GPU",
+        "RTX 5090 Laptop"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 5080 Laptop GPU",
+      "architecture": "Blackwell",
+      "family": "GeForce RTX Laptop",
+      "series": "50 Series Laptop",
+      "vram_gb": 16,
+      "memory_type": "GDDR7",
+      "memory_bandwidth_gbps": 896,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "RTX 5080 Laptop GPU",
+        "RTX 5080 Laptop"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "architecture": "Blackwell",
+      "family": "GeForce RTX Laptop",
+      "series": "50 Series Laptop",
+      "vram_gb": 12,
+      "memory_type": "GDDR7",
+      "memory_bandwidth_gbps": 672,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "RTX 5070 Ti Laptop GPU",
+        "RTX 5070 Ti Laptop"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 5070 Laptop GPU 8GB",
+      "architecture": "Blackwell",
+      "family": "GeForce RTX Laptop",
+      "series": "50 Series Laptop",
+      "vram_gb": 8,
+      "memory_type": "GDDR7",
+      "memory_bandwidth_gbps": 384,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "RTX 5070 Laptop GPU",
+        "RTX 5070 Laptop GPU 8GB"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "architecture": "Blackwell",
+      "family": "GeForce RTX Laptop",
+      "series": "50 Series Laptop",
+      "vram_gb": 8,
+      "memory_type": "GDDR7",
+      "memory_bandwidth_gbps": 384,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "RTX 5060 Laptop GPU",
+        "RTX 5060 Laptop"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 5050 Laptop GPU",
+      "architecture": "Blackwell",
+      "family": "GeForce RTX Laptop",
+      "series": "50 Series Laptop",
+      "vram_gb": 8,
+      "memory_type": "GDDR7",
+      "memory_bandwidth_gbps": 384,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "RTX 5050 Laptop GPU",
+        "RTX 5050 Laptop"
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 5070 Laptop GPU 12GB",
+      "architecture": "Blackwell",
+      "family": "GeForce RTX Laptop",
+      "series": "50 Series Laptop",
+      "vram_gb": 12,
+      "memory_type": "GDDR7",
+      "memory_bandwidth_gbps": 384,
+      "cuda_support": true,
+      "rocm_support": false,
+      "metal_support": false,
+      "aliases": [
+        "RTX 5070 Laptop GPU 12GB"
+      ]
     }
   ],
   "amd_gpus": [
@@ -2828,6 +2946,41 @@
       "aliases": [
         "Instinct MI355X",
         "Instinct MI355X"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 9070 GRE",
+      "architecture": "RDNA 4",
+      "family": "Radeon RX",
+      "series": "9000",
+      "vram_gb": 12,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 432,
+      "cuda_support": false,
+      "rocm_support": true,
+      "metal_support": false,
+      "aliases": [
+        "Radeon RX 9070 GRE",
+        "Radeon RX 9070 GRE"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Radeon RX 9050",
+      "architecture": "RDNA 4",
+      "family": "Radeon RX",
+      "series": "9000",
+      "vram_gb": 8,
+      "memory_type": "GDDR6",
+      "memory_bandwidth_gbps": 288,
+      "cuda_support": false,
+      "rocm_support": true,
+      "metal_support": false,
+      "aliases": [
+        "Radeon RX 9050",
+        "RX 9050",
+        "RX 9050 8GB"
       ]
     }
   ],

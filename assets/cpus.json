@@ -2423,6 +2423,118 @@
         "EPYC 9755",
         "9755"
       ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen AI 9 HX 475",
+      "family": "Ryzen AI",
+      "series": "400",
+      "architecture": "Zen 5 / Zen 5c",
+      "cores": 12,
+      "threads": 24,
+      "base_ghz": 2.0,
+      "boost_ghz": 5.2,
+      "frequency_ghz": "2.0 - 5.2 GHz",
+      "aliases": [
+        "Ryzen AI 9 HX 475",
+        "475"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen AI 9 HX 470",
+      "family": "Ryzen AI",
+      "series": "400",
+      "architecture": "Zen 5 / Zen 5c",
+      "cores": 12,
+      "threads": 24,
+      "base_ghz": 2.0,
+      "boost_ghz": 5.2,
+      "frequency_ghz": "2.0 - 5.2 GHz",
+      "aliases": [
+        "Ryzen AI 9 HX 470",
+        "470"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen AI 9 465",
+      "family": "Ryzen AI",
+      "series": "400",
+      "architecture": "Zen 5 / Zen 5c",
+      "cores": 10,
+      "threads": 20,
+      "base_ghz": 2.0,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "2.0 - 5.0 GHz",
+      "aliases": [
+        "Ryzen AI 9 465",
+        "465"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen AI 7 450",
+      "family": "Ryzen AI",
+      "series": "400",
+      "architecture": "Zen 5 / Zen 5c",
+      "cores": 8,
+      "threads": 16,
+      "base_ghz": 2.0,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "2.0 - 5.1 GHz",
+      "aliases": [
+        "Ryzen AI 7 450",
+        "450"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen AI 7 445",
+      "family": "Ryzen AI",
+      "series": "400",
+      "architecture": "Zen 5 / Zen 5c",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 2.0,
+      "boost_ghz": 4.6,
+      "frequency_ghz": "2.0 - 4.6 GHz",
+      "aliases": [
+        "Ryzen AI 7 445",
+        "445"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen AI 5 435",
+      "family": "Ryzen AI",
+      "series": "400",
+      "architecture": "Zen 5 / Zen 5c",
+      "cores": 6,
+      "threads": 12,
+      "base_ghz": 2.0,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "2.0 - 4.5 GHz",
+      "aliases": [
+        "Ryzen AI 5 435",
+        "435"
+      ]
+    },
+    {
+      "vendor": "AMD",
+      "name": "AMD Ryzen AI 5 430",
+      "family": "Ryzen AI",
+      "series": "400",
+      "architecture": "Zen 5 / Zen 5c",
+      "cores": 4,
+      "threads": 8,
+      "base_ghz": 2.0,
+      "boost_ghz": 4.5,
+      "frequency_ghz": "2.0 - 4.5 GHz",
+      "aliases": [
+        "Ryzen AI 5 430",
+        "430"
+      ]
     }
   ],
   "intel_cpus": [
@@ -4156,6 +4268,278 @@
       "aliases": [
         "Xeon 6780E",
         "6780E"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 7 270K Plus",
+      "family": "Core Ultra",
+      "series": "200S Plus",
+      "architecture": "Arrow Lake",
+      "cores": 24,
+      "threads": 24,
+      "base_ghz": 3.7,
+      "boost_ghz": 5.5,
+      "frequency_ghz": "3.7 - 5.5 GHz",
+      "aliases": [
+        "Core Ultra 7 270K Plus",
+        "Plus"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 5 250K Plus",
+      "family": "Core Ultra",
+      "series": "200S Plus",
+      "architecture": "Arrow Lake",
+      "cores": 18,
+      "threads": 18,
+      "base_ghz": 3.9,
+      "boost_ghz": 5.3,
+      "frequency_ghz": "3.9 - 5.3 GHz",
+      "aliases": [
+        "Core Ultra 5 250K Plus",
+        "Plus"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 5 250KF Plus",
+      "family": "Core Ultra",
+      "series": "200S Plus",
+      "architecture": "Arrow Lake",
+      "cores": 18,
+      "threads": 18,
+      "base_ghz": 3.9,
+      "boost_ghz": 5.3,
+      "frequency_ghz": "3.9 - 5.3 GHz",
+      "aliases": [
+        "Core Ultra 5 250KF Plus",
+        "Plus"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 9 290HX Plus",
+      "family": "Core Ultra",
+      "series": "200HX Plus",
+      "architecture": "Arrow Lake",
+      "cores": 24,
+      "threads": 24,
+      "base_ghz": 2.1,
+      "boost_ghz": 5.5,
+      "frequency_ghz": "2.1 - 5.5 GHz",
+      "aliases": [
+        "Core Ultra 9 290HX Plus",
+        "Plus"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 7 270HX Plus",
+      "family": "Core Ultra",
+      "series": "200HX Plus",
+      "architecture": "Arrow Lake",
+      "cores": 20,
+      "threads": 20,
+      "base_ghz": 2.1,
+      "boost_ghz": 5.3,
+      "frequency_ghz": "2.1 - 5.3 GHz",
+      "aliases": [
+        "Core Ultra 7 270HX Plus",
+        "Plus"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 9 275HX",
+      "family": "Core Ultra",
+      "series": "200HX",
+      "architecture": "Arrow Lake",
+      "cores": 24,
+      "threads": 24,
+      "base_ghz": 2.1,
+      "boost_ghz": 5.4,
+      "frequency_ghz": "2.1 - 5.4 GHz",
+      "aliases": [
+        "Core Ultra 9 275HX",
+        "275HX"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 7 255HX",
+      "family": "Core Ultra",
+      "series": "200HX",
+      "architecture": "Arrow Lake",
+      "cores": 20,
+      "threads": 20,
+      "base_ghz": 2.0,
+      "boost_ghz": 5.2,
+      "frequency_ghz": "2.0 - 5.2 GHz",
+      "aliases": [
+        "Core Ultra 7 255HX",
+        "255HX"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 5 245HX",
+      "family": "Core Ultra",
+      "series": "200HX",
+      "architecture": "Arrow Lake",
+      "cores": 14,
+      "threads": 14,
+      "base_ghz": 2.1,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "2.1 - 5.1 GHz",
+      "aliases": [
+        "Core Ultra 5 245HX",
+        "245HX"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 5 235HX",
+      "family": "Core Ultra",
+      "series": "200HX",
+      "architecture": "Arrow Lake",
+      "cores": 14,
+      "threads": 14,
+      "base_ghz": 2.0,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "2.0 - 5.1 GHz",
+      "aliases": [
+        "Core Ultra 5 235HX",
+        "235HX"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 9 285H",
+      "family": "Core Ultra",
+      "series": "200H",
+      "architecture": "Arrow Lake",
+      "cores": 16,
+      "threads": 16,
+      "base_ghz": 2.9,
+      "boost_ghz": 5.4,
+      "frequency_ghz": "2.9 - 5.4 GHz",
+      "aliases": [
+        "Core Ultra 9 285H",
+        "285H"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 7 265H",
+      "family": "Core Ultra",
+      "series": "200H",
+      "architecture": "Arrow Lake",
+      "cores": 16,
+      "threads": 16,
+      "base_ghz": 2.2,
+      "boost_ghz": 5.3,
+      "frequency_ghz": "2.2 - 5.3 GHz",
+      "aliases": [
+        "Core Ultra 7 265H",
+        "265H"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 7 255H",
+      "family": "Core Ultra",
+      "series": "200H",
+      "architecture": "Arrow Lake",
+      "cores": 16,
+      "threads": 16,
+      "base_ghz": 2.0,
+      "boost_ghz": 5.1,
+      "frequency_ghz": "2.0 - 5.1 GHz",
+      "aliases": [
+        "Core Ultra 7 255H",
+        "255H"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 5 235H",
+      "family": "Core Ultra",
+      "series": "200H",
+      "architecture": "Arrow Lake",
+      "cores": 14,
+      "threads": 14,
+      "base_ghz": 2.0,
+      "boost_ghz": 5.0,
+      "frequency_ghz": "2.0 - 5.0 GHz",
+      "aliases": [
+        "Core Ultra 5 235H",
+        "235H"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 7 265U",
+      "family": "Core Ultra",
+      "series": "200U",
+      "architecture": "Arrow Lake",
+      "cores": 12,
+      "threads": 14,
+      "base_ghz": 2.1,
+      "boost_ghz": 5.3,
+      "frequency_ghz": "2.1 - 5.3 GHz",
+      "aliases": [
+        "Core Ultra 7 265U",
+        "265U"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 5 235U",
+      "family": "Core Ultra",
+      "series": "200U",
+      "architecture": "Arrow Lake",
+      "cores": 12,
+      "threads": 14,
+      "base_ghz": 2.0,
+      "boost_ghz": 4.9,
+      "frequency_ghz": "2.0 - 4.9 GHz",
+      "aliases": [
+        "Core Ultra 5 235U",
+        "235U"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 5 238V",
+      "family": "Core Ultra",
+      "series": "200V",
+      "architecture": "Lunar Lake",
+      "cores": 8,
+      "threads": 8,
+      "base_ghz": 2.1,
+      "boost_ghz": 4.7,
+      "frequency_ghz": "2.1 - 4.7 GHz",
+      "aliases": [
+        "Core Ultra 5 238V",
+        "238V"
+      ]
+    },
+    {
+      "vendor": "Intel",
+      "name": "Intel Core Ultra 5 236V",
+      "family": "Core Ultra",
+      "series": "200V",
+      "architecture": "Lunar Lake",
+      "cores": 8,
+      "threads": 8,
+      "base_ghz": 2.1,
+      "boost_ghz": 4.7,
+      "frequency_ghz": "2.1 - 4.7 GHz",
+      "aliases": [
+        "Core Ultra 5 236V",
+        "236V"
       ]
     }
   ]

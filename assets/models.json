@@ -604,6 +604,222 @@
       "context_tokens": 16384,
       "coding": true,
       "vision": false
+    },
+    {
+      "ollama_name": "qwen3.5:0.8b",
+      "family": "Qwen3.5",
+      "parameters": "0.8B",
+      "context_tokens": 262144,
+      "vision": true,
+      "audio": false,
+      "coding": true
+    },
+    {
+      "ollama_name": "qwen3.5:2b",
+      "family": "Qwen3.5",
+      "parameters": "2B",
+      "context_tokens": 262144,
+      "vision": true,
+      "audio": false,
+      "coding": true
+    },
+    {
+      "ollama_name": "qwen3.5:4b",
+      "family": "Qwen3.5",
+      "parameters": "4B",
+      "context_tokens": 262144,
+      "vision": true,
+      "audio": false,
+      "coding": true
+    },
+    {
+      "ollama_name": "qwen3.5:9b",
+      "family": "Qwen3.5",
+      "parameters": "9B",
+      "context_tokens": 262144,
+      "vision": true,
+      "audio": false,
+      "coding": true
+    },
+    {
+      "ollama_name": "qwen3.5:27b",
+      "family": "Qwen3.5",
+      "parameters": "27B",
+      "context_tokens": 262144,
+      "vision": true,
+      "audio": false,
+      "coding": true
+    },
+    {
+      "ollama_name": "qwen3.5:35b",
+      "family": "Qwen3.5",
+      "parameters": "35B",
+      "context_tokens": 262144,
+      "vision": true,
+      "audio": false,
+      "coding": true,
+      "active_parameters": "3B",
+      "effective_parameters": "3B",
+      "moe": true
+    },
+    {
+      "ollama_name": "qwen3.5:122b",
+      "family": "Qwen3.5",
+      "parameters": "122B",
+      "context_tokens": 262144,
+      "vision": true,
+      "audio": false,
+      "coding": true,
+      "active_parameters": "10B",
+      "effective_parameters": "10B",
+      "moe": true
+    },
+    {
+      "ollama_name": "qwen3-vl:2b",
+      "family": "Qwen3-VL",
+      "parameters": "2B",
+      "context_tokens": 262144,
+      "vision": true,
+      "audio": false,
+      "coding": true
+    },
+    {
+      "ollama_name": "qwen3-vl:4b",
+      "family": "Qwen3-VL",
+      "parameters": "4B",
+      "context_tokens": 262144,
+      "vision": true,
+      "audio": false,
+      "coding": true
+    },
+    {
+      "ollama_name": "qwen3-vl:8b",
+      "family": "Qwen3-VL",
+      "parameters": "8B",
+      "context_tokens": 262144,
+      "vision": true,
+      "audio": false,
+      "coding": true
+    },
+    {
+      "ollama_name": "qwen3-vl:30b",
+      "family": "Qwen3-VL",
+      "parameters": "30B",
+      "context_tokens": 262144,
+      "vision": true,
+      "audio": false,
+      "coding": true,
+      "active_parameters": "3B",
+      "effective_parameters": "3B",
+      "moe": true
+    },
+    {
+      "ollama_name": "qwen3-vl:32b",
+      "family": "Qwen3-VL",
+      "parameters": "32B",
+      "context_tokens": 262144,
+      "vision": true,
+      "audio": false,
+      "coding": true
+    },
+    {
+      "ollama_name": "qwen3-vl:235b",
+      "family": "Qwen3-VL",
+      "parameters": "235B",
+      "context_tokens": 262144,
+      "vision": true,
+      "audio": false,
+      "coding": true,
+      "active_parameters": "22B",
+      "effective_parameters": "22B",
+      "moe": true
+    },
+    {
+      "ollama_name": "qwen3-next:80b",
+      "family": "Qwen3-Next",
+      "parameters": "80B",
+      "context_tokens": 262144,
+      "vision": false,
+      "audio": false,
+      "coding": true,
+      "active_parameters": "3B",
+      "effective_parameters": "3B",
+      "moe": true
+    },
+    {
+      "ollama_name": "ministral-3:3b",
+      "family": "Ministral 3",
+      "parameters": "3B",
+      "context_tokens": 262144,
+      "vision": true,
+      "audio": false,
+      "coding": false
+    },
+    {
+      "ollama_name": "ministral-3:8b",
+      "family": "Ministral 3",
+      "parameters": "8B",
+      "context_tokens": 262144,
+      "vision": true,
+      "audio": false,
+      "coding": false
+    },
+    {
+      "ollama_name": "ministral-3:14b",
+      "family": "Ministral 3",
+      "parameters": "14B",
+      "context_tokens": 262144,
+      "vision": true,
+      "audio": false,
+      "coding": false
+    },
+    {
+      "ollama_name": "gemma3n:e2b",
+      "family": "Gemma 3n",
+      "parameters": "5B",
+      "context_tokens": 32768,
+      "vision": true,
+      "audio": true,
+      "coding": false,
+      "active_parameters": "2B",
+      "effective_parameters": "2B",
+      "moe": true
+    },
+    {
+      "ollama_name": "gemma3n:e4b",
+      "family": "Gemma 3n",
+      "parameters": "7B",
+      "context_tokens": 32768,
+      "vision": true,
+      "audio": true,
+      "coding": false,
+      "active_parameters": "4B",
+      "effective_parameters": "4B",
+      "moe": true
+    },
+    {
+      "ollama_name": "glm-4.7-flash",
+      "family": "GLM-4.7",
+      "parameters": "30B",
+      "context_tokens": 202752,
+      "vision": false,
+      "audio": false,
+      "coding": true,
+      "active_parameters": "3B",
+      "effective_parameters": "3B",
+      "moe": true
+    },
+    {
+      "ollama_name": "deepseek-v3.1",
+      "family": "DeepSeek V3",
+      "parameters": "671B",
+      "context_tokens": 131072,
+      "vision": false,
+      "audio": false,
+      "coding": true,
+      "active_parameters": "37B",
+      "effective_parameters": "37B",
+      "moe": true
     }
   ],
   "nvidia_build_models": [
@@ -759,6 +975,162 @@
         "reasoning",
         "agents",
         "tool_use"
+      ]
+    },
+    {
+      "nvidia_build_name": "qwen3.5-397b-a17b",
+      "publisher": "Qwen",
+      "type": "multimodal",
+      "parameters": "397B",
+      "active_parameters": "17B",
+      "moe": true,
+      "context_tokens": 262144,
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "coding",
+        "agents",
+        "tool_use"
+      ]
+    },
+    {
+      "nvidia_build_name": "mistral-large-3-675b-instruct-2512",
+      "publisher": "Mistral AI",
+      "type": "multimodal",
+      "parameters": "675B",
+      "moe": true,
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "agents",
+        "tool_use"
+      ]
+    },
+    {
+      "nvidia_build_name": "ministral-14b-instruct-2512",
+      "publisher": "Mistral AI",
+      "type": "multimodal",
+      "parameters": "14B",
+      "context_tokens": 262144,
+      "capabilities": [
+        "vision",
+        "instruction_following",
+        "tool_use"
+      ]
+    },
+    {
+      "nvidia_build_name": "nvidia-nemotron-nano-9b-v2",
+      "publisher": "NVIDIA",
+      "type": "multimodal",
+      "parameters": "9B",
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "tool_use"
+      ]
+    },
+    {
+      "nvidia_build_name": "llama-3.3-70b-instruct",
+      "publisher": "Meta",
+      "type": "LLM",
+      "parameters": "70B",
+      "context_tokens": 131072,
+      "capabilities": [
+        "reasoning",
+        "coding",
+        "tool_use"
+      ]
+    },
+    {
+      "nvidia_build_name": "llama-3.1-nemotron-safety-guard-8b-v3",
+      "publisher": "NVIDIA",
+      "type": "LLM",
+      "parameters": "8B",
+      "capabilities": [
+        "safety",
+        "moderation",
+        "multilingual"
+      ]
+    },
+    {
+      "nvidia_build_name": "ising-calibration-1-35b-a3b",
+      "publisher": "NVIDIA",
+      "type": "multimodal",
+      "parameters": "35B",
+      "active_parameters": "3B",
+      "moe": true,
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "quantum"
+      ]
+    },
+    {
+      "nvidia_build_name": "nemotron-mini-4b-instruct",
+      "publisher": "NVIDIA",
+      "type": "LLM",
+      "parameters": "4B",
+      "capabilities": [
+        "instruction_following",
+        "reasoning"
+      ]
+    },
+    {
+      "nvidia_build_name": "mistral-medium-3.5-128b",
+      "publisher": "Mistral AI",
+      "type": "LLM",
+      "parameters": "128B",
+      "capabilities": [
+        "coding",
+        "reasoning",
+        "text",
+        "agents"
+      ]
+    },
+    {
+      "nvidia_build_name": "qwen3-next-80b-a3b-instruct",
+      "publisher": "Qwen",
+      "type": "LLM",
+      "parameters": "80B",
+      "active_parameters": "3B",
+      "moe": true,
+      "context_tokens": 262144,
+      "capabilities": [
+        "text_generation",
+        "agents"
+      ]
+    },
+    {
+      "nvidia_build_name": "ising-calibration-1.5-31b",
+      "publisher": "NVIDIA",
+      "type": "multimodal",
+      "parameters": "31B",
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "quantum",
+        "calibration"
+      ]
+    },
+    {
+      "nvidia_build_name": "nemotron-3.5-content-safety",
+      "publisher": "NVIDIA",
+      "type": "multimodal",
+      "capabilities": [
+        "safety",
+        "moderation",
+        "multilingual"
+      ]
+    },
+    {
+      "nvidia_build_name": "step-3.7-flash",
+      "publisher": "Stepfun-ai",
+      "type": "multimodal",
+      "capabilities": [
+        "coding",
+        "vision",
+        "agents",
+        "reasoning"
       ]
     }
   ],
@@ -2201,6 +2573,532 @@
       "likes": 1200,
       "source": "huggingface",
       "source_url": "https://huggingface.co/openai/gpt-oss-120b"
+    },
+    {
+      "huggingface_id": "Qwen/Qwen3.5-0.8B",
+      "model_name": "Qwen3.5-0.8B",
+      "publisher": "Qwen",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 800000000,
+      "active_parameters": 800000000,
+      "architecture": "Dense",
+      "moe": false,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "Qwen/Qwen3.5-2B",
+      "model_name": "Qwen3.5-2B",
+      "publisher": "Qwen",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 2000000000,
+      "active_parameters": 2000000000,
+      "architecture": "Dense",
+      "moe": false,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.5-2B",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "Qwen/Qwen3.5-4B",
+      "model_name": "Qwen3.5-4B",
+      "publisher": "Qwen",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 4000000000,
+      "active_parameters": 4000000000,
+      "architecture": "Dense",
+      "moe": false,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "Qwen/Qwen3.5-9B",
+      "model_name": "Qwen3.5-9B",
+      "publisher": "Qwen",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 9000000000,
+      "active_parameters": 9000000000,
+      "architecture": "Dense",
+      "moe": false,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "Qwen/Qwen3.5-27B",
+      "model_name": "Qwen3.5-27B",
+      "publisher": "Qwen",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 27000000000,
+      "active_parameters": 27000000000,
+      "architecture": "Dense",
+      "moe": false,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.5-27B",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "Qwen/Qwen3.5-35B-A3B",
+      "model_name": "Qwen3.5-35B-A3B",
+      "publisher": "Qwen",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 35000000000,
+      "active_parameters": 3000000000,
+      "architecture": "MoE",
+      "moe": true,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "Qwen/Qwen3.5-122B-A10B",
+      "model_name": "Qwen3.5-122B-A10B",
+      "publisher": "Qwen",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 122000000000,
+      "active_parameters": 10000000000,
+      "architecture": "MoE",
+      "moe": true,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_name": "Qwen3-VL-2B-Instruct",
+      "publisher": "Qwen",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 2000000000,
+      "active_parameters": 2000000000,
+      "architecture": "Dense",
+      "moe": false,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision",
+        "video"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "Qwen/Qwen3-VL-4B-Instruct",
+      "model_name": "Qwen3-VL-4B-Instruct",
+      "publisher": "Qwen",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 4000000000,
+      "active_parameters": 4000000000,
+      "architecture": "Dense",
+      "moe": false,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision",
+        "video"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "Qwen/Qwen3-VL-8B-Instruct",
+      "model_name": "Qwen3-VL-8B-Instruct",
+      "publisher": "Qwen",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 8000000000,
+      "active_parameters": 8000000000,
+      "architecture": "Dense",
+      "moe": false,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision",
+        "video"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+      "model_name": "Qwen3-VL-30B-A3B-Instruct",
+      "publisher": "Qwen",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 30000000000,
+      "active_parameters": 3000000000,
+      "architecture": "MoE",
+      "moe": true,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision",
+        "video"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "Qwen/Qwen3-VL-32B-Instruct",
+      "model_name": "Qwen3-VL-32B-Instruct",
+      "publisher": "Qwen",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 32000000000,
+      "active_parameters": 32000000000,
+      "architecture": "Dense",
+      "moe": false,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision",
+        "video"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+      "model_name": "Qwen3-VL-235B-A22B-Instruct",
+      "publisher": "Qwen",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 235000000000,
+      "active_parameters": 22000000000,
+      "architecture": "MoE",
+      "moe": true,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision",
+        "video"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "model_name": "Qwen3-Next-80B-A3B-Instruct",
+      "publisher": "Qwen",
+      "library_name": "transformers",
+      "pipeline_tag": "text-generation",
+      "parameters": 80000000000,
+      "active_parameters": 3000000000,
+      "architecture": "MoE",
+      "moe": true,
+      "context_tokens": 262144,
+      "modalities": [
+        "text"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "mistralai/Ministral-3-3B-Instruct-2512",
+      "model_name": "Ministral-3-3B-Instruct-2512",
+      "publisher": "Mistral AI",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 4000000000,
+      "active_parameters": 4000000000,
+      "architecture": "Dense",
+      "moe": false,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "mistralai/Ministral-3-8B-Instruct-2512",
+      "model_name": "Ministral-3-8B-Instruct-2512",
+      "publisher": "Mistral AI",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 9000000000,
+      "active_parameters": 9000000000,
+      "architecture": "Dense",
+      "moe": false,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "mistralai/Ministral-3-14B-Instruct-2512",
+      "model_name": "Ministral-3-14B-Instruct-2512",
+      "publisher": "Mistral AI",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 14000000000,
+      "active_parameters": 14000000000,
+      "architecture": "Dense",
+      "moe": false,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "google/gemma-3n-E2B-it",
+      "model_name": "Gemma-3n-E2B-IT",
+      "publisher": "Google",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 5000000000,
+      "active_parameters": 2000000000,
+      "architecture": "MoE",
+      "moe": true,
+      "context_tokens": 32768,
+      "modalities": [
+        "text",
+        "vision",
+        "audio",
+        "video"
+      ],
+      "license": "gemma",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/google/gemma-3n-E2B-it",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "google/gemma-3n-E4B-it",
+      "model_name": "Gemma-3n-E4B-IT",
+      "publisher": "Google",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 7000000000,
+      "active_parameters": 4000000000,
+      "architecture": "MoE",
+      "moe": true,
+      "context_tokens": 32768,
+      "modalities": [
+        "text",
+        "vision",
+        "audio",
+        "video"
+      ],
+      "license": "gemma",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/google/gemma-3n-E4B-it",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "zai-org/GLM-4.7-Flash",
+      "model_name": "GLM-4.7-Flash",
+      "publisher": "Z.ai",
+      "library_name": "transformers",
+      "pipeline_tag": "text-generation",
+      "parameters": 30000000000,
+      "active_parameters": 3000000000,
+      "architecture": "MoE",
+      "moe": true,
+      "context_tokens": 202752,
+      "modalities": [
+        "text"
+      ],
+      "license": "mit",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/zai-org/GLM-4.7-Flash",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+      "model_name": "Devstral-Small-2-24B-Instruct",
+      "publisher": "Mistral AI",
+      "library_name": "transformers",
+      "pipeline_tag": "text-generation",
+      "parameters": 24000000000,
+      "active_parameters": 24000000000,
+      "architecture": "Dense",
+      "moe": false,
+      "context_tokens": 262144,
+      "modalities": [
+        "text"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "mistralai/Devstral-2-123B-Instruct-2512",
+      "model_name": "Devstral-2-123B-Instruct",
+      "publisher": "Mistral AI",
+      "library_name": "transformers",
+      "pipeline_tag": "text-generation",
+      "parameters": 125000000000,
+      "active_parameters": 125000000000,
+      "architecture": "Dense",
+      "moe": false,
+      "context_tokens": 262144,
+      "modalities": [
+        "text"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "mistralai/Mistral-Medium-3.5-128B",
+      "model_name": "Mistral-Medium-3.5-128B",
+      "publisher": "Mistral AI",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 128000000000,
+      "active_parameters": 128000000000,
+      "architecture": "Dense",
+      "moe": false,
+      "context_tokens": 131072,
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "license": null,
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "mistralai/Mistral-Small-4-119B-2603",
+      "model_name": "Mistral-Small-4-119B-2603",
+      "publisher": "Mistral AI",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 119000000000,
+      "active_parameters": 6500000000,
+      "architecture": "MoE",
+      "moe": true,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "mistralai/Leanstral-1.5-119B-A6B",
+      "model_name": "Leanstral-1.5-119B-A6B",
+      "publisher": "Mistral AI",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 119000000000,
+      "active_parameters": 6500000000,
+      "architecture": "MoE",
+      "moe": true,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/mistralai/Leanstral-1.5-119B-A6B",
+      "updated_at": "2026-09-14"
+    },
+    {
+      "huggingface_id": "mistralai/Shieldstral-1.0-3B",
+      "model_name": "Shieldstral-1.0-3B",
+      "publisher": "Mistral AI",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "parameters": 4000000000,
+      "active_parameters": 4000000000,
+      "architecture": "Dense",
+      "moe": false,
+      "context_tokens": 262144,
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "license": "apache-2.0",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/mistralai/Shieldstral-1.0-3B",
+      "updated_at": "2026-09-14"
     }
   ],
   "canonical_models": [
@@ -2363,7 +3261,7 @@
         }
       ],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "confidence": "high"
       }
     },
@@ -2475,8 +3373,8 @@
       "sources": {
         "huggingface": {
           "id": "meta-llama/Llama-3.1-8B-Instruct",
-          "downloads": 5620096,
-          "likes": 6902
+          "downloads": 5620539,
+          "likes": 7602
         },
         "ollama": [
           "llama3.1:8b"
@@ -2554,7 +3452,7 @@
         }
       ],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "confidence": "high"
       }
     },
@@ -3414,7 +4312,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen3-0.6B"
         ],
@@ -3431,8 +4329,8 @@
       "sources": {
         "huggingface": {
           "id": "Qwen/Qwen3-1.7B",
-          "downloads": 3464727,
-          "likes": 537
+          "downloads": 3585353,
+          "likes": 541
         },
         "ollama": [
           "qwen3:1.7b"
@@ -3483,7 +4381,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen3-1.7B"
         ],
@@ -3552,7 +4450,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen3-4B"
         ],
@@ -3688,7 +4586,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen3-32B"
         ],
@@ -3839,8 +4737,8 @@
       "sources": {
         "huggingface": {
           "id": "meta-llama/Llama-3.2-1B-Instruct",
-          "downloads": 6258911,
-          "likes": 1626
+          "downloads": 6303233,
+          "likes": 1649
         },
         "ollama": [
           "llama3.2:1b"
@@ -3891,7 +4789,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
         ],
@@ -4965,7 +5863,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/openai/gpt-oss-20b"
         ],
@@ -5034,7 +5932,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/openai/gpt-oss-120b"
         ],
@@ -5319,7 +6217,7 @@
       "sources": {
         "huggingface": {
           "id": "Qwen/Qwen2.5-0.5B-Instruct",
-          "downloads": 7225322,
+          "downloads": 7906327,
           "likes": 623
         },
         "ollama": [
@@ -5371,7 +6269,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct"
         ],
@@ -5440,7 +6338,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct"
         ],
@@ -5509,7 +6407,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct"
         ],
@@ -5578,7 +6476,7 @@
       ],
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
         ],
@@ -7723,7 +8621,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-AWQ"
         ],
@@ -7740,8 +8638,8 @@
       "sources": {
         "huggingface": {
           "id": "Qwen/Qwen3-1.7B",
-          "downloads": 3464727,
-          "likes": 537
+          "downloads": 3585353,
+          "likes": 541
         },
         "ollama": [],
         "nvidia_build": []
@@ -7791,7 +8689,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen3-1.7B"
         ],
@@ -7859,7 +8757,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16"
         ],
@@ -7876,7 +8774,7 @@
       "sources": {
         "huggingface": {
           "id": "EleutherAI/pythia-160m",
-          "downloads": 3400230,
+          "downloads": 3419459,
           "likes": 45
         },
         "ollama": [],
@@ -7927,7 +8825,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/EleutherAI/pythia-160m"
         ],
@@ -7944,8 +8842,8 @@
       "sources": {
         "huggingface": {
           "id": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
-          "downloads": 2883270,
-          "likes": 1063
+          "downloads": 2914886,
+          "likes": 1106
         },
         "ollama": [],
         "nvidia_build": []
@@ -7995,7 +8893,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF"
         ],
@@ -8063,7 +8961,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen3-0.6B"
         ],
@@ -8131,7 +9029,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/trl-internal-testing/tiny-Qwen2ForCausalLM-2.5"
         ],
@@ -8148,8 +9046,8 @@
       "sources": {
         "huggingface": {
           "id": "openai-community/gpt2",
-          "downloads": 15074191,
-          "likes": 3941
+          "downloads": 15182177,
+          "likes": 4074
         },
         "ollama": [],
         "nvidia_build": []
@@ -8199,7 +9097,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/openai-community/gpt2"
         ],
@@ -8267,7 +9165,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen3-8B"
         ],
@@ -8335,7 +9233,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF"
         ],
@@ -8403,7 +9301,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
         ],
@@ -8471,7 +9369,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4"
         ],
@@ -8539,7 +9437,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/facebook/opt-125m"
         ],
@@ -8607,7 +9505,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct"
         ],
@@ -8624,8 +9522,8 @@
       "sources": {
         "huggingface": {
           "id": "farbodtavakkoli/OTel-2.0-LLM-31B-IT",
-          "downloads": 7246115,
-          "likes": 15
+          "downloads": 7426197,
+          "likes": 17
         },
         "ollama": [],
         "nvidia_build": []
@@ -8675,7 +9573,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/farbodtavakkoli/OTel-2.0-LLM-31B-IT"
         ],
@@ -8692,7 +9590,7 @@
       "sources": {
         "huggingface": {
           "id": "Qwen/Qwen2.5-0.5B-Instruct",
-          "downloads": 7225322,
+          "downloads": 7906327,
           "likes": 623
         },
         "ollama": [],
@@ -8743,7 +9641,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct"
         ],
@@ -8811,7 +9709,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/openai/gpt-oss-20b"
         ],
@@ -8828,8 +9726,8 @@
       "sources": {
         "huggingface": {
           "id": "meta-llama/Llama-3.2-1B-Instruct",
-          "downloads": 6258911,
-          "likes": 1626
+          "downloads": 6303233,
+          "likes": 1649
         },
         "ollama": [],
         "nvidia_build": []
@@ -8879,7 +9777,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
         ],
@@ -8947,7 +9845,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen3-4B"
         ],
@@ -8964,8 +9862,8 @@
       "sources": {
         "huggingface": {
           "id": "meta-llama/Llama-3.1-8B-Instruct",
-          "downloads": 5620096,
-          "likes": 6902
+          "downloads": 5620539,
+          "likes": 7602
         },
         "ollama": [],
         "nvidia_build": []
@@ -9015,7 +9913,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct"
         ],
@@ -9083,7 +9981,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/openai/gpt-oss-120b"
         ],
@@ -9151,7 +10049,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct"
         ],
@@ -9219,7 +10117,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen3-32B"
         ],
@@ -9287,7 +10185,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/dphn/dolphin-2.9.1-yi-1.5-34b"
         ],
@@ -9304,8 +10202,8 @@
       "sources": {
         "huggingface": {
           "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-          "downloads": 4397122,
-          "likes": 3931
+          "downloads": 4451916,
+          "likes": 3962
         },
         "ollama": [],
         "nvidia_build": []
@@ -9355,7 +10253,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
         ],
@@ -9372,8 +10270,8 @@
       "sources": {
         "huggingface": {
           "id": "ornith-ai/Ornith-1.5-9B-GGUF",
-          "downloads": 4238715,
-          "likes": 347
+          "downloads": 4889153,
+          "likes": 378
         },
         "ollama": [],
         "nvidia_build": []
@@ -9423,7 +10321,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF"
         ],
@@ -9491,7 +10389,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/ornith-ai/Ornith-1.0-9B-GGUF"
         ],
@@ -9559,7 +10457,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen-72B"
         ],
@@ -9576,8 +10474,8 @@
       "sources": {
         "huggingface": {
           "id": "ornith-ai/Ornith-1.5-35B-A3B-GGUF",
-          "downloads": 3702705,
-          "likes": 396
+          "downloads": 4149809,
+          "likes": 415
         },
         "ollama": [],
         "nvidia_build": []
@@ -9627,7 +10525,7 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF"
         ],
@@ -9644,8 +10542,8 @@
       "sources": {
         "huggingface": {
           "id": "Qwen/Qwen3-4B-Instruct-2507",
-          "downloads": 3579530,
-          "likes": 959
+          "downloads": 3633207,
+          "likes": 961
         },
         "ollama": [],
         "nvidia_build": []
@@ -9695,11 +10593,1523 @@
       "memory": {},
       "benchmarks": [],
       "provenance": {
-        "last_verified": "2026-09-12",
+        "last_verified": "2026-09-14",
         "sources": [
           "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507"
         ],
         "confidence": "medium"
+      }
+    },
+    {
+      "id": "qwen3-5-0-8b",
+      "identity": {
+        "canonical_name": "Qwen3.5-0.8B",
+        "family": "Qwen3.5",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3.5-0.8B"
+        },
+        "ollama": [
+          "qwen3.5:0.8b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 800000000,
+        "active_parameters": 800000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": false,
+        "reasoning": true,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/qwen3.5:0.8b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/qwen3.5:0.8b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/qwen3.5:0.8b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3.5-0.8B"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "qwen3-5-2b",
+      "identity": {
+        "canonical_name": "Qwen3.5-2B",
+        "family": "Qwen3.5",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3.5-2B"
+        },
+        "ollama": [
+          "qwen3.5:2b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 2000000000,
+        "active_parameters": 2000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": false,
+        "reasoning": true,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/qwen3.5:2b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/qwen3.5:2b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/qwen3.5:2b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3.5-2B"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "qwen3-5-4b",
+      "identity": {
+        "canonical_name": "Qwen3.5-4B",
+        "family": "Qwen3.5",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3.5-4B"
+        },
+        "ollama": [
+          "qwen3.5:4b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 4000000000,
+        "active_parameters": 4000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": false,
+        "reasoning": true,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/qwen3.5:4b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/qwen3.5:4b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/qwen3.5:4b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3.5-4B"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "qwen3-5-9b",
+      "identity": {
+        "canonical_name": "Qwen3.5-9B",
+        "family": "Qwen3.5",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3.5-9B"
+        },
+        "ollama": [
+          "qwen3.5:9b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 9000000000,
+        "active_parameters": 9000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": false,
+        "reasoning": true,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/qwen3.5:9b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/qwen3.5:9b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/qwen3.5:9b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3.5-9B"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "qwen3-5-27b",
+      "identity": {
+        "canonical_name": "Qwen3.5-27B",
+        "family": "Qwen3.5",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3.5-27B"
+        },
+        "ollama": [
+          "qwen3.5:27b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 27000000000,
+        "active_parameters": 27000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": false,
+        "reasoning": true,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/qwen3.5:27b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/qwen3.5:27b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/qwen3.5:27b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3.5-27B"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "qwen3-5-35b-a3b",
+      "identity": {
+        "canonical_name": "Qwen3.5-35B-A3B",
+        "family": "Qwen3.5",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3.5-35B-A3B"
+        },
+        "ollama": [
+          "qwen3.5:35b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "MoE",
+        "total_parameters": 35000000000,
+        "active_parameters": 3000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": false,
+        "reasoning": true,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/qwen3.5:35b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/qwen3.5:35b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/qwen3.5:35b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3.5-35B-A3B"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "qwen3-5-122b-a10b",
+      "identity": {
+        "canonical_name": "Qwen3.5-122B-A10B",
+        "family": "Qwen3.5",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3.5-122B-A10B"
+        },
+        "ollama": [
+          "qwen3.5:122b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "MoE",
+        "total_parameters": 122000000000,
+        "active_parameters": 10000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": false,
+        "reasoning": true,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/qwen3.5:122b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/qwen3.5:122b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/qwen3.5:122b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3.5-122B-A10B"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "qwen3-vl-2b",
+      "identity": {
+        "canonical_name": "Qwen3-VL-2B-Instruct",
+        "family": "Qwen3-VL",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3-VL-2B-Instruct"
+        },
+        "ollama": [
+          "qwen3-vl:2b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 2000000000,
+        "active_parameters": 2000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": true,
+        "reasoning": true,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/qwen3-vl:2b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/qwen3-vl:2b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/qwen3-vl:2b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "qwen3-vl-4b",
+      "identity": {
+        "canonical_name": "Qwen3-VL-4B-Instruct",
+        "family": "Qwen3-VL",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3-VL-4B-Instruct"
+        },
+        "ollama": [
+          "qwen3-vl:4b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 4000000000,
+        "active_parameters": 4000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": true,
+        "reasoning": true,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/qwen3-vl:4b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/qwen3-vl:4b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/qwen3-vl:4b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "qwen3-vl-8b",
+      "identity": {
+        "canonical_name": "Qwen3-VL-8B-Instruct",
+        "family": "Qwen3-VL",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3-VL-8B-Instruct"
+        },
+        "ollama": [
+          "qwen3-vl:8b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 8000000000,
+        "active_parameters": 8000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": true,
+        "reasoning": true,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/qwen3-vl:8b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/qwen3-vl:8b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/qwen3-vl:8b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "qwen3-vl-30b-a3b",
+      "identity": {
+        "canonical_name": "Qwen3-VL-30B-A3B-Instruct",
+        "family": "Qwen3-VL",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3-VL-30B-A3B-Instruct"
+        },
+        "ollama": [
+          "qwen3-vl:30b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "MoE",
+        "total_parameters": 30000000000,
+        "active_parameters": 3000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": true,
+        "reasoning": true,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/qwen3-vl:30b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/qwen3-vl:30b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/qwen3-vl:30b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "qwen3-vl-32b",
+      "identity": {
+        "canonical_name": "Qwen3-VL-32B-Instruct",
+        "family": "Qwen3-VL",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3-VL-32B-Instruct"
+        },
+        "ollama": [
+          "qwen3-vl:32b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 32000000000,
+        "active_parameters": 32000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": true,
+        "reasoning": true,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/qwen3-vl:32b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/qwen3-vl:32b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/qwen3-vl:32b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "qwen3-vl-235b-a22b",
+      "identity": {
+        "canonical_name": "Qwen3-VL-235B-A22B-Instruct",
+        "family": "Qwen3-VL",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3-VL-235B-A22B-Instruct"
+        },
+        "ollama": [
+          "qwen3-vl:235b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "MoE",
+        "total_parameters": 235000000000,
+        "active_parameters": 22000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": true,
+        "reasoning": true,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/qwen3-vl:235b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/qwen3-vl:235b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/qwen3-vl:235b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "qwen3-next-80b-a3b",
+      "identity": {
+        "canonical_name": "Qwen3-Next-80B-A3B-Instruct",
+        "family": "Qwen3-Next",
+        "publisher": "Qwen"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "Qwen/Qwen3-Next-80B-A3B-Instruct"
+        },
+        "ollama": [
+          "qwen3-next:80b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "MoE",
+        "total_parameters": 80000000000,
+        "active_parameters": 3000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/qwen3-next:80b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/qwen3-next:80b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/qwen3-next:80b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "ministral-3-3b",
+      "identity": {
+        "canonical_name": "Ministral-3-3B-Instruct",
+        "family": "Ministral 3",
+        "publisher": "Mistral AI"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "mistralai/Ministral-3-3B-Instruct-2512"
+        },
+        "ollama": [
+          "ministral-3:3b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 4000000000,
+        "active_parameters": 4000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/ministral-3:3b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/ministral-3:3b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/ministral-3:3b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "ministral-3-8b",
+      "identity": {
+        "canonical_name": "Ministral-3-8B-Instruct",
+        "family": "Ministral 3",
+        "publisher": "Mistral AI"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "mistralai/Ministral-3-8B-Instruct-2512"
+        },
+        "ollama": [
+          "ministral-3:8b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 9000000000,
+        "active_parameters": 9000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/ministral-3:8b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/ministral-3:8b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/ministral-3:8b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "ministral-3-14b",
+      "identity": {
+        "canonical_name": "Ministral-3-14B-Instruct",
+        "family": "Ministral 3",
+        "publisher": "Mistral AI"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "mistralai/Ministral-3-14B-Instruct-2512"
+        },
+        "ollama": [
+          "ministral-3:14b"
+        ],
+        "nvidia_build": [
+          "ministral-14b-instruct-2512"
+        ]
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 14000000000,
+        "active_parameters": 14000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/ministral-3:14b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/ministral-3:14b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/ministral-3:14b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "gemma-3n-e2b",
+      "identity": {
+        "canonical_name": "Gemma-3n-E2B-IT",
+        "family": "Gemma 3n",
+        "publisher": "Google"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "google/gemma-3n-E2B-it"
+        },
+        "ollama": [
+          "gemma3n:e2b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "MoE",
+        "total_parameters": 5000000000,
+        "active_parameters": 2000000000
+      },
+      "context": {
+        "maximum_tokens": 32768
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": true,
+        "video": true,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/gemma3n:e2b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/gemma3n:e2b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/gemma3n:e2b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/google/gemma-3n-E2B-it"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "gemma-3n-e4b",
+      "identity": {
+        "canonical_name": "Gemma-3n-E4B-IT",
+        "family": "Gemma 3n",
+        "publisher": "Google"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "google/gemma-3n-E4B-it"
+        },
+        "ollama": [
+          "gemma3n:e4b"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "MoE",
+        "total_parameters": 7000000000,
+        "active_parameters": 4000000000
+      },
+      "context": {
+        "maximum_tokens": 32768
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": true,
+        "video": true,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/gemma3n:e4b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/gemma3n:e4b"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/gemma3n:e4b"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/google/gemma-3n-E4B-it"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "glm-4-7-flash",
+      "identity": {
+        "canonical_name": "GLM-4.7-Flash",
+        "family": "GLM 4.7",
+        "publisher": "Z.ai"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "zai-org/GLM-4.7-Flash"
+        },
+        "ollama": [
+          "glm-4.7-flash"
+        ],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "MoE",
+        "total_parameters": 30000000000,
+        "active_parameters": 3000000000
+      },
+      "context": {
+        "maximum_tokens": 202752
+      },
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "video": false,
+        "reasoning": true,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": true,
+        "llama_cpp": true,
+        "vllm": true,
+        "transformers": true,
+        "mlx": true
+      },
+      "artifacts": [
+        {
+          "format": "GGUF",
+          "quantization": "Q4_K_M",
+          "source": "https://ollama.com/library/glm-4.7-flash"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q5_K_M",
+          "source": "https://ollama.com/library/glm-4.7-flash"
+        },
+        {
+          "format": "GGUF",
+          "quantization": "Q8_0",
+          "source": "https://ollama.com/library/glm-4.7-flash"
+        }
+      ],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/zai-org/GLM-4.7-Flash"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "mistral-small-4-119b-a6b",
+      "identity": {
+        "canonical_name": "Mistral-Small-4-119B-A6B",
+        "family": "Mistral Small 4",
+        "publisher": "Mistral AI"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "mistralai/Mistral-Small-4-119B-2603"
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "MoE",
+        "total_parameters": 119000000000,
+        "active_parameters": 6500000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": false,
+        "reasoning": true,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": false,
+        "llama_cpp": false,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "leanstral-1-5-119b-a6b",
+      "identity": {
+        "canonical_name": "Leanstral-1.5-119B-A6B",
+        "family": "Leanstral 1.5",
+        "publisher": "Mistral AI"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "mistralai/Leanstral-1.5-119B-A6B"
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "MoE",
+        "total_parameters": 119000000000,
+        "active_parameters": 6500000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": false,
+        "reasoning": true,
+        "coding": true,
+        "tool_calling": true,
+        "agents": true
+      },
+      "runtime": {
+        "ollama": false,
+        "llama_cpp": false,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/mistralai/Leanstral-1.5-119B-A6B"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "shieldstral-1-0-3b",
+      "identity": {
+        "canonical_name": "Shieldstral-1.0-3B",
+        "family": "Shieldstral 1.0",
+        "publisher": "Mistral AI"
+      },
+      "sources": {
+        "huggingface": {
+          "id": "mistralai/Shieldstral-1.0-3B"
+        },
+        "ollama": [],
+        "nvidia_build": []
+      },
+      "architecture": {
+        "type": "Dense",
+        "total_parameters": 4000000000,
+        "active_parameters": 4000000000
+      },
+      "context": {
+        "maximum_tokens": 262144
+      },
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "video": false,
+        "reasoning": false,
+        "coding": false,
+        "tool_calling": false,
+        "agents": false
+      },
+      "runtime": {
+        "ollama": false,
+        "llama_cpp": false,
+        "vllm": true,
+        "transformers": true,
+        "mlx": false
+      },
+      "artifacts": [],
+      "memory": {},
+      "benchmarks": [],
+      "provenance": {
+        "last_verified": "2026-09-14",
+        "sources": [
+          "https://huggingface.co/mistralai/Shieldstral-1.0-3B"
+        ],
+        "confidence": "high"
       }
     }
   ],
