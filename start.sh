@@ -40,4 +40,11 @@ if [ -z "$PYTHON_BIN" ]; then
 fi
 
 export MODELSCOUT_UV="$UV_BIN"
+export PYTHONUNBUFFERED="${PYTHONUNBUFFERED:-1}"
+
+if [ "$#" -eq 0 ]; then
+    echo "Starting ModelScout hardware scan..." >&2
+    echo "For the web dashboard, run: ./start.sh web" >&2
+fi
+
 exec "$PYTHON_BIN" "$SCRIPT_DIR/scripts/launch.py" "$@"
