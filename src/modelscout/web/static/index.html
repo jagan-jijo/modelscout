@@ -10,14 +10,15 @@
   <header class="navbar">
     <div class="nav-container">
       <div class="brand">
-        <span class="logo-icon">⚡</span>
+        <span class="logo-icon" aria-hidden="true">⚡</span>
         <span class="brand-title">ModelScout</span>
         <span class="brand-sub">Local AI Advisor</span>
       </div>
       <div class="nav-links">
-        <button id="nav-btn-hw" class="active">Hardware & Advisor</button>
-        <button id="nav-btn-catalog">Model Catalogue</button>
-        <button id="nav-btn-compare">Comparison (<span id="compare-count">0</span>)</button>
+        <button id="nav-btn-hw" class="active" aria-expanded="true">Hardware & Advisor</button>
+        <button id="nav-btn-catalog" aria-expanded="false">Model Catalogue</button>
+        <button type="button" id="nav-btn-runtime" aria-expanded="false" aria-controls="runtime-models-section">Runtime Models</button>
+        <button id="nav-btn-compare" aria-expanded="false">Comparison (<span id="compare-count">0</span>)</button>
         <button id="btn-run-benchmark" class="btn-secondary" title="Opt-in 5s real CPU/RAM speed test">Benchmark System</button>
       </div>
     </div>
@@ -202,6 +203,47 @@
         <h2>Local AI Model Catalogue</h2>
         <p class="dim">All models indexed locally in SQLite from dataset.json and cached sources.</p>
         <div class="catalog-table-wrapper" id="catalog-table-container"></div>
+      </div>
+    </section>
+
+    <!-- Runtime Models Section -->
+    <section id="runtime-models-section" class="runtime-models-section" style="display: none;" aria-labelledby="runtime-models-title">
+      <div class="card runtime-models-card">
+        <div class="card-header runtime-models-header">
+          <div>
+            <h2 id="runtime-models-title">Runtime Models</h2>
+            <p class="dim">Curated model identifiers and installation details for supported local runtimes.</p>
+          </div>
+          <button type="button" id="btn-runtime-refresh" class="btn-secondary" aria-label="Refresh runtime models">Refresh</button>
+        </div>
+        <div id="runtime-models-status" class="runtime-status" role="status" aria-live="polite" aria-atomic="true"></div>
+        <div id="runtime-models-warnings" class="runtime-warnings" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+        <div class="runtime-sections">
+          <section class="runtime-section" aria-labelledby="runtime-ollama-title">
+            <div class="runtime-section-header">
+              <h3 id="runtime-ollama-title">Ollama Models</h3>
+              <span id="runtime-ollama-count" class="tag tag-neutral" aria-label="Ollama model count">—</span>
+            </div>
+            <div id="runtime-ollama-status" class="runtime-section-status" role="status" aria-live="polite" aria-atomic="true"></div>
+            <div id="runtime-ollama-content" class="runtime-section-content" aria-busy="false"></div>
+          </section>
+          <section class="runtime-section" aria-labelledby="runtime-airllm-title">
+            <div class="runtime-section-header">
+              <h3 id="runtime-airllm-title">AirLLM Compatible Models</h3>
+              <span id="runtime-airllm-count" class="tag tag-neutral" aria-label="AirLLM model count">—</span>
+            </div>
+            <div id="runtime-airllm-status" class="runtime-section-status" role="status" aria-live="polite" aria-atomic="true"></div>
+            <div id="runtime-airllm-content" class="runtime-section-content" aria-busy="false"></div>
+          </section>
+          <section class="runtime-section" aria-labelledby="runtime-colibri-title">
+            <div class="runtime-section-header">
+              <h3 id="runtime-colibri-title">Colibri Compatible Models</h3>
+              <span id="runtime-colibri-count" class="tag tag-neutral" aria-label="Colibri model count">—</span>
+            </div>
+            <div id="runtime-colibri-status" class="runtime-section-status" role="status" aria-live="polite" aria-atomic="true"></div>
+            <div id="runtime-colibri-content" class="runtime-section-content" aria-busy="false"></div>
+          </section>
+        </div>
       </div>
     </section>
 

@@ -11,10 +11,15 @@ from rich.text import Text
 
 from modelscout.hardware.types import SystemHardware
 from modelscout.recommendation.ranking import ModelRecommendation, RecommendationReport
+from modelscout.output.runtime_models import (
+    display_runtime_models_json,
+    display_runtime_models_terminal,
+    render_runtime_models_json,
+    render_runtime_models_terminal,
+)
 
 console = Console()
 err_console = Console(stderr=True)
-
 
 def render_scan_json(report: RecommendationReport) -> None:
     """Outputs strictly valid JSON on stdout for scripting/jq."""

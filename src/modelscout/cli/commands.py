@@ -13,6 +13,8 @@ import typer
 from modelscout.cli.output import (
     console,
     err_console,
+    render_runtime_models_json,
+    render_runtime_models_terminal,
     render_scan_json,
     render_scan_markdown,
     render_scan_terminal,
@@ -23,6 +25,7 @@ from modelscout.dataset.loader import load_dataset
 from modelscout.dataset.updater import start_background_model_update, sync_models_from_open_apis
 from modelscout.dataset.validator import validate_catalog
 from modelscout.hardware.detector import detect_system_hardware
+from modelscout.models.runtime_catalog import build_runtime_report
 from modelscout.recommendation.ranking import generate_recommendations
 
 cmd_app = typer.Typer(help="Find local AI models that fit your hardware, with memory and speed estimates.")
@@ -175,6 +178,28 @@ def models_cmd(
             m["ollama_name"] or "-",
         )
     console.print(table)
+
+
+@cmd_app.command(name="runtimes")
+def runtimes_cmd(
+    as_json: bool = typer.Option(False, "--json", help="Output strict grouped JSON"),
+    limit: int = typer.Option(6, "--limit", min=1, max=6, help="Maximum models per runtime (1-6)"),
+    offline: bool = typer.Option(
+        False,
+        "--offline",
+        help="Use bundled metadata without network access",
+    ),
+) -> None:
+    """Lists documented models for Ollama, AirLLM, and Colibri."""
+    report = build_runtime_report(
+        limit=limit,
+        enrich=not offline,
+        offline=offline,
+    )
+    if as_json:
+        render_runtime_models_json(report)
+    else:
+        render_runtime_models_terminal(report)
 
 
 @cmd_app.command(name="benchmarks")

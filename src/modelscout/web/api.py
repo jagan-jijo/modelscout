@@ -8,6 +8,7 @@ from pydantic import BaseModel, Field
 from modelscout.database.repository import DatabaseRepository
 from modelscout.hardware.detector import detect_runtimes, detect_system_hardware
 from modelscout.hardware.types import SystemHardware
+from modelscout.models.runtime_catalog import build_runtime_report
 from modelscout.recommendation.ranking import (
     ModelRecommendation,
     RecommendationReport,
@@ -119,6 +120,19 @@ def get_runtimes() -> Dict[str, Any]:
     """Detects installed local AI inference runtimes."""
     rt = detect_runtimes()
     return rt.model_dump()
+
+
+@router.get("/runtime-models")
+def get_runtime_models(
+    limit: int = Query(6, ge=1, le=6),
+    offline: bool = Query(False),
+) -> Dict[str, Any]:
+    """Returns grouped Ollama, AirLLM, and Colibri catalogue records."""
+    return build_runtime_report(
+        limit=limit,
+        enrich=not offline,
+        offline=offline,
+    )
 
 
 @router.post("/analyze")

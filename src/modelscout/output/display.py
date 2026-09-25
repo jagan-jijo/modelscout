@@ -25,6 +25,12 @@ from modelscout.output.json_output import (
 from modelscout.output.markdown import display_markdown
 from modelscout.output.plan import display_plan
 from modelscout.output.ranking import display_hardware, display_ranking
+from modelscout.output.runtime_models import (
+    display_runtime_models_json,
+    display_runtime_models_terminal,
+    render_runtime_models_json,
+    render_runtime_models_terminal,
+)
 from modelscout.output.upgrade import display_upgrade
 
 __all__ = [
@@ -37,4 +43,8 @@ __all__ = [
     "display_ranking",
     "display_upgrade",
     "display_upgrade_json",
+    "display_runtime_models_json",
+    "display_runtime_models_terminal",
+    "render_runtime_models_json",
+    "render_runtime_models_terminal",
 ]

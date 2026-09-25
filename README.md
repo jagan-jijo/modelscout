@@ -105,6 +105,23 @@ uv run --directory src modelscout web
 ./start.sh --help
 ```
 
+### Runtime-compatible model lists
+
+List exact install identifiers for Ollama, AirLLM, and Colibri separately:
+
+```bash
+./start.sh runtimes
+./start.sh runtimes --json
+./start.sh runtimes --offline
+```
+
+The command uses 10,000 Hugging Face downloads as the normal popularity filter
+and permits 5,000 only when a runtime needs the fallback. It does not download
+weights or launch inference. AirLLM records show the exact `AutoModel` repo ID;
+Colibri records distinguish the source checkpoint from its installable container.
+
+The web dashboard exposes the same grouped lists under **Runtime Models**.
+
 The web server runs in the foreground. Stop it with `Ctrl+C`. For a remote Linux
 machine, forward the local port over SSH and open it in your browser:
 

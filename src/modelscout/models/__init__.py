@@ -5,6 +5,7 @@ from modelscout.models.discovery import discover_available_models
 from modelscout.models.metadata import ModelMetadata
 from modelscout.models.normalization import extract_model_family, normalize_model_name, parse_parameters_str
 from modelscout.models.quantization import BITS_PER_WEIGHT, QuantizationType, get_bits_per_weight, get_quant_quality_multiplier
+from modelscout.models.runtime_types import RuntimeModel
 
 __all__ = [
     "ModelMetadata",
@@ -17,4 +18,5 @@ __all__ = [
     "extract_model_family",
     "parse_parameters_str",
     "discover_available_models",
+    "RuntimeModel",
 ]

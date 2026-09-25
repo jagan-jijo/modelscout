@@ -19,9 +19,20 @@ function safeHref(value) {
 let currentHardware = null;
 let currentReport = null;
 let selectedCompareIds = new Set();
+let runtimeModelsLoaded = false;
+let runtimeModelsLoading = false;
+let runtimeModelsRequestId = 0;
+
+const RUNTIME_MODELS_ENDPOINT = "/api/runtime-models?limit=6&offline=false";
+const RUNTIME_SECTIONS = [
+  { key: "ollama", title: "Ollama Models" },
+  { key: "airllm", title: "AirLLM Compatible Models" },
+  { key: "colibri", title: "Colibri Compatible Models" }
+];
 
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
+  initRuntimeModels();
   initAutocomplete();
   initHardwareDetection();
   initFormActions();
@@ -33,17 +44,20 @@ document.addEventListener("DOMContentLoaded", () => {
 function initNav() {
   const btnHw = document.getElementById("nav-btn-hw");
   const btnCatalog = document.getElementById("nav-btn-catalog");
+  const btnRuntime = document.getElementById("nav-btn-runtime");
   const btnCompare = document.getElementById("nav-btn-compare");
 
   const secResults = document.getElementById("results-section");
   const secHw = document.querySelector(".hardware-card");
   const secCatalog = document.getElementById("catalog-section");
+  const secRuntime = document.getElementById("runtime-models-section");
   const secCompare = document.getElementById("compare-section");
 
   btnHw.addEventListener("click", () => {
     setActiveNav(btnHw);
     secHw.style.display = "block";
     secCatalog.style.display = "none";
+    secRuntime.style.display = "none";
     secCompare.style.display = "none";
     if (currentReport) secResults.style.display = "block";
   });
@@ -52,9 +66,20 @@ function initNav() {
     setActiveNav(btnCatalog);
     secHw.style.display = "none";
     secResults.style.display = "none";
+    secRuntime.style.display = "none";
     secCompare.style.display = "none";
     secCatalog.style.display = "block";
     loadCatalogTable();
+  });
+
+  btnRuntime.addEventListener("click", () => {
+    setActiveNav(btnRuntime);
+    secHw.style.display = "none";
+    secResults.style.display = "none";
+    secCatalog.style.display = "none";
+    secCompare.style.display = "none";
+    secRuntime.style.display = "block";
+    if (!runtimeModelsLoaded) loadRuntimeModels();
   });
 
   btnCompare.addEventListener("click", () => {
@@ -62,6 +87,7 @@ function initNav() {
     secHw.style.display = "none";
     secResults.style.display = "none";
     secCatalog.style.display = "none";
+    secRuntime.style.display = "none";
     secCompare.style.display = "block";
     renderComparisonTable();
   });
@@ -83,8 +109,320 @@ function initNav() {
 }
 
 function setActiveNav(btn) {
-  document.querySelectorAll(".nav-links button").forEach((b) => b.classList.remove("active"));
+  document.querySelectorAll(".nav-links button").forEach((b) => {
+    b.classList.remove("active");
+    if (b.id !== "btn-run-benchmark") b.setAttribute("aria-expanded", "false");
+  });
   btn.classList.add("active");
+  if (btn.id !== "btn-run-benchmark") btn.setAttribute("aria-expanded", "true");
+}
+
+function initRuntimeModels() {
+  const refreshButton = document.getElementById("btn-runtime-refresh");
+  if (refreshButton) {
+    refreshButton.addEventListener("click", () => loadRuntimeModels());
+  }
+}
+
+function runtimeValue(value, fallback = "Not provided") {
+  if (value === null || value === undefined) return fallback;
+  if (typeof value === "object") {
+    try {
+      const serialized = JSON.stringify(value);
+      return serialized === undefined ? fallback : serialized;
+    } catch {
+      return fallback;
+    }
+  }
+  const text = String(value);
+  return text.trim() === "" ? fallback : text;
+}
+
+function hasRuntimeValue(value) {
+  return runtimeValue(value, "") !== "";
+}
+
+function firstRuntimeValue(record, keys) {
+  for (const key of keys) {
+    if (hasRuntimeValue(record[key])) return record[key];
+  }
+  return null;
+}
+
+function renderRuntimeLink(value) {
+  const text = runtimeValue(value, "");
+  if (!text) return `<span class="runtime-missing">Not provided</span>`;
+
+  const url = typeof value === "string" ? value : "";
+  const href = safeHref(url);
+  if (!href || href === "#") {
+    return `<span class="runtime-source-text">${escapeHtml(text)}</span>`;
+  }
+  return `<a href="${href}" target="_blank" rel="noopener noreferrer" class="runtime-source-link">${escapeHtml(text)}</a>`;
+}
+
+function formatRuntimeCount(value) {
+  const text = runtimeValue(value, "Not provided");
+  if (text === "Not provided") return text;
+  const number = typeof value === "number" ? value : Number(text);
+  return Number.isFinite(number) ? number.toLocaleString() : text;
+}
+
+function formatRuntimeResource(value) {
+  const text = runtimeValue(value, "Not provided");
+  if (text === "Not provided") return text;
+  if (/\bgb\b/i.test(text)) return text;
+  const number = typeof value === "number" ? value : Number(text);
+  if (Number.isFinite(number)) {
+    return `${number.toLocaleString(undefined, { maximumFractionDigits: 2 })} GB`;
+  }
+  return `${text} GB`;
+}
+
+function renderRuntimeDate(value) {
+  const text = runtimeValue(value, "Not provided");
+  if (text === "Not provided") return `<span>${escapeHtml(text)}</span>`;
+  const timestamp = Date.parse(text);
+  if (Number.isNaN(timestamp)) return `<span>${escapeHtml(text)}</span>`;
+  return `<time datetime="${escapeHtml(new Date(timestamp).toISOString())}">${escapeHtml(text)}</time>`;
+}
+
+function renderRuntimeState(kind, heading, message) {
+  return `<div class="runtime-state runtime-state-${kind}"><strong>${escapeHtml(heading)}</strong><p>${escapeHtml(message)}</p></div>`;
+}
+
+function renderRuntimeTags(record) {
+  return [record.family, record.architecture, record.parameters, record.active_parameters]
+    .filter((value) => hasRuntimeValue(value))
+    .map((value) => `<span class="tag tag-neutral">${escapeHtml(runtimeValue(value))}</span>`)
+    .join("");
+}
+
+function renderRuntimeModel(record) {
+  const safeRecord = record && typeof record === "object" ? record : {};
+  const modelId = runtimeValue(safeRecord.model_id, "Not provided");
+  const sourceId = runtimeValue(firstRuntimeValue(safeRecord, ["source_id", "popularity_id"]), "");
+  const containerId = runtimeValue(firstRuntimeValue(safeRecord, ["container_id", "container"]), "");
+  const sourceUrl = firstRuntimeValue(safeRecord, ["source_url", "huggingface_url", "model_url", "url"]);
+  const frameworkSource = firstRuntimeValue(safeRecord, ["source", "framework_source", "framework_url", "documentation_url"]);
+  const modifiedDate = firstRuntimeValue(safeRecord, ["last_modified", "lastModified", "updated_at", "updatedAt", "updated", "updated_date"]);
+  const benchmark = firstRuntimeValue(safeRecord, ["benchmark", "benchmark_notes"]);
+  const runtimeNotes = firstRuntimeValue(safeRecord, ["notes", "resource_notes"]);
+
+  return `
+    <article class="runtime-model-card">
+      <div class="runtime-model-header">
+        <h4>${escapeHtml(runtimeValue(safeRecord.display_name, modelId))}</h4>
+        <div class="runtime-tags">${renderRuntimeTags(safeRecord)}</div>
+      </div>
+
+      <dl class="runtime-fields">
+        <div class="runtime-field">
+          <dt>Model ID</dt>
+          <dd><code class="runtime-code runtime-id">${escapeHtml(modelId)}</code></dd>
+        </div>
+        ${sourceId && sourceId !== modelId ? `
+        <div class="runtime-field">
+          <dt>Source ID</dt>
+          <dd><code class="runtime-code runtime-id">${escapeHtml(sourceId)}</code></dd>
+        </div>` : ""}
+        ${containerId ? `
+        <div class="runtime-field">
+          <dt>Container ID</dt>
+          <dd><code class="runtime-code runtime-id">${escapeHtml(containerId)}</code></dd>
+        </div>` : ""}
+        <div class="runtime-field runtime-command-field">
+          <dt>Install command</dt>
+          <dd><code class="runtime-code runtime-command">${escapeHtml(runtimeValue(safeRecord.install_command, "Not provided"))}</code></dd>
+        </div>
+      </dl>
+
+      <dl class="runtime-metadata">
+        <div class="runtime-field">
+          <dt>Source downloads</dt>
+          <dd>${escapeHtml(formatRuntimeCount(safeRecord.source_downloads))}</dd>
+        </div>
+        <div class="runtime-field">
+          <dt>Container downloads</dt>
+          <dd>${escapeHtml(formatRuntimeCount(safeRecord.container_downloads))}</dd>
+        </div>
+        <div class="runtime-field">
+          <dt>Last modified</dt>
+          <dd>${renderRuntimeDate(modifiedDate)}</dd>
+        </div>
+        <div class="runtime-field">
+          <dt>Metadata source</dt>
+          <dd>${escapeHtml(runtimeValue(safeRecord.metadata_source, "Not provided"))}</dd>
+        </div>
+        <div class="runtime-field">
+          <dt>Reported VRAM</dt>
+          <dd>${escapeHtml(formatRuntimeResource(safeRecord.reported_vram_gb))}</dd>
+        </div>
+        <div class="runtime-field">
+          <dt>RAM</dt>
+          <dd>${escapeHtml(formatRuntimeResource(safeRecord.ram_gb))}</dd>
+        </div>
+        <div class="runtime-field">
+          <dt>Disk</dt>
+          <dd>${escapeHtml(formatRuntimeResource(safeRecord.disk_gb))}</dd>
+        </div>
+      </dl>
+
+      <div class="runtime-sources">
+        <div class="runtime-source-row">
+          <span class="runtime-label">Source URL</span>
+          ${renderRuntimeLink(sourceUrl)}
+        </div>
+        <div class="runtime-source-row">
+          <span class="runtime-label">Framework source</span>
+          ${renderRuntimeLink(frameworkSource)}
+        </div>
+      </div>
+
+      <div class="runtime-notes">
+        <div class="runtime-note">
+          <span class="runtime-label">Benchmark</span>
+          <p>${escapeHtml(runtimeValue(benchmark, "Not provided"))}</p>
+        </div>
+        <div class="runtime-note">
+          <span class="runtime-label">Runtime notes</span>
+          <p>${escapeHtml(runtimeValue(runtimeNotes, "Not provided"))}</p>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function setRuntimeStatus(message, state = "") {
+  const status = document.getElementById("runtime-models-status");
+  if (!status) return;
+  status.textContent = message;
+  status.className = `runtime-status${state ? ` runtime-status-${state}` : ""}`;
+}
+
+function renderRuntimeWarnings(warnings) {
+  const container = document.getElementById("runtime-models-warnings");
+  if (!container) return;
+  const items = Array.isArray(warnings) ? warnings : [];
+  container.hidden = items.length === 0;
+  container.innerHTML = items.length
+    ? `<ul>${items.map((warning) => `<li>${escapeHtml(runtimeValue(warning))}</li>`).join("")}</ul>`
+    : "";
+}
+
+function setRuntimeSectionBusy(runtime, isBusy) {
+  const content = document.getElementById(`runtime-${runtime}-content`);
+  if (content) content.setAttribute("aria-busy", String(isBusy));
+}
+
+function renderRuntimeSectionsLoading() {
+  renderRuntimeWarnings([]);
+  for (const section of RUNTIME_SECTIONS) {
+    const count = document.getElementById(`runtime-${section.key}-count`);
+    const status = document.getElementById(`runtime-${section.key}-status`);
+    const content = document.getElementById(`runtime-${section.key}-content`);
+    if (count) count.textContent = "Loading";
+    if (status) status.textContent = `Loading ${section.title}...`;
+    if (content) {
+      content.innerHTML = renderRuntimeState("loading", "Loading models", `Fetching ${section.title.toLowerCase()}...`);
+      setRuntimeSectionBusy(section.key, true);
+    }
+  }
+}
+
+function renderRuntimeSectionsError(message) {
+  const safeMessage = runtimeValue(message, "Unknown error");
+  renderRuntimeWarnings([]);
+  for (const section of RUNTIME_SECTIONS) {
+    const count = document.getElementById(`runtime-${section.key}-count`);
+    const status = document.getElementById(`runtime-${section.key}-status`);
+    const content = document.getElementById(`runtime-${section.key}-content`);
+    if (count) count.textContent = "Unavailable";
+    if (status) status.textContent = `Could not load ${section.title}.`;
+    if (content) {
+      content.innerHTML = renderRuntimeState("error", "Could not load models", `${safeMessage} Use the Refresh button to retry.`);
+      setRuntimeSectionBusy(section.key, false);
+    }
+  }
+}
+
+function renderRuntimeReport(payload) {
+  if (!payload || typeof payload !== "object" || !payload.runtimes || typeof payload.runtimes !== "object") {
+    throw new Error("Runtime model response was malformed.");
+  }
+
+  for (const section of RUNTIME_SECTIONS) {
+    const rawRecords = Array.isArray(payload.runtimes[section.key]) ? payload.runtimes[section.key] : [];
+    const records = rawRecords.filter((record) => record && typeof record === "object" && !Array.isArray(record));
+    const count = document.getElementById(`runtime-${section.key}-count`);
+    const status = document.getElementById(`runtime-${section.key}-status`);
+    const content = document.getElementById(`runtime-${section.key}-content`);
+    const recordLabel = `${records.length} ${records.length === 1 ? "record" : "records"}`;
+
+    if (count) count.textContent = recordLabel;
+    if (status) status.textContent = `${recordLabel} loaded.`;
+    if (content) {
+      content.innerHTML = records.length
+        ? records.map((record) => renderRuntimeModel(record)).join("")
+        : renderRuntimeState("empty", "No models available", "This runtime returned no qualifying records.");
+      setRuntimeSectionBusy(section.key, false);
+    }
+  }
+
+  const metadataSource = runtimeValue(payload.metadata_source, "Not provided");
+  setRuntimeStatus(`Loaded runtime models. Metadata source: ${metadataSource}.`, "success");
+  renderRuntimeWarnings(payload.warnings);
+}
+
+async function loadRuntimeModels() {
+  if (runtimeModelsLoading) return;
+
+  runtimeModelsLoading = true;
+  runtimeModelsLoaded = false;
+  const requestId = ++runtimeModelsRequestId;
+  const refreshButton = document.getElementById("btn-runtime-refresh");
+  if (refreshButton) {
+    refreshButton.disabled = true;
+    refreshButton.textContent = "Refreshing...";
+  }
+
+  setRuntimeStatus("Loading runtime models...", "loading");
+  renderRuntimeSectionsLoading();
+
+  try {
+    const response = await fetch(RUNTIME_MODELS_ENDPOINT, {
+      headers: { Accept: "application/json" }
+    });
+    if (!response.ok) {
+      let detail = "";
+      try {
+        const body = await response.json();
+        if (body && typeof body.detail === "string") detail = body.detail;
+      } catch {
+        // The status code remains the useful error when the body is not JSON.
+      }
+      throw new Error(detail || `Request failed with status ${response.status}.`);
+    }
+
+    const payload = await response.json();
+    if (requestId !== runtimeModelsRequestId) return;
+    renderRuntimeReport(payload);
+    runtimeModelsLoaded = true;
+  } catch (error) {
+    if (requestId !== runtimeModelsRequestId) return;
+    const message = error instanceof Error ? error.message : "Unknown error.";
+    setRuntimeStatus(`Could not load runtime models: ${message}`, "error");
+    renderRuntimeSectionsError(message);
+    runtimeModelsLoaded = false;
+  } finally {
+    if (requestId === runtimeModelsRequestId) {
+      runtimeModelsLoading = false;
+      if (refreshButton) {
+        refreshButton.disabled = false;
+        refreshButton.textContent = "Refresh";
+      }
+    }
+  }
 }
 
 // Autocomplete for Processors and GPUs with instant in-memory filtering & clock speeds

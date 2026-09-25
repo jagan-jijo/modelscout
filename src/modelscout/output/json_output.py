@@ -9,8 +9,11 @@ from modelscout.engine.types import CompatibilityResult
 from modelscout.hardware.types import HardwareInfo
 from modelscout.models.types import GGUFVariant, ModelInfo
 from modelscout.output import _console
+from modelscout.output.runtime_models import (
+    display_runtime_models_json,
+    render_runtime_models_json,
+)
 from modelscout.output.upgrade import _summarize_row
-
 
 def display_json(results: list[CompatibilityResult], hardware: HardwareInfo) -> None:
     """Output ranking results as JSON."""
